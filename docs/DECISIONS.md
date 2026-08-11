@@ -82,8 +82,17 @@ Last updated: 2026-08-11
 - Analytics (e.g. GA4 / none)  
 - Redirect map from old WP slugs (likely keep paths)  
 - Announcement content schema details  
-- Package manager / Node version conventions  
 - Whether birthday copy/pricing ($200, 90 min, etc.) changes  
+
+### Locked during scaffold
+
+| Decision | Choice |
+|---|---|
+| Package manager | **pnpm** workspaces |
+| Node | **22** (`.nvmrc`) |
+| Lambda handler | Thin **Node + Zod** (not Hono yet) |
+| API surface | Lambda **Function URL** `POST /leads` (+ `GET /health`) |
+| Old program URLs | Astro redirects to `/programs/...` paths |
 
 ---
 

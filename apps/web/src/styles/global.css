@@ -1,0 +1,129 @@
+:root {
+  /* Sacred brand colors — evolve around these */
+  --color-blue: #0054b7;
+  --color-blue-deep: #274e73;
+  --color-blue-dark: #004ca5;
+  --color-red: #e70e1b;
+
+  --color-ink: #14202b;
+  --color-ink-muted: #4a5a68;
+  --color-surface: #f7f9fb;
+  --color-white: #ffffff;
+
+  --font-display: "Bebas Neue", "Arial Narrow", Impact, sans-serif;
+  --font-body: "Roboto Flex", "Segoe UI", sans-serif;
+
+  --space-page: clamp(1.25rem, 4vw, 3rem);
+  --width-content: 68rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  color: var(--color-ink);
+  background: var(--color-surface);
+  font-family: var(--font-body);
+  font-size: 100%;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: var(--color-blue);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  line-height: 1.1;
+  color: var(--color-blue-deep);
+}
+
+.wrap {
+  width: min(100% - 2 * var(--space-page), var(--width-content));
+  margin-inline: auto;
+}
+
+.site-header,
+.site-footer {
+  background: var(--color-blue-deep);
+  color: var(--color-white);
+}
+
+.site-header a,
+.site-footer a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.site-header a:hover,
+.site-footer a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.25rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.banner {
+  background: var(--color-red);
+  color: var(--color-white);
+  padding: 0.65rem var(--space-page);
+  text-align: center;
+}
+
+.hero {
+  padding: clamp(3rem, 10vw, 6rem) 0;
+}
+
+.cta {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.25rem;
+  background: var(--color-red);
+  color: var(--color-white);
+  text-decoration: none;
+  border-radius: 2px;
+}
+
+.cta:hover {
+  filter: brightness(1.05);
+}
+
+.cta-secondary {
+  background: transparent;
+  color: var(--color-blue-deep);
+  border: 2px solid var(--color-blue-deep);
+}
+
+.page {
+  padding: clamp(2.5rem, 6vw, 4rem) 0;
+}
+
+.muted {
+  color: var(--color-ink-muted);
+}

@@ -1,0 +1,54 @@
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  id-token: write
+  contents: read
+
+concurrency:
+  group: deploy-main
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      AWS_REGION: ${{ vars.AWS_REGION || 'us-west-2' }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 9.15.0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+
+      - name: Install
+        run: pnpm install --frozen-lockfile
+
+      - name: Build site
+        run: pnpm build
+        env:
+          PUBLIC_API_URL: ${{ vars.PUBLIC_API_URL }}
+
+      - name: Configure AWS credentials (OIDC)
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ secrets.AWS_DEPLOY_ROLE_ARN }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: CDK deploy
+        working-directory: infra
+        run: pnpm exec cdk deploy --all --require-approval never
+        env:
+          # Pass through as CDK context/params when ready:
+          # cdk deploy -c ... or use stack parameters via CI vars
+          LEAD_NOTIFY_TO: ${{ secrets.LEAD_NOTIFY_TO }}
+          LEAD_NOTIFY_FROM: ${{ secrets.LEAD_NOTIFY_FROM }}

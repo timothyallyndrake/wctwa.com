@@ -1,0 +1,17 @@
+node_modules/
+dist/
+.astro/
+.cdk.staging/
+cdk.out/
+*.js.map
+.env
+.env.*
+!.env.example
+.DS_Store
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/launch.json
+*.log
+.turbo/
+coverage/

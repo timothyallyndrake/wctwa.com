@@ -1,0 +1,31 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { site } from "../content/site";
+---
+
+<BaseLayout
+  title="Privacy Policy"
+  description="Privacy policy for World Champion Taekwondo Washougal."
+>
+  <section class="page">
+    <div class="wrap">
+      <h1>Privacy Policy</h1>
+      <p class="muted">Placeholder — replace Divi lorem; keep substance, rewrite cleanly.</p>
+      <h2>Information collected</h2>
+      <p>
+        When you contact us or submit a form, we may collect your name, email,
+        phone number, and message details. Standard technical data (such as IP
+        address and browser type) may be collected automatically.
+      </p>
+      <h2>How we use information</h2>
+      <p>
+        We use your information to respond to inquiries, operate the website, and
+        improve our services. We do not sell or rent customer lists.
+      </p>
+      <h2>Contact</h2>
+      <p>
+        Questions: <a href={`mailto:${site.email}`}>{site.email}</a>
+      </p>
+    </div>
+  </section>
+</BaseLayout>

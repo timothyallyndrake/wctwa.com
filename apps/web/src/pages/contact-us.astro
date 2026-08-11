@@ -1,0 +1,30 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { site } from "../content/site";
+---
+
+<BaseLayout
+  title="Contact Us"
+  description="Contact World Champion Taekwondo Washougal — address, phone, and email."
+>
+  <section class="page">
+    <div class="wrap">
+      <h1>Contact</h1>
+      <p>
+        <a href={site.address.mapsUrl}>
+          {site.address.line1}<br />
+          {site.address.city}, {site.address.state} {site.address.zip}
+        </a>
+      </p>
+      <p>
+        <a href={`mailto:${site.email}`}>{site.email}</a><br />
+        <a href={site.phone.href}>{site.phone.display}</a>
+      </p>
+      <p>
+        <a href={site.facebook}>Facebook</a>
+        {" · "}
+        <a class="cta" href="/start/?intent=info">Request information</a>
+      </p>
+    </div>
+  </section>
+</BaseLayout>

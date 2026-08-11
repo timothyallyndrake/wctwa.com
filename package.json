@@ -1,0 +1,17 @@
+{
+  "name": "wctwa.com",
+  "private": true,
+  "packageManager": "pnpm@9.15.0",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "pnpm --filter @wctwa/web dev",
+    "build": "pnpm --filter @wctwa/web build",
+    "preview": "pnpm --filter @wctwa/web preview",
+    "build:api": "pnpm --filter @wctwa/api build",
+    "build:infra": "pnpm --filter @wctwa/infra build",
+    "synth": "pnpm --filter @wctwa/infra synth",
+    "typecheck": "pnpm -r typecheck"
+  }
+}

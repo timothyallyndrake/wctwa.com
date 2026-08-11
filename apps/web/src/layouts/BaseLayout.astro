@@ -1,0 +1,88 @@
+---
+import "../styles/global.css";
+import { announcement, nav, site } from "../content/site";
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = site.tagline } = Astro.props;
+const pageTitle = title === site.name ? title : `${title} | ${site.shortName}`;
+
+const now = Date.now();
+const startsOk =
+  !announcement.startsAt || now >= Date.parse(announcement.startsAt);
+const endsOk = !announcement.endsAt || now <= Date.parse(announcement.endsAt);
+const showAnnouncement = announcement.active && announcement.message && startsOk && endsOk;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Flex:opsz,wght@8..144,400;8..144,600&display=swap"
+      rel="stylesheet"
+    />
+    <title>{pageTitle}</title>
+  </head>
+  <body>
+    {
+      showAnnouncement && (
+        <div class="banner" role="status">{announcement.message}</div>
+      )
+    }
+    <header class="site-header">
+      <div class="wrap" style="display:flex;flex-wrap:wrap;gap:1rem;align-items:center;justify-content:space-between;padding:1rem 0;">
+        <a href="/" style="font-family:var(--font-display);font-size:1.5rem;letter-spacing:0.04em;">
+          {site.shortName}
+        </a>
+        <nav aria-label="Primary">
+          <ul class="nav">
+            {nav.map((item) => (
+              <li>
+                <a href={item.href}>{item.label}</a>
+              </li>
+            ))}
+            <li>
+              <a href="/start/" style="font-weight:600;">Start here</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <slot />
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap" style="padding:2.5rem 0;display:grid;gap:1.25rem;">
+        <strong style="font-family:var(--font-display);font-size:1.5rem;">{site.name}</strong>
+        <p style="margin:0;">
+          <a href={site.address.mapsUrl}>
+            {site.address.line1}, {site.address.city}, {site.address.state}{" "}
+            {site.address.zip}
+          </a>
+        </p>
+        <p style="margin:0;">
+          <a href={`mailto:${site.email}`}>{site.email}</a>
+          {" · "}
+          <a href={site.phone.href}>{site.phone.display}</a>
+        </p>
+        <p style="margin:0;opacity:0.8;font-size:0.9rem;">
+          © {new Date().getFullYear()} {site.name}
+          {" · "}
+          <a href="/privacy-policy/">Privacy Policy</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

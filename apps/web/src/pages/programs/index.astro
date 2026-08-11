@@ -1,0 +1,45 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const programs = [
+  {
+    href: "/programs/kids-martial-arts/",
+    title: "Kids Martial Arts",
+    blurb: "Confidence, discipline, and leadership — at each child’s pace.",
+  },
+  {
+    href: "/programs/tiny-tigers-martial-arts/",
+    title: "Tiny Tigers",
+    blurb: "Energetic classes for children under 6 — respect, kindness, fun.",
+  },
+  {
+    href: "/programs/adults-and-families-martial-arts/",
+    title: "Adults & Families",
+    blurb: "Fitness, self-defense, and classes families can train in together.",
+  },
+];
+---
+
+<BaseLayout
+  title="Programs"
+  description="Kids, Tiny Tigers, and Adults & Families martial arts programs in Washougal."
+>
+  <section class="page">
+    <div class="wrap">
+      <h1>Programs</h1>
+      <p class="muted">One clear overview — then go deeper if you want.</p>
+      <ul style="list-style:none;padding:0;display:grid;gap:1.5rem;margin:2rem 0;">
+        {
+          programs.map((p) => (
+            <li style="background:var(--color-white);padding:1.5rem;">
+              <h2 style="margin-top:0;">{p.title}</h2>
+              <p class="muted">{p.blurb}</p>
+              <a href={p.href}>Learn more</a>
+            </li>
+          ))
+        }
+      </ul>
+      <p><a class="cta" href="/start/">Start here</a></p>
+    </div>
+  </section>
+</BaseLayout>

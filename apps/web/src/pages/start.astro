@@ -1,0 +1,102 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { site } from "../content/site";
+
+const intentParam = Astro.url.searchParams.get("intent");
+const intent =
+  intentParam === "info" || intentParam === "birthday" || intentParam === "trial"
+    ? intentParam
+    : "trial";
+
+const headings = {
+  trial: "Reserve your first class",
+  info: "Request information",
+  birthday: "Birthday party request",
+} as const;
+
+const apiUrl = import.meta.env.PUBLIC_API_URL ?? "";
+---
+
+<BaseLayout title={headings[intent]} description="Get started with World Champion Taekwondo Washougal.">
+  <section class="page">
+    <div class="wrap" style="max-width:36rem;">
+      <h1>{headings[intent]}</h1>
+      <p class="muted">
+        Form wires to our Lambda + SES API. Set <code>PUBLIC_API_URL</code> when
+        the endpoint is live. {site.offer.label}: {site.offer.price}.
+      </p>
+
+      <form id="lead-form" style="display:grid;gap:0.85rem;margin-top:1.5rem;">
+        <input type="hidden" name="intent" value={intent} />
+
+        <label>
+          Name
+          <input name="name" required autocomplete="name" style="width:100%;padding:0.6rem;" />
+        </label>
+
+        <label>
+          Email
+          <input
+            name="email"
+            type="email"
+            required
+            autocomplete="email"
+            style="width:100%;padding:0.6rem;"
+          />
+        </label>
+
+        <label>
+          Phone
+          <input
+            name="phone"
+            type="tel"
+            required
+            autocomplete="tel"
+            style="width:100%;padding:0.6rem;"
+          />
+        </label>
+
+        <label>
+          Message <span class="muted">(optional)</span>
+          <textarea name="message" rows="4" style="width:100%;padding:0.6rem;"></textarea>
+        </label>
+
+        <button class="cta" type="submit" style="border:0;cursor:pointer;">
+          Send
+        </button>
+        <p id="lead-status" class="muted" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <script define:vars={{ apiUrl }}>
+    const form = document.getElementById("lead-form");
+    const status = document.getElementById("lead-status");
+    form?.addEventListener("submit", async (event) => {
+      event.preventDefault();
+      if (!status) return;
+
+      if (!apiUrl) {
+        status.textContent =
+          "API URL not configured yet — form UI is ready; wire PUBLIC_API_URL after deploy.";
+        return;
+      }
+
+      status.textContent = "Sending…";
+      const data = Object.fromEntries(new FormData(form));
+
+      try {
+        const res = await fetch(`${apiUrl.replace(/\/$/, "")}/leads`, {
+          method: "POST",
+          headers: { "content-type": "application/json" },
+          body: JSON.stringify(data),
+        });
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        status.textContent = "Thank you — we’ll be in touch soon.";
+        form.reset();
+      } catch {
+        status.textContent = "Something went wrong. Please call or email us directly.";
+      }
+    });
+  </script>
+</BaseLayout>
