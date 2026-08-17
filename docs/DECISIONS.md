@@ -40,15 +40,29 @@ Last updated: 2026-08-11
 - Photo enhance + new assets as available  
 - CDK infra + GitHub Actions deploy  
 
-### v1 out of scope
+### v1 out of scope (build later)
 
-- Member login / student portal  
+- Working member login / student portal (auth)  
 - Online payments / membership billing  
-- Admin dashboard for leads  
+- Staff admin dashboard  
 - Blog / news  
 - Live chat  
 - Logo replacement  
 - Native mobile app  
+
+### v1 teaser (in scope)
+
+- Public **coming soon** messaging for the future member platform  
+- `/members/` sign-in shell (disabled) — parents will land here later  
+- Staff admin remains a **separate app** when built (not parent login)  
+
+### Auth surfaces (locked direction)
+
+| Who | Where | Notes |
+|---|---|---|
+| Parents / students | Marketing site member area (`/members/` → later portal) | Not “admin” |
+| Master / staff | Future `apps/admin` (e.g. Quasar) | Ops, schedule publish, students, store inventory |
+| Shared API | Future NestJS (or equivalent) | When platform work starts — not required for marketing v1 |
 
 ---
 

@@ -1,0 +1,72 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { comingSoon, site } from "../content/site";
+---
+
+<BaseLayout
+  title="Member sign in"
+  description="Family member portal for World Champion Taekwondo Washougal — coming soon."
+>
+  <section class="page">
+    <div class="wrap" style="max-width:40rem;">
+      <div class="coming-soon-panel">
+        <p class="eyebrow">{comingSoon.eyebrow}</p>
+        <h1 style="font-size:clamp(2.2rem, 6vw, 3.25rem);margin:0 0 0.75rem;">
+          Member sign in
+        </h1>
+        <p class="muted" style="margin:0;font-size:1.05rem;">
+          Parents and students will sign in here — for schedules, store orders,
+          and dues. School staff will use a separate admin workspace. This portal
+          isn’t live yet; the craft is underway.
+        </p>
+
+        <form class="sign-in-shell" aria-describedby="members-coming-soon-note">
+          <label>
+            Email
+            <input
+              type="email"
+              name="email"
+              autocomplete="username"
+              placeholder="parent@email.com"
+              disabled
+            />
+          </label>
+          <label>
+            Password
+            <input
+              type="password"
+              name="password"
+              autocomplete="current-password"
+              placeholder="••••••••"
+              disabled
+            />
+          </label>
+          <button class="cta" type="button" disabled style="margin-top:0.25rem;border:0;">
+            Sign in — coming soon
+          </button>
+          <p id="members-coming-soon-note" class="muted" style="margin:0.9rem 0 0;font-size:0.92rem;">
+            Want early access updates?{" "}
+            <a href="/start/?intent=info" style="color:#fff;text-decoration:underline;">
+              Request information
+            </a>
+            {" "}or call{" "}
+            <a href={site.phone.href} style="color:#fff;text-decoration:underline;">
+              {site.phone.display}
+            </a>.
+          </p>
+        </form>
+      </div>
+
+      <ul class="feature-grid" style="margin-top:1.5rem;">
+        {
+          comingSoon.features.map((feature) => (
+            <li class="feature-card">
+              <h3>{feature.title}</h3>
+              <p>{feature.detail}</p>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </section>
+</BaseLayout>

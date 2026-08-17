@@ -39,3 +39,33 @@ export const nav = [
   { href: "/martial-arts-birthday-parties/", label: "Birthday Parties" },
   { href: "/contact-us/", label: "Contact" },
 ] as const;
+
+/**
+ * Public teaser for the future member experience.
+ * Parents sign in here later — Master/staff use a separate admin app.
+ */
+export const comingSoon = {
+  eyebrow: "Coming soon",
+  title: "A member home for every family",
+  lead:
+    "We’re building a simple place for parents and students to manage training life online — without the clutter.",
+  membersPath: "/members/",
+  features: [
+    {
+      title: "Family accounts",
+      detail: "Sign in to see your students, belt progress, and class rhythm in one calm view.",
+    },
+    {
+      title: "Live schedule",
+      detail: "Check what’s on the mat this week — updates published from the school, not a PDF chase.",
+    },
+    {
+      title: "School store",
+      detail: "Order uniforms and gear when you need them, sized for your student’s path.",
+    },
+    {
+      title: "Monthly dues online",
+      detail: "Pay membership automatically and securely — fewer reminders, more training.",
+    },
+  ],
+} as const;

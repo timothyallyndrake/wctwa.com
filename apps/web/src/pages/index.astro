@@ -1,6 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import { site } from "../content/site";
+import { comingSoon, site } from "../content/site";
 ---
 
 <BaseLayout title={site.name} description={site.tagline}>
@@ -26,6 +26,38 @@ import { site } from "../content/site";
       <h2>Programs for every age</h2>
       <p class="muted">Tiny Tigers, Kids, and Adults & Families — clarity first, then you choose.</p>
       <p><a href="/programs/">Explore programs</a></p>
+    </div>
+  </section>
+
+  <section class="page" style="padding-top:0;">
+    <div class="wrap">
+      <div class="coming-soon-panel">
+        <p class="eyebrow">{comingSoon.eyebrow}</p>
+        <h2 style="font-size:clamp(2rem, 5vw, 3rem);margin:0 0 0.75rem;">
+          {comingSoon.title}
+        </h2>
+        <p class="muted" style="max-width:38rem;margin:0;font-size:1.05rem;">
+          {comingSoon.lead}
+        </p>
+        <ul class="feature-grid">
+          {
+            comingSoon.features.map((feature) => (
+              <li class="feature-card">
+                <h3>{feature.title}</h3>
+                <p>{feature.detail}</p>
+              </li>
+            ))
+          }
+        </ul>
+        <p style="display:flex;flex-wrap:wrap;gap:0.75rem;margin:1.75rem 0 0;">
+          <a class="cta" href={comingSoon.membersPath} style="margin-top:0;">
+            Preview member sign in
+          </a>
+          <a class="cta cta-secondary" href="/start/?intent=info" style="margin-top:0;">
+            Ask about membership
+          </a>
+        </p>
+      </div>
     </div>
   </section>
 
