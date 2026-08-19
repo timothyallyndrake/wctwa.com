@@ -1,0 +1,7 @@
+Photorealistic CONTINUATION of the exact reference photograph — same camera, same three students, same faces, same poses, same uniforms. Girl with braids centered, two boys with glasses left and right, ready stance, full bodies to bare feet. White doboks, black V-necks, circular World Champion chest patches, Korea sleeve patches. Terracotta / deep red wall, blue interlocking mats, red mat border, left wooden cubbies, white trophy shelf behind the girl. NO water bottle on any shelf.
+
+CRITICAL CHANGE: outpaint / extend the canvas UPWARD only. Add a generous band of the same red/terracotta dojang wall (and a hint of ceiling / simple gym lights if needed) ABOVE the students so there is clear headroom — heads must sit well below the top edge, about 18–22% of the frame height reserved above the tallest hair. Do not crop feet. Do not add people. Do not add text overlays, watermarks, logos, or website UI.
+
+Black belts: gold embroidery stays SMALL and HARD TO READ — English + Hangul, cramped, not dummy names. Do NOT render MAYA PARK, JORDAN LEE, ELI NGUYEN, or TIM DRAKE. Left and center students: two gold dan bars (2nd dan). Far right: rank unclear, no readable bars.
+
+Do NOT add black-belt graphic frames, angled belt borders, embroidered “Washougal trains here.”, or collage elements.

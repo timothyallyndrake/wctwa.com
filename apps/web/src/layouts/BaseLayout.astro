@@ -1,13 +1,15 @@
 ---
 import "../styles/global.css";
 import { announcement, nav, site } from "../content/site";
+import { withBase } from "../lib/with-base";
 
 interface Props {
   title: string;
   description?: string;
+  home?: boolean;
 }
 
-const { title, description = site.tagline } = Astro.props;
+const { title, description = site.tagline, home = false } = Astro.props;
 const pageTitle = title === site.name ? title : `${title} | ${site.shortName}`;
 
 const now = Date.now();
@@ -21,54 +23,63 @@ const showAnnouncement = announcement.active && announcement.message && startsOk
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href={withBase("/favicon-32.png")} />
+    <link rel="icon" href={withBase("/favicon.ico")} />
+    <link rel="apple-touch-icon" href={withBase("/apple-touch-icon.png")} />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
     <meta name="generator" content={Astro.generator} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Flex:opsz,wght@8..144,400;8..144,600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto+Flex:opsz,wght@8..144,400;8..144,600&display=swap"
       rel="stylesheet"
     />
     <title>{pageTitle}</title>
   </head>
-  <body>
+  <body class:list={[{ "layout--home": home }]}>
+    <!--
+      WCT Washougal — Dobok Embroidery direction contract
+      Cotton weave grounds, black V-neck collar bars, gold belt-thread accents.
+      Sacred blue #0054B7, red #E70E1B, ivory/off-white, near-black navy.
+      Trust before transaction. No eyebrow kickers, carnival CTAs, or glass cards.
+    -->
     {
       showAnnouncement && (
         <div class="banner" role="status">{announcement.message}</div>
       )
     }
-    <header class="site-header">
-      <div class="wrap" style="display:flex;flex-wrap:wrap;gap:1rem;align-items:center;justify-content:space-between;padding:1rem 0;">
-        <a href="/" style="font-family:var(--font-display);font-size:1.5rem;letter-spacing:0.04em;">
-          {site.shortName}
+    <header class:list={["site-header", { "site-header--home": home }]}>
+      <div class="site-header__inner wrap">
+        <a class="brand-lockup" href={withBase("/")}>
+          <img src={withBase(site.marks.school.src)} alt="" width="40" height="40" />
+          <span>{site.shortName}</span>
         </a>
         <nav aria-label="Primary">
           <ul class="nav">
             {nav.map((item) => (
               <li>
-                <a href={item.href}>{item.label}</a>
+                <a href={withBase(item.href)}>{item.label}</a>
               </li>
             ))}
             <li>
-              <a href="/start/" style="font-weight:600;">Start here</a>
+              <a class="nav-cta" href={withBase("/start/")}>Start here</a>
             </li>
             <li>
-              <a class="nav-signin" href="/members/">Member sign in</a>
+              <a class="nav-signin" href={withBase("/members/")}>Member sign in</a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <main>
+    <main class:list={[{ "main--home": home }]}>
       <slot />
     </main>
 
     <footer class="site-footer">
-      <div class="wrap" style="padding:2.5rem 0;display:grid;gap:1.25rem;">
-        <strong style="font-family:var(--font-display);font-size:1.5rem;">{site.name}</strong>
+      <div class="wrap site-footer__inner">
+        <strong class="site-footer__name">{site.name}</strong>
         <p style="margin:0;">
           <a href={site.address.mapsUrl}>
             {site.address.line1}, {site.address.city}, {site.address.state}{" "}
@@ -81,13 +92,17 @@ const showAnnouncement = announcement.active && announcement.message && startsOk
           <a href={site.phone.href}>{site.phone.display}</a>
         </p>
         <p style="margin:0;">
-          <a href="/members/">Member sign in</a>
+          <a href={withBase("/members/")}>Member sign in</a>
           <span style="opacity:0.7;"> — family portal coming soon</span>
         </p>
+        <div class="affiliation-mark">
+          <img src={withBase(site.marks.foundation.src)} alt={site.marks.foundation.alt} width="68" height="68" />
+          <p>Affiliated with the United States Taekwondo Education Foundation</p>
+        </div>
         <p style="margin:0;opacity:0.8;font-size:0.9rem;">
           © {new Date().getFullYear()} {site.name}
           {" · "}
-          <a href="/privacy-policy/">Privacy Policy</a>
+          <a href={withBase("/privacy-policy/")}>Privacy Policy</a>
         </p>
       </div>
     </footer>

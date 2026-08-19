@@ -4,6 +4,8 @@ import { defineConfig } from "astro/config";
 // https://astro.build/config
 export default defineConfig({
   site: "https://wctwa.com",
+  // Preview lives next to the WordPress export until cutover.
+  base: "/new/",
   output: "static",
   trailingSlash: "always",
   redirects: {

@@ -20,6 +20,21 @@ export const site = {
     price: "$40",
     detail: "Two weeks of class — a simple way to start.",
   },
+  marks: {
+    school: {
+      src: "/images/brand/world-champion-tkd.webp",
+      alt: "World Champion Tae Kwon Do",
+    },
+    foundation: {
+      src: "/images/brand/us-taekwondo-education-foundation.webp",
+      alt: "United States Taekwondo Education Foundation",
+    },
+  },
+  hero: {
+    src: "/images/enhanced/home-hero.png",
+    alt: "Three students in ready stance on the mat at World Champion Taekwondo Washougal.",
+    approved: "v3" as const,
+  },
 } as const;
 
 /** Set `active: true` and fill fields when Master asks for a notice. */

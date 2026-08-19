@@ -1,5 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import { site } from "../content/site";
+import { withBase } from "../lib/with-base";
 ---
 
 <BaseLayout
@@ -25,7 +27,14 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         </li>
         <li>USAT Certified Coach</li>
       </ul>
-      <p><a class="cta" href="/start/?intent=info">Request information</a></p>
+      <div class="affiliation-mark" style="margin:1.75rem 0;">
+        <img src={withBase(site.marks.foundation.src)} alt={site.marks.foundation.alt} width="72" height="72" />
+        <p>
+          United States Taekwondo Education Foundation — affiliation mark
+          shown with Master Kim’s credentials.
+        </p>
+      </div>
+      <p><a class="cta" href={withBase("/start/?intent=info")}>Request information</a></p>
     </div>
   </section>
 </BaseLayout>

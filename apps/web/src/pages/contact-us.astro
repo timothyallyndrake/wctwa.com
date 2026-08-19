@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { site } from "../content/site";
+import { withBase } from "../lib/with-base";
 ---
 
 <BaseLayout
@@ -23,7 +24,7 @@ import { site } from "../content/site";
       <p>
         <a href={site.facebook}>Facebook</a>
         {" · "}
-        <a class="cta" href="/start/?intent=info">Request information</a>
+        <a class="cta" href={withBase("/start/?intent=info")}>Request information</a>
       </p>
     </div>
   </section>

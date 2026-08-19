@@ -1,0 +1,28 @@
+---
+description: Session and subagent model routing for all wctwa.com work
+alwaysApply: true
+---
+
+# Session model router
+
+The human picks the **parent** chat model. This repo expects **Cursor Grok 4.6 High Fast** (`cursor-grok-4.6-high-fast`). If the parent is a different model, say so once and keep working; do not switch mid-turn.
+
+Do **not** implement design comps, visual advice, or large coding passes in the parent when a routed subagent applies. The parent interviews, decides, and routes.
+
+## Situational router
+
+| Situation | Who | Task `model` slug |
+|---|---|---|
+| Orchestration, grilling, product decisions, routing | Parent session | `cursor-grok-4.6-high-fast` (human-selected) |
+| Implement / write production code, refactors, wiring, tests | Subagent | `composer-2.5-fast` |
+| Design advice, visual direction, graphics / image generation, Impeccable world/comp work | Subagent | `gpt-5.6-sol-medium` |
+
+Use only slugs from the Task tool allowlist. Pass `model` explicitly. Do not use `inherit` for implementor or design work.
+
+## How to spawn
+
+- Implementor: `subagent_type: generalPurpose`, `model: composer-2.5-fast`
+- Design: `subagent_type: generalPurpose`, `model: gpt-5.6-sol-medium`
+- Give the subagent the full brief, paths, and constraints. The parent reviews and integrates.
+
+Narrow one-file edits the parent can finish in a few lines may stay in-parent. Anything that is a design pass or a real implementation batch goes to the matching subagent.

@@ -98,6 +98,16 @@ Last updated: 2026-08-11
 - Announcement content schema details  
 - Whether birthday copy/pricing ($200, 90 min, etc.) changes  
 
+### Session routing (locked 2026-08-18)
+
+| Role | Model |
+|---|---|
+| Parent / main session | Cursor Grok 4.6 High Fast |
+| Implementor subagent | Cursor Composer 2.5 Fast |
+| Design / graphics / visual advice subagent | GPT 5.6 Sol Medium |
+
+Enforced in `.cursor/rules/session-model-router.mdc`. Impeccable new surfaces: **comp-first** (`apps/web/.impeccable/config.json`).
+
 ### Locked during scaffold
 
 | Decision | Choice |

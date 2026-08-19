@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import { withBase } from "../../lib/with-base";
 ---
 
 <BaseLayout
@@ -14,7 +15,7 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
         Our kids program builds self-confidence, self-discipline, and
         self-control in a clean, supportive environment.
       </p>
-      <p><a class="cta" href="/start/?intent=trial">Reserve a class</a></p>
+      <p><a class="cta" href={withBase("/start/?intent=trial")}>Reserve a class</a></p>
     </div>
   </section>
 </BaseLayout>

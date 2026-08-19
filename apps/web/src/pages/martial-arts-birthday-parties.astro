@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import { withBase } from "../lib/with-base";
 ---
 
 <BaseLayout
@@ -18,7 +19,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         <li>Price: $200</li>
       </ul>
       <p>
-        <a class="cta" href="/start/?intent=birthday">Reserve a party</a>
+        <a class="cta" href={withBase("/start/?intent=birthday")}>Reserve a party</a>
       </p>
     </div>
   </section>

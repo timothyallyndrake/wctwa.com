@@ -1,19 +1,20 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import { withBase } from "../../lib/with-base";
 
 const programs = [
   {
-    href: "/programs/kids-martial-arts/",
+    href: withBase("/programs/kids-martial-arts/"),
     title: "Kids Martial Arts",
     blurb: "Confidence, discipline, and leadership — at each child’s pace.",
   },
   {
-    href: "/programs/tiny-tigers-martial-arts/",
+    href: withBase("/programs/tiny-tigers-martial-arts/"),
     title: "Tiny Tigers",
     blurb: "Energetic classes for children under 6 — respect, kindness, fun.",
   },
   {
-    href: "/programs/adults-and-families-martial-arts/",
+    href: withBase("/programs/adults-and-families-martial-arts/"),
     title: "Adults & Families",
     blurb: "Fitness, self-defense, and classes families can train in together.",
   },
@@ -39,7 +40,7 @@ const programs = [
           ))
         }
       </ul>
-      <p><a class="cta" href="/start/">Start here</a></p>
+      <p><a class="cta" href={withBase("/start/")}>Start here</a></p>
     </div>
   </section>
 </BaseLayout>

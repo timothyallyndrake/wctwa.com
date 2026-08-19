@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import { withBase } from "../lib/with-base";
 ---
 
 <BaseLayout
@@ -23,7 +24,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         Full grid will be modeled in content (not a fragile HTML table dump).
         Level 1 &amp; 2 students need safety gear. Sparring requires full gear.
       </p>
-      <p><a class="cta" href="/start/">Reserve your first class</a></p>
+      <p><a class="cta" href={withBase("/start/")}>Reserve your first class</a></p>
     </div>
   </section>
 </BaseLayout>
