@@ -1,0 +1,48 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import DesignReview from "../../components/DesignReview.astro";
+import { site } from "../../content/site";
+import { withBase } from "../../lib/with-base";
+import "../../styles/designs.css";
+---
+
+<BaseLayout
+  title="Inside the room"
+  showHeader={false}
+  showFooter={false}
+  bodyClass="design-room"
+>
+  <section class="room" aria-label="Welcome">
+    <header class="room-bar">
+      <a class="room-brand" href={withBase("/")}>
+        <img src={withBase(site.marks.school.src)} alt="" width="40" height="40" />
+        <span>{site.shortName}</span>
+      </a>
+      <ul class="room-links">
+        <li><a href={withBase("/instructors/")}>Instructors</a></li>
+        <li><a href={withBase("/schedule/")}>Schedule</a></li>
+        <li><a href={withBase("/programs/")}>Programs</a></li>
+      </ul>
+    </header>
+    <div class="room-intro">
+      <h1>Washougal trains here.</h1>
+      <p>Master Chulan Kim. A safe, positive school for families.</p>
+      <div class="room-actions">
+        <a class="room-button" href={withBase("/start/?intent=trial")}>Reserve your first class</a>
+      </div>
+    </div>
+    <figure class="room-photo">
+      <img
+        src={withBase(site.hero.src)}
+        alt={site.hero.alt}
+        width="1536"
+        height="1024"
+      />
+    </figure>
+    <div class="room-mat">
+      <span>{site.address.line1}</span>
+      <a href={withBase("/instructors/")}>Meet Master Kim</a>
+    </div>
+  </section>
+  <DesignReview current="room" />
+</BaseLayout>

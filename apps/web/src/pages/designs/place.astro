@@ -1,0 +1,141 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import DesignReview from "../../components/DesignReview.astro";
+import { site } from "../../content/site";
+import { withBase } from "../../lib/with-base";
+import "../../styles/designs.css";
+
+const programs = [
+  {
+    href: withBase("/programs/tiny-tigers-martial-arts/"),
+    title: "Tiny Tigers",
+    blurb: "Energetic classes for children under 6 — respect, kindness, and fun on the mat.",
+    image: withBase("/images/source/home-tiny-tigers-martial-arts.jpg"),
+    alt: "Tiny Tigers class at World Champion Taekwondo Washougal.",
+  },
+  {
+    href: withBase("/programs/kids-martial-arts/"),
+    title: "Kids",
+    blurb: "Confidence, discipline, and leadership — at each child’s pace.",
+    image: withBase("/images/source/home-kids-martial-arts.jpg"),
+    alt: "Kids martial arts class in Washougal.",
+  },
+  {
+    href: withBase("/programs/adults-and-families-martial-arts/"),
+    title: "Adults & Families",
+    blurb: "Fitness, self-defense, and classes families can train in together.",
+    image: withBase("/images/source/home-adult-and-family-martial-arts.jpg"),
+    alt: "Adults and families training together.",
+  },
+];
+
+const facts = [
+  "7th Degree World Tae Kwon Do Federation Black Belt",
+  "4th Degree Yong Moo Do",
+  "Yong-In University, Tae Kwon Do",
+  "National Champion 1995",
+  "USAT Certified Coach",
+  "Taekwondo of America — Master Kim Je-Kyoung, Olympic gold 1992",
+];
+---
+
+<BaseLayout
+  title="The place"
+  showHeader={false}
+  showFooter={false}
+  bodyClass="design-place"
+>
+  <section class="place" aria-label="Welcome">
+    <img
+      class="place-photo"
+      src={withBase(site.hero.src)}
+      alt={site.hero.alt}
+      width="1536"
+      height="1024"
+      fetchpriority="high"
+    />
+    <header class="place-nav">
+      <a class="place-brand" href={withBase("/")}>{site.shortName}</a>
+      <ul class="place-links">
+        <li><a href={withBase("/programs/")}>Programs</a></li>
+        <li><a href={withBase("/schedule/")}>Schedule</a></li>
+        <li><a href={withBase("/instructors/")}>Instructors</a></li>
+      </ul>
+    </header>
+    <div class="place-copy">
+      <h1>Washougal trains here.</h1>
+      <a class="place-pill" href={withBase("/start/?intent=trial")}>Reserve your first class</a>
+    </div>
+  </section>
+
+  <section class="place-statement" aria-label="The school">
+    <p>Master Chulan Kim. A safe, positive school for families.</p>
+    <p>{site.tagline}</p>
+    <a href={withBase("/instructors/")}>Meet Master Kim</a>
+  </section>
+
+  <section class="place-master" aria-labelledby="place-master-heading">
+    <div class="place-master__copy">
+      <h2 id="place-master-heading">Master Chulan Kim</h2>
+      <p>
+        Headmaster of World Champion Taekwondo Washougal. Graduate of Yong-In
+        University. National Champion 1995.
+      </p>
+      <ul>
+        {facts.map((fact) => <li>{fact}</li>)}
+      </ul>
+      <a href={withBase("/instructors/")}>View full credentials</a>
+    </div>
+    <img
+      src={withBase("/images/source/instructors-main.webp")}
+      alt="Master Chulan Kim"
+      width="771"
+      height="1000"
+    />
+  </section>
+
+  <section class="place-programs" aria-labelledby="place-programs-heading">
+    <h2 id="place-programs-heading">Programs for every age</h2>
+    <p class="place-programs__lead">Tiny Tigers, Kids, and Adults &amp; Families — one school, clear paths.</p>
+    <div class="place-programs__grid">
+      {
+        programs.map((program) => (
+          <article>
+            <img src={program.image} alt={program.alt} width="300" height="186" />
+            <h3>{program.title}</h3>
+            <p>{program.blurb}</p>
+            <a href={program.href}>View program</a>
+          </article>
+        ))
+      }
+    </div>
+  </section>
+
+  <section class="place-visit" aria-labelledby="place-visit-heading">
+    <h2 id="place-visit-heading">Visit</h2>
+    <div class="place-visit__grid">
+      <p>
+        {site.address.line1}<br />
+        {site.address.city}, {site.address.state} {site.address.zip}
+      </p>
+      <p>
+        <a href={site.phone.href}>{site.phone.display}</a><br />
+        <a href={`mailto:${site.email}`}>{site.email}</a>
+      </p>
+      <p>
+        Monday – Friday, 2pm – 8pm<br />
+        Saturday, events only<br />
+        Sunday, closed
+      </p>
+    </div>
+    <a class="place-pill place-pill--ink" href={withBase("/schedule/")}>See the schedule</a>
+  </section>
+
+  <section class="place-offer" aria-labelledby="place-offer-heading">
+    <h2 id="place-offer-heading">{site.offer.label} for {site.offer.price}</h2>
+    <p>{site.offer.detail}</p>
+    <a class="place-pill" href={withBase("/start/?intent=trial")}>Reserve your first class</a>
+  </section>
+
+  <DesignReview current="place" />
+</BaseLayout>

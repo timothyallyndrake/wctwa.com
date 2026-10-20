@@ -1,0 +1,68 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import DesignReview from "../../components/DesignReview.astro";
+import { site } from "../../content/site";
+import { withBase } from "../../lib/with-base";
+import "../../styles/designs.css";
+
+const hours = ["2", "3", "4", "6", "7", "8"];
+---
+
+<BaseLayout
+  title="The afternoon"
+  showHeader={false}
+  showFooter={false}
+  bodyClass="design-afternoon"
+>
+  <header class="day-top">
+    <a href={withBase("/")}>{site.shortName}</a>
+    <p>Monday through Friday, the school is open from 2pm to 8pm.</p>
+  </header>
+  <ol class="day">
+    <li class="day-closed">
+      <span class="day-hour">Sun</span>
+      <p>Closed.</p>
+    </li>
+    {
+      hours.map((hour) =>
+        hour === "4" ? (
+          <li class="day-live">
+            <span class="day-hour">
+              {hour}
+              <small>pm</small>
+            </span>
+            <p>Weekday classes are in session through the afternoon and evening.</p>
+            <figure class="day-photo">
+              <img
+                src={withBase(site.hero.src)}
+                alt={site.hero.alt}
+                width="1536"
+                height="1024"
+              />
+            </figure>
+          </li>
+        ) : (
+          <li>
+            <span class="day-hour">
+              {hour}
+              <small>pm</small>
+            </span>
+            <p>{hour === "8" ? "The school day ends." : "Open."}</p>
+          </li>
+        ),
+      )
+    }
+    <li class="day-closed">
+      <span class="day-hour">Sat</span>
+      <p>Events only.</p>
+    </li>
+  </ol>
+  <section class="day-offer" aria-labelledby="offer-heading">
+    <div>
+      <h2 id="offer-heading">{site.offer.label} for {site.offer.price}</h2>
+      <p>{site.offer.detail}</p>
+    </div>
+    <a class="day-button" href={withBase("/start/?intent=trial")}>Reserve your first class</a>
+  </section>
+  <DesignReview current="afternoon" />
+</BaseLayout>

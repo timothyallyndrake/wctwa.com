@@ -1,0 +1,57 @@
+- generic [active] [ref=f80e1]:
+  - main [ref=f80e2]:
+    - generic [ref=f80e3]:
+      - link "WCT Washougal" [ref=f80e4] [cursor=pointer]:
+        - /url: /new/
+      - paragraph [ref=f80e5]: Monday through Friday, the school is open from 2pm to 8pm.
+    - list [ref=f80e6]:
+      - listitem [ref=f80e7]:
+        - generic [ref=f80e8]: Sun
+        - paragraph [ref=f80e9]: Closed.
+      - listitem [ref=f80e10]:
+        - generic [ref=f80e11]: 2pm
+        - paragraph [ref=f80e12]: Open.
+      - listitem [ref=f80e13]:
+        - generic [ref=f80e14]: 3pm
+        - paragraph [ref=f80e15]: Open.
+      - listitem [ref=f80e16]:
+        - generic [ref=f80e17]: 4pm
+        - paragraph [ref=f80e18]: Weekday classes are in session through the afternoon and evening.
+        - figure [ref=f80e19]:
+          - img "Three students in ready stance on the mat at World Champion Taekwondo Washougal." [ref=f80e20]
+      - listitem [ref=f80e21]:
+        - generic [ref=f80e22]: 6pm
+        - paragraph [ref=f80e23]: Open.
+      - listitem [ref=f80e24]:
+        - generic [ref=f80e25]: 7pm
+        - paragraph [ref=f80e26]: Open.
+      - listitem [ref=f80e27]:
+        - generic [ref=f80e28]: 8pm
+        - paragraph [ref=f80e29]: The school day ends.
+      - listitem [ref=f80e30]:
+        - generic [ref=f80e31]: Sat
+        - paragraph [ref=f80e32]: Events only.
+    - region [ref=f80e33]:
+      - generic [ref=f80e34]:
+        - heading "Try 2 weeks for $40" [level=2] [ref=f80e35]
+        - paragraph [ref=f80e36]: Two weeks of class — a simple way to start.
+      - link "Reserve your first class" [ref=f80e37] [cursor=pointer]:
+        - /url: /new/start/?intent=trial
+    - navigation "Review the five designs" [ref=f80e38]:
+      - link "All" [ref=f80e39] [cursor=pointer]:
+        - /url: /new/designs/
+      - link "Room" [ref=f80e40] [cursor=pointer]:
+        - /url: /new/designs/room/
+      - link "Record" [ref=f80e41] [cursor=pointer]:
+        - /url: /new/designs/record/
+      - link "Face" [ref=f80e42] [cursor=pointer]:
+        - /url: /new/designs/face/
+      - link "Afternoon" [ref=f80e43] [cursor=pointer]:
+        - /url: /new/designs/afternoon/
+      - link "Screens" [ref=f80e44] [cursor=pointer]:
+        - /url: /new/designs/screens/
+  - generic [ref=f80e47]:
+    - button [ref=f80e48]
+    - button [ref=f80e54]
+    - button [ref=f80e58]
+    - button [ref=f80e63]

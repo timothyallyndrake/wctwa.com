@@ -1,0 +1,146 @@
+- generic [active] [ref=f66e1]:
+  - banner [ref=f66e2]:
+    - generic [ref=f66e3]:
+      - link "WCT Washougal" [ref=f66e4] [cursor=pointer]:
+        - /url: /new/
+      - navigation "Primary" [ref=f66e6]:
+        - list [ref=f66e7]:
+          - listitem [ref=f66e8]:
+            - link "About" [ref=f66e9] [cursor=pointer]:
+              - /url: /new/about-us/
+          - listitem [ref=f66e10]:
+            - link "Programs" [ref=f66e11] [cursor=pointer]:
+              - /url: /new/programs/
+          - listitem [ref=f66e12]:
+            - link "Schedule" [ref=f66e13] [cursor=pointer]:
+              - /url: /new/schedule/
+          - listitem [ref=f66e14]:
+            - link "Instructors" [ref=f66e15] [cursor=pointer]:
+              - /url: /new/instructors/
+          - listitem [ref=f66e16]:
+            - link "Birthday Parties" [ref=f66e17] [cursor=pointer]:
+              - /url: /new/martial-arts-birthday-parties/
+          - listitem [ref=f66e18]:
+            - link "Contact" [ref=f66e19] [cursor=pointer]:
+              - /url: /new/contact-us/
+          - listitem [ref=f66e20]:
+            - link "Reserve your first class" [ref=f66e21] [cursor=pointer]:
+              - /url: /new/start/
+          - listitem [ref=f66e22]:
+            - link "Member sign in" [ref=f66e23] [cursor=pointer]:
+              - /url: /new/members/
+  - main [ref=f66e24]:
+    - region "Welcome" [ref=f66e25]:
+      - heading "Washougal trains here." [level=1] [ref=f66e27]: Washougaltrains here.
+      - figure [ref=f66e28]:
+        - img "Three students in ready stance on the mat at World Champion Taekwondo Washougal." [ref=f66e29]
+      - generic [ref=f66e31]:
+        - paragraph [ref=f66e32]: Master Chulan Kim. A safe, positive school for families.
+        - generic [ref=f66e33]:
+          - link "Reserve your first class" [ref=f66e34] [cursor=pointer]:
+            - /url: /new/start/?intent=trial
+          - link "Meet Master Kim" [ref=f66e35] [cursor=pointer]:
+            - /url: /new/instructors/
+    - region [ref=f66e36]:
+      - generic [ref=f66e37]:
+        - generic [ref=f66e38]:
+          - heading "Master Chulan Kim" [level=2] [ref=f66e39]
+          - list [ref=f66e40]:
+            - listitem [ref=f66e41]: 7th Degree WTF Black Belt
+            - listitem [ref=f66e42]: 4th Degree Yong Moo Do
+            - listitem [ref=f66e43]: Yong-In University
+            - listitem [ref=f66e44]: National Champion 1995
+            - listitem [ref=f66e45]: USAT Certified Coach
+          - link "View full credentials" [ref=f66e46] [cursor=pointer]:
+            - /url: /new/instructors/
+        - img "Master Chulan Kim" [ref=f66e47]
+    - region [ref=f66e48]:
+      - generic [ref=f66e49]:
+        - generic [ref=f66e50]:
+          - heading "Programs for every age" [level=2] [ref=f66e51]
+          - paragraph [ref=f66e52]: Tiny Tigers, Kids, and Adults & Families — one school, clear paths.
+        - generic [ref=f66e53]:
+          - article [ref=f66e54]:
+            - img "Tiny Tigers class at World Champion Taekwondo Washougal." [ref=f66e55]
+            - heading "Tiny Tigers" [level=3] [ref=f66e56]
+            - paragraph [ref=f66e57]: Energetic classes for children under 6 — respect, kindness, and fun on the mat.
+            - link "View program" [ref=f66e58] [cursor=pointer]:
+              - /url: /new/programs/tiny-tigers-martial-arts/
+          - article [ref=f66e59]:
+            - img "Kids martial arts class in Washougal." [ref=f66e60]
+            - heading "Kids" [level=3] [ref=f66e61]
+            - paragraph [ref=f66e62]: Confidence, discipline, and leadership — at each child’s pace.
+            - link "View program" [ref=f66e63] [cursor=pointer]:
+              - /url: /new/programs/kids-martial-arts/
+          - article [ref=f66e64]:
+            - img "Adults and families training together." [ref=f66e65]
+            - heading "Adults & Families" [level=3] [ref=f66e66]
+            - paragraph [ref=f66e67]: Fitness, self-defense, and classes families can train in together.
+            - link "View program" [ref=f66e68] [cursor=pointer]:
+              - /url: /new/programs/adults-and-families-martial-arts/
+    - region [ref=f66e69]:
+      - generic [ref=f66e70]:
+        - heading "Coming soon — a member home for every family" [level=2] [ref=f66e71]
+        - paragraph [ref=f66e72]: We’re building a simple place for parents and students to manage training life online — without the clutter.
+        - list [ref=f66e73]:
+          - listitem [ref=f66e74]:
+            - heading "Family accounts" [level=3] [ref=f66e75]
+            - paragraph [ref=f66e76]: Sign in to see your students, belt progress, and class rhythm in one calm view.
+          - listitem [ref=f66e77]:
+            - heading "Live schedule" [level=3] [ref=f66e78]
+            - paragraph [ref=f66e79]: Check what’s on the mat this week — updates published from the school, not a PDF chase.
+          - listitem [ref=f66e80]:
+            - heading "School store" [level=3] [ref=f66e81]
+            - paragraph [ref=f66e82]: Order uniforms and gear when you need them, sized for your student’s path.
+          - listitem [ref=f66e83]:
+            - heading "Monthly dues online" [level=3] [ref=f66e84]
+            - paragraph [ref=f66e85]: Pay membership automatically and securely — fewer reminders, more training.
+        - generic [ref=f66e86]:
+          - link "Preview member sign in" [ref=f66e87] [cursor=pointer]:
+            - /url: /new/members/
+          - link "Ask about membership" [ref=f66e88] [cursor=pointer]:
+            - /url: /new/start/?intent=info
+    - region [ref=f66e89]:
+      - generic [ref=f66e90]:
+        - generic [ref=f66e91]:
+          - heading "Try 2 weeks for $40" [level=2] [ref=f66e92]
+          - paragraph [ref=f66e93]: Two weeks of class — a simple way to start.
+        - link "Reserve your first class" [ref=f66e94] [cursor=pointer]:
+          - /url: /new/start/?intent=trial
+    - navigation "Homepage versions" [ref=f66e95]:
+      - link "Version 1" [ref=f66e96] [cursor=pointer]:
+        - /url: /new/
+      - text: ·
+      - link "Version 2" [ref=f66e97] [cursor=pointer]:
+        - /url: /new/versions/2/
+      - text: ·
+      - link "Version 3" [ref=f66e98] [cursor=pointer]:
+        - /url: /new/versions/3/
+  - contentinfo [ref=f66e99]:
+    - generic [ref=f66e100]:
+      - strong [ref=f66e101]: World Champion Taekwondo Washougal
+      - paragraph [ref=f66e102]:
+        - 'link "3307 Evergreen Way #605, Washougal, WA 98671" [ref=f66e103] [cursor=pointer]':
+          - /url: https://maps.app.goo.gl/yvFzGpkYGjAzo5Zs8
+      - paragraph [ref=f66e104]:
+        - link "wctwashougal@gmail.com" [ref=f66e105] [cursor=pointer]:
+          - /url: mailto:wctwashougal@gmail.com
+        - text: ·
+        - link "360-831-1124" [ref=f66e106] [cursor=pointer]:
+          - /url: tel:3608311124
+      - paragraph [ref=f66e107]:
+        - link "Member sign in" [ref=f66e108] [cursor=pointer]:
+          - /url: /new/members/
+        - text: — family portal coming soon
+      - generic [ref=f66e109]:
+        - img "United States Taekwondo Education Foundation" [ref=f66e110]
+        - paragraph [ref=f66e111]: Affiliated with the United States Taekwondo Education Foundation
+      - paragraph [ref=f66e112]:
+        - text: © 2026 World Champion Taekwondo Washougal ·
+        - link "Privacy Policy" [ref=f66e113] [cursor=pointer]:
+          - /url: /new/privacy-policy/
+  - generic [ref=f66e116]:
+    - button [ref=f66e117]
+    - button [ref=f66e123]
+    - button [ref=f66e127]
+    - button [ref=f66e132]

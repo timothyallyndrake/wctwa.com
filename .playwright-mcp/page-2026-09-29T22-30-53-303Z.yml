@@ -1,0 +1,198 @@
+- generic [active] [ref=f84e1]:
+  - generic [ref=f84e3]:
+    - generic [ref=f84e7]:
+      - link [ref=f84e8] [cursor=pointer]:
+        - /url: ./
+      - generic [ref=f84e11]:
+        - paragraph [ref=f84e16] [cursor=pointer]: Classes
+        - link [ref=f84e18] [cursor=pointer]:
+          - /url: ./schedule
+          - paragraph [ref=f84e20]: Schedule
+        - link [ref=f84e22] [cursor=pointer]:
+          - /url: ./pricing
+          - paragraph [ref=f84e24]: Pricing
+        - link [ref=f84e26] [cursor=pointer]:
+          - /url: ./studio
+          - paragraph [ref=f84e28]: Studio
+        - link [ref=f84e30] [cursor=pointer]:
+          - /url: ./visit
+          - paragraph [ref=f84e32]: Visit
+      - link [ref=f84e34] [cursor=pointer]:
+        - /url: ./schedule
+        - paragraph [ref=f84e37]: Book a class
+    - generic [ref=f84e39]:
+      - generic [ref=f84e44]:
+        - generic [ref=f84e45]:
+          - heading "54 Mirrors studio in New York City" [level=1] [ref=f84e47]
+          - paragraph [ref=f84e49]: A small mirrored room. Loud music. Low light. Reformer Pilates rebuilt around how it should feel. Your first class is $25.
+        - link [ref=f84e52] [cursor=pointer]:
+          - /url: ./schedule
+          - paragraph [ref=f84e55]: Claim your first class
+      - generic [ref=f84e62]:
+        - heading "Strong, not punishing. Sweat, not suffer." [level=1] [ref=f84e65]
+        - generic [ref=f84e66]:
+          - paragraph [ref=f84e68]: 54 Mirrors is reformer Pilates rebuilt around the way you actually want to feel after class switched on, not wiped out. Group classes max out at eight. Music is loud. Lights are low. The work is precise.
+          - link [ref=f84e71] [cursor=pointer]:
+            - /url: ./schedule
+            - paragraph [ref=f84e74]: Claim your first class
+      - generic [ref=f84e98]:
+        - generic [ref=f84e103]:
+          - heading "Reformer Flow" [level=2] [ref=f84e105]
+          - generic [ref=f84e106]:
+            - generic [ref=f84e107]:
+              - paragraph [ref=f84e109]: Overview
+              - paragraph [ref=f84e111]: Our signature class. Strength, mobility, and intentional flow across 50 minutes.
+            - generic [ref=f84e112]:
+              - paragraph [ref=f84e114]: For who
+              - paragraph [ref=f84e121]: Beginners
+              - paragraph [ref=f84e128]: Advanced
+            - generic [ref=f84e129]:
+              - paragraph [ref=f84e131]: Sessions
+              - paragraph [ref=f84e133]: We recommend 2–4 sessions a week
+          - link [ref=f84e136] [cursor=pointer]:
+            - /url: ./class/reformer-flow
+            - paragraph [ref=f84e139]: See more
+        - generic [ref=f84e144]:
+          - heading "Sculpt + Burn" [level=2] [ref=f84e146]
+          - generic [ref=f84e147]:
+            - generic [ref=f84e148]:
+              - paragraph [ref=f84e150]: Overview
+              - paragraph [ref=f84e152]: High-energy reformer with cardio bursts. The class people drag their friends to.
+            - generic [ref=f84e153]:
+              - paragraph [ref=f84e155]: For who
+              - paragraph [ref=f84e162]: Intermediate
+              - paragraph [ref=f84e169]: Advanced
+            - generic [ref=f84e170]:
+              - paragraph [ref=f84e172]: Sessions
+              - paragraph [ref=f84e174]: We recommend 2–4 sessions a week
+          - link [ref=f84e177] [cursor=pointer]:
+            - /url: ./class/sculpt-burn
+            - paragraph [ref=f84e180]: See more
+        - generic [ref=f84e185]:
+          - heading "Foundations" [level=2] [ref=f84e187]
+          - generic [ref=f84e188]:
+            - generic [ref=f84e189]:
+              - paragraph [ref=f84e191]: Overview
+              - paragraph [ref=f84e193]: New to the reformer? Start here. Slower pace, deeper cues, no shame about the learning curve.
+            - generic [ref=f84e194]:
+              - paragraph [ref=f84e196]: For who
+              - paragraph [ref=f84e203]: Beginners
+              - paragraph [ref=f84e210]: New to reformer
+            - generic [ref=f84e211]:
+              - paragraph [ref=f84e213]: Sessions
+              - paragraph [ref=f84e215]: We recommend 2–4 sessions a week
+          - link [ref=f84e218] [cursor=pointer]:
+            - /url: ./class/foundations
+            - paragraph [ref=f84e221]: See more
+      - generic [ref=f84e222]:
+        - heading "Girls want to have some fun" [level=2] [ref=f84e224]
+        - generic [ref=f84e229] [cursor=pointer]:
+          - heading "day" [level=3] [ref=f84e230]
+          - paragraph [ref=f84e231]: Details about this image go here.
+        - generic [ref=f84e232]:
+          - heading "First class, $25. No membership, no commitment." [level=2] [ref=f84e234]
+          - link [ref=f84e237] [cursor=pointer]:
+            - /url: ./schedule
+            - paragraph [ref=f84e240]: Claim your first class
+      - generic [ref=f84e247]:
+        - heading "Inside 54 Mirrors" [level=2] [ref=f84e249]
+        - paragraph [ref=f84e251]: The space was designed for how Pilates actually feels — focused, rhythmic, slightly theatrical. The lighting changes with the class. The mirrors catch every angle. The music is on the system, not in your headphones.
+      - generic [ref=f84e266]:
+        - generic [ref=f84e267]:
+          - heading "The people teaching you" [level=2] [ref=f84e269]
+          - paragraph [ref=f84e271]: Every 54 instructor trains for 500+ hours before they teach a class. You'll get to know them quickly — most of them know your name by class three.
+        - list [ref=f84e273]:
+          - listitem [ref=f84e274]:
+            - generic [ref=f84e275]:
+              - paragraph [ref=f84e279]: Maria
+              - paragraph [ref=f84e281]: Senior · calm voice, deep burn
+          - listitem [ref=f84e282]:
+            - generic [ref=f84e283]:
+              - paragraph [ref=f84e287]: Marcus
+              - paragraph [ref=f84e289]: 7 years teaching · counts down like he means it
+          - listitem [ref=f84e290]:
+            - generic [ref=f84e291]:
+              - paragraph [ref=f84e295]: Sia
+              - paragraph [ref=f84e297]: Senior · playlist first, sequence second
+          - listitem [ref=f84e298]:
+            - generic [ref=f84e299]:
+              - paragraph [ref=f84e303]: Naomi
+              - paragraph [ref=f84e305]: Senior · will fix your form mid-track
+          - listitem [ref=f84e306]:
+            - generic [ref=f84e307]:
+              - paragraph [ref=f84e311]: Robert
+              - paragraph [ref=f84e313]: Strength coach · heaviest springs in the building
+          - listitem [ref=f84e314]:
+            - generic [ref=f84e315]:
+              - paragraph [ref=f84e319]: Olivia
+              - paragraph [ref=f84e321]: Dancer first · flow is literal in her class
+      - generic [ref=f84e324]:
+        - generic [ref=f84e325]:
+          - heading "Ready to walk in?" [level=1] [ref=f84e327]
+          - paragraph [ref=f84e329]: 50 minutes. One mirrored room. $25 to try it.
+        - link [ref=f84e332] [cursor=pointer]:
+          - /url: ./schedule
+          - paragraph [ref=f84e335]: Claim your first class
+      - generic [ref=f84e362]:
+        - heading "54 Mirrors + you" [level=2] [ref=f84e364]
+        - list [ref=f84e366]:
+          - listitem [ref=f84e367]:
+            - generic [ref=f84e371]:
+              - paragraph [ref=f84e373]: "\"I came in thinking Pilates was for people who already had it together. Three months later I'm one of those people.\""
+              - paragraph [ref=f84e375]: Lena, member since 2024
+          - listitem [ref=f84e376]
+          - listitem [ref=f84e379]
+          - listitem [ref=f84e382]:
+            - generic [ref=f84e384]:
+              - paragraph [ref=f84e386]: "\"My friend dragged me here on a Tuesday. Now I'm the one doing the dragging.\""
+              - paragraph [ref=f84e388]: Priya, member since 2025
+          - listitem [ref=f84e391]
+          - listitem [ref=f84e394]
+          - listitem [ref=f84e397]:
+            - generic [ref=f84e401]:
+              - paragraph [ref=f84e403]: "\"I booked the $25 first class as a joke. That was forty classes ago.\""
+              - paragraph [ref=f84e405]: Dana, member since 2026
+      - generic [ref=f84e406]:
+        - heading "Things you might be wondering." [level=2] [ref=f84e408]
+        - generic [ref=f84e410]:
+          - button "Will I be lost if I've never been on a reformer?" [ref=f84e412] [cursor=pointer]
+          - button "What do I wear and bring?" [ref=f84e417] [cursor=pointer]
+          - button "Do you offer international shipping?" [ref=f84e422] [cursor=pointer]
+          - button "Where is it and is parking a nightmare?" [ref=f84e427] [cursor=pointer]
+          - button "Can I cancel a class I booked?" [ref=f84e432] [cursor=pointer]
+          - button "Is this going to be too \"wellness\" for me?" [ref=f84e437] [cursor=pointer]
+    - generic [ref=f84e441]:
+      - heading "Book your first class for $25" [level=2] [ref=f84e444]
+      - link [ref=f84e447] [cursor=pointer]:
+        - /url: ./schedule
+        - paragraph [ref=f84e450]: Claim first class
+    - generic [ref=f84e458]:
+      - generic [ref=f84e459]:
+        - generic [ref=f84e460]:
+          - link [ref=f84e462] [cursor=pointer]:
+            - /url: mailto:hello@54mirrors.com
+            - heading "hello@54mirrors.com" [level=2] [ref=f84e464]
+          - generic [ref=f84e465]:
+            - link [ref=f84e467] [cursor=pointer]:
+              - /url: https://www.instagram.com/
+              - heading "Instagram" [level=2] [ref=f84e469]
+            - link [ref=f84e471] [cursor=pointer]:
+              - /url: https://www.tiktok.com/
+              - heading "TikTok" [level=2] [ref=f84e473]
+        - generic [ref=f84e474]:
+          - paragraph [ref=f84e476]: 939 8th Avenue, 2nd Fl
+          - paragraph [ref=f84e478]: New York, NY 10019
+          - paragraph [ref=f84e480]: Open 7 days a week
+      - generic [ref=f84e484]:
+        - paragraph [ref=f84e486]: © 2026 54 Mirrors · Made in NYC
+        - generic [ref=f84e487]:
+          - link [ref=f84e489] [cursor=pointer]:
+            - /url: ./legal/privacy-policy
+            - paragraph [ref=f84e491]: Privacy
+          - link [ref=f84e493] [cursor=pointer]:
+            - /url: ./legal/terms-conditions
+            - paragraph [ref=f84e495]: Terms
+  - generic:
+    - link "Create a free website with Framer, the website builder loved by startups, designers and agencies.":
+      - /url: https://www.framer.com
+      - paragraph [ref=f84e496] [cursor=pointer]: Create a free website with Framer, the website builder loved by startups, designers and agencies.

@@ -1,0 +1,113 @@
+- generic [active] [ref=f49e1]:
+  - banner [ref=f49e2]:
+    - generic [ref=f49e3]:
+      - link "WCT Washougal" [ref=f49e4] [cursor=pointer]:
+        - /url: /new/
+      - button "Menu" [ref=f49e6] [cursor=pointer]
+  - main [ref=f49e11]:
+    - region "Welcome" [ref=f49e12]:
+      - generic [ref=f49e13]:
+        - generic [ref=f49e14]:
+          - heading "Washougal trains here." [level=1] [ref=f49e15]: Washougaltrains here.
+          - paragraph [ref=f49e16]: Master Chulan Kim. A safe, positive school for families.
+          - generic [ref=f49e18]:
+            - link "Reserve your first class" [ref=f49e19] [cursor=pointer]:
+              - /url: /new/start/?intent=trial
+            - link "Meet Master Kim" [ref=f49e20] [cursor=pointer]:
+              - /url: /new/instructors/
+        - figure [ref=f49e21]:
+          - img "Three students in ready stance on the mat at World Champion Taekwondo Washougal." [ref=f49e22]
+    - region [ref=f49e23]:
+      - generic [ref=f49e24]:
+        - img "Master Chulan Kim" [ref=f49e25]
+        - generic [ref=f49e26]:
+          - heading "Master Chulan Kim" [level=2] [ref=f49e27]
+          - list [ref=f49e28]:
+            - listitem [ref=f49e29]: 7th Degree WTF Black Belt
+            - listitem [ref=f49e30]: 4th Degree Yong Moo Do
+            - listitem [ref=f49e31]: Yong-In University
+            - listitem [ref=f49e32]: National Champion 1995
+            - listitem [ref=f49e33]: USAT Certified Coach
+          - link "View full credentials" [ref=f49e34] [cursor=pointer]:
+            - /url: /new/instructors/
+    - region [ref=f49e35]:
+      - generic [ref=f49e36]:
+        - generic [ref=f49e37]:
+          - heading "Programs for every age" [level=2] [ref=f49e38]
+          - paragraph [ref=f49e39]: Tiny Tigers, Kids, and Adults & Families — one school, clear paths.
+        - generic [ref=f49e40]:
+          - article [ref=f49e41]:
+            - img "Tiny Tigers class at World Champion Taekwondo Washougal." [ref=f49e42]
+            - heading "Tiny Tigers" [level=3] [ref=f49e43]
+            - paragraph [ref=f49e44]: Energetic classes for children under 6 — respect, kindness, and fun on the mat.
+            - link "View program" [ref=f49e45] [cursor=pointer]:
+              - /url: /new/programs/tiny-tigers-martial-arts/
+          - article [ref=f49e46]:
+            - img "Kids martial arts class in Washougal." [ref=f49e47]
+            - heading "Kids" [level=3] [ref=f49e48]
+            - paragraph [ref=f49e49]: Confidence, discipline, and leadership — at each child’s pace.
+            - link "View program" [ref=f49e50] [cursor=pointer]:
+              - /url: /new/programs/kids-martial-arts/
+          - article [ref=f49e51]:
+            - img "Adults and families training together." [ref=f49e52]
+            - heading "Adults & Families" [level=3] [ref=f49e53]
+            - paragraph [ref=f49e54]: Fitness, self-defense, and classes families can train in together.
+            - link "View program" [ref=f49e55] [cursor=pointer]:
+              - /url: /new/programs/adults-and-families-martial-arts/
+    - region [ref=f49e56]:
+      - generic [ref=f49e57]:
+        - heading "Coming soon — a member home for every family" [level=2] [ref=f49e58]
+        - paragraph [ref=f49e59]: We’re building a simple place for parents and students to manage training life online — without the clutter.
+        - list [ref=f49e60]:
+          - listitem [ref=f49e61]:
+            - heading "Family accounts" [level=3] [ref=f49e62]
+            - paragraph [ref=f49e63]: Sign in to see your students, belt progress, and class rhythm in one calm view.
+          - listitem [ref=f49e64]:
+            - heading "Live schedule" [level=3] [ref=f49e65]
+            - paragraph [ref=f49e66]: Check what’s on the mat this week — updates published from the school, not a PDF chase.
+          - listitem [ref=f49e67]:
+            - heading "School store" [level=3] [ref=f49e68]
+            - paragraph [ref=f49e69]: Order uniforms and gear when you need them, sized for your student’s path.
+          - listitem [ref=f49e70]:
+            - heading "Monthly dues online" [level=3] [ref=f49e71]
+            - paragraph [ref=f49e72]: Pay membership automatically and securely — fewer reminders, more training.
+        - generic [ref=f49e73]:
+          - link "Preview member sign in" [ref=f49e74] [cursor=pointer]:
+            - /url: /new/members/
+          - link "Ask about membership" [ref=f49e75] [cursor=pointer]:
+            - /url: /new/start/?intent=info
+    - region [ref=f49e76]:
+      - generic [ref=f49e77]:
+        - generic [ref=f49e78]:
+          - heading "Try 2 weeks for $40" [level=2] [ref=f49e79]
+          - paragraph [ref=f49e80]: Two weeks of class — a simple way to start.
+        - link "Reserve your first class" [ref=f49e81] [cursor=pointer]:
+          - /url: /new/start/?intent=trial
+  - contentinfo [ref=f49e82]:
+    - generic [ref=f49e83]:
+      - strong [ref=f49e84]: World Champion Taekwondo Washougal
+      - paragraph [ref=f49e85]:
+        - 'link "3307 Evergreen Way #605, Washougal, WA 98671" [ref=f49e86] [cursor=pointer]':
+          - /url: https://maps.app.goo.gl/yvFzGpkYGjAzo5Zs8
+      - paragraph [ref=f49e87]:
+        - link "wctwashougal@gmail.com" [ref=f49e88] [cursor=pointer]:
+          - /url: mailto:wctwashougal@gmail.com
+        - text: ·
+        - link "360-831-1124" [ref=f49e89] [cursor=pointer]:
+          - /url: tel:3608311124
+      - paragraph [ref=f49e90]:
+        - link "Member sign in" [ref=f49e91] [cursor=pointer]:
+          - /url: /new/members/
+        - text: — family portal coming soon
+      - generic [ref=f49e92]:
+        - img "United States Taekwondo Education Foundation" [ref=f49e93]
+        - paragraph [ref=f49e94]: Affiliated with the United States Taekwondo Education Foundation
+      - paragraph [ref=f49e95]:
+        - text: © 2026 World Champion Taekwondo Washougal ·
+        - link "Privacy Policy" [ref=f49e96] [cursor=pointer]:
+          - /url: /new/privacy-policy/
+  - generic [ref=f49e99]:
+    - button [ref=f49e100]
+    - button [ref=f49e106]
+    - button [ref=f49e110]
+    - button [ref=f49e115]

@@ -1,0 +1,62 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import DesignReview from "../../components/DesignReview.astro";
+import { site } from "../../content/site";
+import { withBase } from "../../lib/with-base";
+import "../../styles/designs.css";
+
+const paths = [
+  ["Tiny Tigers", "Children under 6. Respect, kindness, and fun on the mat."],
+  ["Kids", "Confidence and discipline, at each child’s pace."],
+  ["Adults & Families", "Fitness, self-defense, and classes a family can share."],
+];
+---
+
+<BaseLayout
+  title="Five screens"
+  showHeader={false}
+  showFooter={false}
+  bodyClass="design-screens"
+>
+  <section class="screen screen--photo" aria-label="The room">
+    <img src={withBase(site.hero.src)} alt={site.hero.alt} width="1536" height="1024" />
+    <p class="screen-name">{site.shortName}</p>
+  </section>
+
+  <section class="screen screen--record" aria-labelledby="master-name">
+    <p>Headmaster</p>
+    <h1 id="master-name">Chulan Kim</h1>
+    <ul class="screen-facts">
+      <li>7th Degree, World Tae Kwon Do Federation</li>
+      <li>Yong-In University</li>
+      <li>National Champion, 1995</li>
+      <li>USAT Certified Coach</li>
+    </ul>
+  </section>
+
+  <section class="screen screen--paths" aria-label="Programs">
+    <ol>
+      {
+        paths.map(([title, detail]) => (
+          <li>
+            <h2>{title}</h2>
+            <p>{detail}</p>
+          </li>
+        ))
+      }
+    </ol>
+  </section>
+
+  <section class="screen screen--hours" aria-labelledby="hours-heading">
+    <h2 id="hours-heading">2pm–8pm</h2>
+    <p>Monday through Friday. Saturday is events. Sunday the school is closed.</p>
+  </section>
+
+  <section class="screen screen--offer" aria-labelledby="trial-heading">
+    <h2 id="trial-heading">{site.offer.label}<br />for {site.offer.price}</h2>
+    <p>{site.offer.detail}</p>
+    <a class="screen-button" href={withBase("/start/?intent=trial")}>Reserve your first class</a>
+  </section>
+
+  <DesignReview current="screens" />
+</BaseLayout>

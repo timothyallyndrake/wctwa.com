@@ -1,0 +1,55 @@
+- generic [active] [ref=f77e1]:
+  - main [ref=f77e2]:
+    - article [ref=f77e3]:
+      - paragraph [ref=f77e4]: World Champion Taekwondo Washougal
+      - heading "Chulan Kim" [level=1] [ref=f77e5]
+      - generic [ref=f77e6]:
+        - figure [ref=f77e7]:
+          - img "Three students in ready stance on the mat at World Champion Taekwondo Washougal." [ref=f77e8]
+          - generic [ref=f77e9]:
+            - text: Students on the mat in Washougal.
+            - link "Full credentials" [ref=f77e10] [cursor=pointer]:
+              - /url: /new/instructors/
+        - generic [ref=f77e11]:
+          - list [ref=f77e12]:
+            - listitem [ref=f77e13]:
+              - generic [ref=f77e14]: Degree
+              - text: 7th Degree, World Tae Kwon Do Federation
+            - listitem [ref=f77e15]:
+              - generic [ref=f77e16]: Also
+              - text: 4th Degree, Yong Moo Do
+            - listitem [ref=f77e17]:
+              - generic [ref=f77e18]: School
+              - text: Yong-In University, Tae Kwon Do
+            - listitem [ref=f77e19]:
+              - generic [ref=f77e20]: "1995"
+              - text: National Champion
+            - listitem [ref=f77e21]:
+              - generic [ref=f77e22]: Coach
+              - text: USAT Certified Coach
+            - listitem [ref=f77e23]:
+              - generic [ref=f77e24]: Line
+              - text: Taekwondo of America, founded by Master Kim Je-Kyoung
+          - generic [ref=f77e25]:
+            - link "Reserve your first class" [ref=f77e26] [cursor=pointer]:
+              - /url: /new/start/?intent=trial
+            - link "Meet Master Kim" [ref=f77e27] [cursor=pointer]:
+              - /url: /new/instructors/
+    - navigation "Review the five designs" [ref=f77e28]:
+      - link "All" [ref=f77e29] [cursor=pointer]:
+        - /url: /new/designs/
+      - link "Room" [ref=f77e30] [cursor=pointer]:
+        - /url: /new/designs/room/
+      - link "Record" [ref=f77e31] [cursor=pointer]:
+        - /url: /new/designs/record/
+      - link "Face" [ref=f77e32] [cursor=pointer]:
+        - /url: /new/designs/face/
+      - link "Afternoon" [ref=f77e33] [cursor=pointer]:
+        - /url: /new/designs/afternoon/
+      - link "Screens" [ref=f77e34] [cursor=pointer]:
+        - /url: /new/designs/screens/
+  - generic [ref=f77e37]:
+    - button [ref=f77e38]
+    - button [ref=f77e44]
+    - button [ref=f77e48]
+    - button [ref=f77e56]

@@ -1,0 +1,43 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import DesignReview from "../../components/DesignReview.astro";
+import { withBase } from "../../lib/with-base";
+import "../../styles/designs.css";
+---
+
+<BaseLayout title="Six designs" showHeader={false} showFooter={false} bodyClass="design-record">
+  <main class="designs-index wrap">
+    <h1>Six designs</h1>
+    <p>
+      Same school, same photograph, same facts. These are directions to compare,
+      not the live homepage.
+    </p>
+    <ol>
+      <li>
+        <a href={withBase("/designs/room/")}>Inside the room</a>
+        <p>The orange wall is the page. The mat continues under the students.</p>
+      </li>
+      <li>
+        <a href={withBase("/designs/record/")}>The record</a>
+        <p>Master Kim’s name and credentials lead. The students are a plate beside the record.</p>
+      </li>
+      <li>
+        <a href={withBase("/designs/face/")}>Open on one face</a>
+        <p>Scroll. The frame opens from the center student to the line of three, then the room.</p>
+      </li>
+      <li>
+        <a href={withBase("/designs/afternoon/")}>The afternoon</a>
+        <p>The homepage is the day: weekday classes from 2pm to 8pm, with the photograph in the middle of it.</p>
+      </li>
+      <li>
+        <a href={withBase("/designs/screens/")}>Five screens</a>
+        <p>One fact at a time. Scroll a full page for each: the room, Master Kim, the programs, the hours, the trial.</p>
+      </li>
+      <li>
+        <a href={withBase("/designs/place/")}>The place</a>
+        <p>The photograph fills the first screen. Below it: Master Kim, the programs, hours, and the trial.</p>
+      </li>
+    </ol>
+  </main>
+  <DesignReview current="all" />
+</BaseLayout>

@@ -1,0 +1,77 @@
+- generic [active] [ref=f53e1]:
+  - banner [ref=f53e2]:
+    - generic [ref=f53e3]:
+      - link "WCT Washougal" [ref=f53e4] [cursor=pointer]:
+        - /url: /new/
+      - navigation "Primary" [ref=f53e6]:
+        - list [ref=f53e7]:
+          - listitem [ref=f53e8]:
+            - link "About" [ref=f53e9] [cursor=pointer]:
+              - /url: /new/about-us/
+          - listitem [ref=f53e10]:
+            - link "Programs" [ref=f53e11] [cursor=pointer]:
+              - /url: /new/programs/
+          - listitem [ref=f53e12]:
+            - link "Schedule" [ref=f53e13] [cursor=pointer]:
+              - /url: /new/schedule/
+          - listitem [ref=f53e14]:
+            - link "Instructors" [ref=f53e15] [cursor=pointer]:
+              - /url: /new/instructors/
+          - listitem [ref=f53e16]:
+            - link "Birthday Parties" [ref=f53e17] [cursor=pointer]:
+              - /url: /new/martial-arts-birthday-parties/
+          - listitem [ref=f53e18]:
+            - link "Contact" [ref=f53e19] [cursor=pointer]:
+              - /url: /new/contact-us/
+      - generic [ref=f53e20]:
+        - link "360-831-1124" [ref=f53e21] [cursor=pointer]:
+          - /url: tel:3608311124
+        - link "Member sign in" [ref=f53e22] [cursor=pointer]:
+          - /url: /new/members/
+        - link "Try 2 weeks" [ref=f53e23] [cursor=pointer]:
+          - /url: /new/start/?intent=trial
+  - main [ref=f53e24]:
+    - generic [ref=f53e26]:
+      - heading "Schedule" [level=1] [ref=f53e27]
+      - paragraph [ref=f53e28]: Effective Feb 23, 2026 — structured data coming next.
+      - heading "Hours" [level=2] [ref=f53e29]
+      - list [ref=f53e30]:
+        - listitem [ref=f53e31]: "Monday – Friday: 2pm – 8pm"
+        - listitem [ref=f53e32]: "Saturday: Events only"
+        - listitem [ref=f53e33]: "Sunday: Closed"
+      - heading "Weekly classes" [level=2] [ref=f53e34]
+      - paragraph [ref=f53e35]: Full grid will be modeled in content (not a fragile HTML table dump). Level 1 & 2 students need safety gear. Sparring requires full gear.
+      - paragraph [ref=f53e36]:
+        - link "Reserve your first class" [ref=f53e37] [cursor=pointer]:
+          - /url: /new/start/
+  - contentinfo [ref=f53e38]:
+    - generic [ref=f53e39]:
+      - generic [ref=f53e40]:
+        - strong [ref=f53e41]: World Champion Taekwondo Washougal
+        - generic [ref=f53e42]:
+          - img "United States Taekwondo Education Foundation" [ref=f53e43]
+          - paragraph [ref=f53e44]: Affiliated with the United States Taekwondo Education Foundation
+      - generic [ref=f53e45]:
+        - paragraph [ref=f53e46]:
+          - 'link "3307 Evergreen Way #605, Washougal, WA 98671" [ref=f53e47] [cursor=pointer]':
+            - /url: https://maps.app.goo.gl/yvFzGpkYGjAzo5Zs8
+        - paragraph [ref=f53e48]:
+          - link "360-831-1124" [ref=f53e49] [cursor=pointer]:
+            - /url: tel:3608311124
+        - paragraph [ref=f53e50]:
+          - link "wctwashougal@gmail.com" [ref=f53e51] [cursor=pointer]:
+            - /url: mailto:wctwashougal@gmail.com
+      - generic [ref=f53e52]:
+        - paragraph [ref=f53e53]:
+          - link "Member sign in" [ref=f53e54] [cursor=pointer]:
+            - /url: /new/members/
+          - text: — family portal coming soon
+        - paragraph [ref=f53e55]:
+          - link "Privacy Policy" [ref=f53e56] [cursor=pointer]:
+            - /url: /new/privacy-policy/
+          - text: · © 2026 World Champion Taekwondo Washougal
+  - generic [ref=f53e59]:
+    - button [ref=f53e60]
+    - button [ref=f53e66]
+    - button [ref=f53e70]
+    - button [ref=f53e75]

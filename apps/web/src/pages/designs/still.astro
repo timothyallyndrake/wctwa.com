@@ -1,0 +1,242 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { site } from "../../content/site";
+import { withBase } from "../../lib/with-base";
+
+const programs = [
+  {
+    href: withBase("/programs/tiny-tigers-martial-arts/"),
+    title: "Tiny Tigers",
+    blurb: "Children under 6",
+  },
+  {
+    href: withBase("/programs/kids-martial-arts/"),
+    title: "Kids",
+    blurb: "At their own pace",
+  },
+  {
+    href: withBase("/programs/adults-and-families-martial-arts/"),
+    title: "Adults and families",
+    blurb: "Train together",
+  },
+];
+---
+
+<BaseLayout
+  title="World Champion Taekwondo"
+  description="A taekwondo school in Washougal."
+  showHeader={false}
+  showFooter={false}
+  bodyClass="design-still"
+>
+  <section class="class" aria-label="Afternoon class">
+    <img
+      src={withBase("/images/stills/class.jpg")}
+      alt="An afternoon class. Children practice a form while the instructor stands at the front."
+      width="1280"
+      height="720"
+    />
+  </section>
+
+  <section class="master" aria-labelledby="master-name">
+    <img
+      src={withBase("/images/source/instructors-main.webp")}
+      alt="Master Chulan Kim"
+      width="771"
+      height="1000"
+    />
+    <div class="master-copy">
+      <h2 id="master-name">Master<br />Chulan Kim</h2>
+      <p>Headmaster. 7th degree. Yong-In University. National Champion, 1995.</p>
+      <a href={withBase("/instructors/")}>His full record</a>
+    </div>
+  </section>
+
+  <section class="school" aria-labelledby="school-name">
+    <div class="school-names">
+      {
+        programs.map((program) => (
+          <article>
+            <h3><a href={program.href}>{program.title}</a></h3>
+            <p>{program.blurb}</p>
+          </article>
+        ))
+      }
+    </div>
+    <div class="school-facts">
+      <h1 id="school-name">World Champion<br />Taekwondo</h1>
+      <p class="town">Washougal</p>
+      <p>
+        <a href={site.address.mapsUrl}>{site.address.line1}</a><br />
+        {site.address.city}, Washington {site.address.zip}
+      </p>
+      <p>
+        Monday to Friday, 2 to 8<br />
+        Saturday, events<br />
+        Sunday, closed
+      </p>
+      <p>
+        <a href={site.phone.href}>{site.phone.display}</a><br />
+        <a href={`mailto:${site.email}`}>{site.email}</a>
+      </p>
+      <p class="price">Two weeks of class is {site.offer.price}.</p>
+      <p><a class="begin" href={withBase("/start/?intent=trial")}>Reserve your first class</a></p>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  :global(body.design-still) {
+    margin: 0;
+    background: #f3efe6;
+    color: #1a140f;
+  }
+
+  .class,
+  .master {
+    height: 100svh;
+    overflow: hidden;
+  }
+
+  .class {
+    background: #c46a3a;
+  }
+
+  .class img,
+  .master img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .class img {
+    object-position: center 42%;
+  }
+
+  .master {
+    position: relative;
+    background: #3e3e3e;
+    color: #f3efe6;
+  }
+
+  .master img {
+    object-position: 62% 18%;
+  }
+
+  .master-copy {
+    position: absolute;
+    left: clamp(1.5rem, 6vw, 5.5rem);
+    bottom: clamp(2.5rem, 8vh, 4.5rem);
+    max-width: 14em;
+  }
+
+  .master h2,
+  .school h1,
+  .school h3 {
+    margin: 0;
+    color: inherit;
+    font-family: "Source Serif 4", Georgia, serif;
+    font-weight: 560;
+    letter-spacing: -0.035em;
+    line-height: 0.92;
+  }
+
+  .master h2 {
+    font-size: clamp(3.4rem, 7vw, 6.5rem);
+  }
+
+  .master p {
+    margin: 1.25rem 0 0;
+    max-width: 16em;
+    font-size: 1.15rem;
+    line-height: 1.4;
+  }
+
+  .master a,
+  .school a {
+    color: inherit;
+  }
+
+  .master a {
+    display: inline-block;
+    margin-top: 1.1rem;
+    font-weight: 700;
+    text-underline-offset: 0.2em;
+  }
+
+  .school {
+    display: grid;
+    grid-template-columns: minmax(0, 1.35fr) minmax(16rem, 0.8fr);
+    gap: clamp(2rem, 6vw, 6rem);
+    align-items: center;
+    min-height: 100svh;
+    padding: clamp(3rem, 8vh, 5.5rem) clamp(1.5rem, 6vw, 5.5rem);
+    background: #f3efe6;
+  }
+
+  .school-names {
+    display: grid;
+    gap: clamp(1.5rem, 4vh, 2.75rem);
+  }
+
+  .school h3 {
+    font-size: clamp(2.8rem, 5.5vw, 4.8rem);
+  }
+
+  .school h3 a {
+    text-decoration: none;
+  }
+
+  .school h3 a:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.12em;
+  }
+
+  .school-names p {
+    margin: 0.35rem 0 0;
+    font-size: 1.05rem;
+  }
+
+  .school h1 {
+    font-size: clamp(2.2rem, 3.5vw, 3.2rem);
+  }
+
+  .town {
+    margin: 0.45rem 0 0;
+  }
+
+  .school-facts p {
+    margin: 1rem 0 0;
+    line-height: 1.45;
+  }
+
+  .price {
+    margin-top: 1.75rem;
+    font-family: "Source Serif 4", Georgia, serif;
+    font-size: 1.45rem;
+    font-weight: 560;
+    letter-spacing: -0.03em;
+  }
+
+  .begin {
+    font-weight: 700;
+    text-underline-offset: 0.2em;
+  }
+
+  @media (max-width: 800px) {
+    .master-copy {
+      left: 1.25rem;
+      right: 1.25rem;
+      max-width: none;
+    }
+
+    .master h2 {
+      font-size: 3.2rem;
+    }
+
+    .school {
+      grid-template-columns: 1fr;
+      align-items: start;
+    }
+  }
+</style>

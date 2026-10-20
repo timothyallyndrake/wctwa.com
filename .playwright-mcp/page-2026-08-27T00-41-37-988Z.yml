@@ -1,0 +1,93 @@
+- generic [ref=f5e1]:
+  - banner [ref=f5e2]:
+    - generic [ref=f5e3]: Impeccable
+  - main [ref=f5e8]:
+    - generic [ref=f5e9]:
+      - heading "Choose the drawn Dobok homepage" [level=1] [ref=f5e18]
+      - paragraph [ref=f5e19]: Same school, same students, same blue and red. Two directions. Flip a card for the phone layout. Click the image to zoom.
+      - generic [ref=f5e21]:
+        - article [ref=f5e22]:
+          - generic [ref=f5e23]:
+            - generic [ref=f5e24]:
+              - generic [ref=f5e25]:
+                - figure "inspiration" [ref=f5e26]
+                - generic [ref=f5e28]:
+                  - button "Expand the image" [active] [ref=f5e29] [cursor=pointer]
+                  - button "Flip the card" [ref=f5e32] [cursor=pointer]:
+                    - generic [ref=f5e36]: Details
+              - generic [ref=f5e37]:
+                - heading "Collar Frame" [level=2] [ref=f5e38]
+                - paragraph [ref=f5e39]: "The page is a dobok V-neck: black collar tape is architecture, the three students live in the clearing, gold stitch is the only ornament."
+                - generic [ref=f5e40]:
+                  - generic [ref=f5e41]:
+                    - generic "#f4f1ea" [ref=f5e42]
+                    - generic "#0d1b2a" [ref=f5e43]
+                    - generic "#0054b7" [ref=f5e44]
+                    - generic "#e70e1b" [ref=f5e45]
+                    - generic "#c9a227" [ref=f5e46]
+                  - generic [ref=f5e47]: collar tape
+                  - generic [ref=f5e48]: running stitch
+                  - generic [ref=f5e49]: cotton weave
+                  - generic [ref=f5e50]: documentary photo
+                - paragraph [ref=f5e51]:
+                  - generic [ref=f5e52]: Risk
+                  - text: Collar can read as a decorative border if it does not actually structure the scroll.
+                - button "Build this" [ref=f5e53] [cursor=pointer]
+            - generic:
+              - generic:
+                - generic:
+                  - button "Expand the image"
+                  - button "Flip the card":
+                    - generic: Front
+              - generic:
+                - paragraph: The full read · Collar Frame
+                - paragraph:
+                  - generic: First viewport
+                  - text: "Desktop: full-bleed trio inside a drawn V that grows in from the page edges. Phone: the same V, flowing off the left and right sides of the screen — not a picture-frame around the photo."
+                - paragraph:
+                  - generic: Risk
+                  - text: Collar can read as a decorative border if it does not actually structure the scroll.
+                - button "Build this"
+        - article [ref=f5e54]:
+          - generic [ref=f5e55]:
+            - generic [ref=f5e56]:
+              - generic [ref=f5e57]:
+                - figure "inspiration" [ref=f5e58]
+                - generic [ref=f5e60]:
+                  - button "Expand the image" [ref=f5e61] [cursor=pointer]
+                  - button "Flip the card" [ref=f5e64] [cursor=pointer]:
+                    - generic [ref=f5e68]: Details
+              - generic [ref=f5e69]:
+                - heading "Unfolded Uniform" [level=2] [ref=f5e70]
+                - paragraph [ref=f5e71]: "The homepage is a dobok laid open: the header is the collar, the weave is the cloth, and seams divide trust, programs, and the offer as panels of one garment."
+                - generic [ref=f5e72]:
+                  - generic [ref=f5e73]:
+                    - generic "#f4f1ea" [ref=f5e74]
+                    - generic "#0d1b2a" [ref=f5e75]
+                    - generic "#0054b7" [ref=f5e76]
+                    - generic "#e70e1b" [ref=f5e77]
+                    - generic "#c9a227" [ref=f5e78]
+                  - generic [ref=f5e79]: collar header
+                  - generic [ref=f5e80]: weave field
+                  - generic [ref=f5e81]: square chest plate
+                  - generic [ref=f5e82]: documentary photo
+                - paragraph [ref=f5e83]:
+                  - generic [ref=f5e84]: Risk
+                  - text: Too much garment metaphor can hide the school. Seams must remain a grid, not a costume.
+                - button "Build this" [ref=f5e85] [cursor=pointer]
+            - generic:
+              - generic:
+                - generic:
+                  - button "Expand the image"
+                  - button "Flip the card":
+                    - generic: Front
+              - generic:
+                - paragraph: The full read · Unfolded Uniform
+                - paragraph:
+                  - generic: First viewport
+                  - text: "Desktop: black collar across the top, coming down to a square chest opening for the photo. Phone: the same — collar is the header (logo, name, menu), then a smaller square chest opening. Stitching on black just bright enough to read as real thread."
+                - paragraph:
+                  - generic: Risk
+                  - text: Too much garment metaphor can hide the school. Seams must remain a grid, not a costume.
+                - button "Build this"
+  - contentinfo [ref=f5e86]

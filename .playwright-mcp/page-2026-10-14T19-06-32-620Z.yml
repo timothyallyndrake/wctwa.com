@@ -1,0 +1,171 @@
+- generic [active] [ref=f9e1]:
+  - banner [ref=f9e2]:
+    - generic [ref=f9e3]:
+      - link "WCT Washougal" [ref=f9e4] [cursor=pointer]:
+        - /url: /new/
+      - button "Menu" [ref=f9e6] [cursor=pointer]
+      - generic [ref=f9e11]:
+        - link "360-831-1124" [ref=f9e12] [cursor=pointer]:
+          - /url: tel:3608311124
+        - link "Member sign in" [ref=f9e13] [cursor=pointer]:
+          - /url: /new/members/
+  - main [ref=f9e14]:
+    - region "Welcome" [ref=f9e15]:
+      - generic [ref=f9e16]:
+        - generic [ref=f9e17]:
+          - heading "Washougal trains here." [level=1] [ref=f9e18]
+          - paragraph [ref=f9e19]: Master Chulan Kim. A safe, positive school for families.
+        - figure [ref=f9e20]:
+          - img "Three students in ready stance on the mat at World Champion Taekwondo Washougal." [ref=f9e21]
+    - region "Location and hours" [ref=f9e22]:
+      - list [ref=f9e24]:
+        - listitem [ref=f9e25]: "3307 Evergreen Way #605, Washougal, WA 98671"
+        - listitem [ref=f9e26]: Classes Monday–Friday, 2–8pm
+        - listitem [ref=f9e27]: "Saturday: events only"
+        - listitem [ref=f9e28]: "Sunday: closed"
+    - region [ref=f9e29]:
+      - generic [ref=f9e30]:
+        - figure [ref=f9e31]:
+          - img "Master Chulan Kim" [ref=f9e32]
+        - generic [ref=f9e33]:
+          - heading "Master Chulan Kim" [level=2] [ref=f9e34]
+          - list [ref=f9e35]:
+            - listitem [ref=f9e36]: 7th Degree World Tae Kwon Do Federation Black Belt
+            - listitem [ref=f9e37]: 4th Degree Yong Moo Do
+            - listitem [ref=f9e38]: Yong-In University
+            - listitem [ref=f9e39]: National Champion 1995
+            - listitem [ref=f9e40]: USAT Certified Coach
+            - listitem [ref=f9e41]: Taekwondo of America Master
+          - link "View full credentials" [ref=f9e42] [cursor=pointer]:
+            - /url: /new/instructors/
+    - region [ref=f9e43]:
+      - generic [ref=f9e44]:
+        - heading "Programs for every age" [level=2] [ref=f9e45]
+        - generic [ref=f9e46]:
+          - article [ref=f9e47]:
+            - img "Tiny Tigers class at World Champion Taekwondo Washougal." [ref=f9e48]
+            - heading "Tiny Tigers" [level=3] [ref=f9e49]
+            - paragraph [ref=f9e50]: Energetic classes for children under 6 — respect, kindness, and fun on the mat.
+            - link "View program" [ref=f9e51] [cursor=pointer]:
+              - /url: /new/programs/tiny-tigers-martial-arts/
+          - article [ref=f9e52]:
+            - img "Kids martial arts class in Washougal." [ref=f9e53]
+            - heading "Kids" [level=3] [ref=f9e54]
+            - paragraph [ref=f9e55]: Confidence, discipline, and leadership — at each child’s pace.
+            - link "View program" [ref=f9e56] [cursor=pointer]:
+              - /url: /new/programs/kids-martial-arts/
+          - article [ref=f9e57]:
+            - img "Adults and families training together." [ref=f9e58]
+            - heading "Adults & Families" [level=3] [ref=f9e59]
+            - paragraph [ref=f9e60]: Fitness, self-defense, and classes families can train in together.
+            - link "View program" [ref=f9e61] [cursor=pointer]:
+              - /url: /new/programs/adults-and-families-martial-arts/
+    - region "Training at the school" [ref=f9e62]:
+      - generic [ref=f9e63]:
+        - figure [ref=f9e64]:
+          - img "Kids training at World Champion Taekwondo Washougal." [ref=f9e65]
+        - paragraph [ref=f9e66]: Classes run weekday afternoons and evenings on Evergreen Way.
+    - region [ref=f9e67]:
+      - generic [ref=f9e68]:
+        - heading "Families who train here" [level=2] [ref=f9e69]
+        - paragraph [ref=f9e70]: Master Eric, Michelle Ludlow, and Sara Dimitt have written about Master Kim, the positive discipline, and classes parents and children take together.
+    - region [ref=f9e71]:
+      - generic [ref=f9e72]:
+        - heading "This week's classes" [level=2] [ref=f9e73]
+        - paragraph [ref=f9e74]: Monday–Friday 2–8pm. Saturday events. Sunday closed.
+        - table [ref=f9e76]:
+          - caption [ref=f9e77]: Weekly class schedule effective February 23, 2026
+          - rowgroup [ref=f9e78]:
+            - row [ref=f9e79]:
+              - columnheader "Time" [ref=f9e80]
+              - columnheader "Mon" [ref=f9e81]
+              - columnheader "Tue" [ref=f9e82]
+              - columnheader "Wed" [ref=f9e83]
+              - columnheader "Thu" [ref=f9e84]
+              - columnheader "Fri" [ref=f9e85]
+          - rowgroup [ref=f9e86]:
+            - row [ref=f9e87]:
+              - rowheader "4:00–4:30p" [ref=f9e88]
+              - cell "Tiny Tiger" [ref=f9e89]
+              - cell "Tiny Tiger" [ref=f9e90]
+              - cell "Tiny Tiger" [ref=f9e91]
+              - cell "Tiny Tiger" [ref=f9e92]
+              - cell "—" [ref=f9e93]
+            - row [ref=f9e94]:
+              - rowheader "4:40–5:20p" [ref=f9e95]
+              - cell "Level 1" [ref=f9e96]
+              - cell "Sparring" [ref=f9e97]
+              - cell "Level 1" [ref=f9e98]
+              - cell "Level 2 & 3 & Black Belt" [ref=f9e99]
+              - cell "Family" [ref=f9e100]
+            - row [ref=f9e101]:
+              - rowheader "5:30–6:10p" [ref=f9e102]
+              - cell "Beginner" [ref=f9e103]
+              - cell "Beginner" [ref=f9e104]
+              - cell "Beginner" [ref=f9e105]
+              - cell "Level 1" [ref=f9e106]
+              - cell "Beginner" [ref=f9e107]
+            - row [ref=f9e108]:
+              - rowheader "6:10–6:50p" [ref=f9e109]
+              - cell "Level 2 & 3 & Black Belt" [ref=f9e110]
+              - cell "Family" [ref=f9e111]
+              - cell "Level 2 & 3 & Black Belt" [ref=f9e112]
+              - cell "Family" [ref=f9e113]
+              - cell "—" [ref=f9e114]
+            - row [ref=f9e115]:
+              - rowheader "7:00–7:40p" [ref=f9e116]
+              - cell "Teen & Adult & Black Belt" [ref=f9e117]
+              - cell "Teen & Adult Sparring" [ref=f9e118]
+              - cell "Teen & Adult & Black Belt" [ref=f9e119]
+              - cell "Teen & Adult & Black Belt" [ref=f9e120]
+              - cell "—" [ref=f9e121]
+        - paragraph [ref=f9e122]: Level 1 and 2 students need safety gear. Sparring requires full sparring gear.
+        - link "Full schedule" [ref=f9e123] [cursor=pointer]:
+          - /url: /new/schedule/
+    - region [ref=f9e124]:
+      - generic [ref=f9e125]:
+        - generic [ref=f9e126]:
+          - heading "Try 2 weeks for $40" [level=2] [ref=f9e127]
+          - paragraph [ref=f9e128]: Two weeks of class — a simple way to start.
+        - link "Reserve your first class" [ref=f9e129] [cursor=pointer]:
+          - /url: /new/start/?intent=trial
+    - region [ref=f9e130]:
+      - generic [ref=f9e131]:
+        - heading "Visit the school" [level=2] [ref=f9e132]
+        - paragraph [ref=f9e133]:
+          - 'link "3307 Evergreen Way #605, Washougal, WA 98671" [ref=f9e134] [cursor=pointer]':
+            - /url: https://maps.app.goo.gl/yvFzGpkYGjAzo5Zs8
+        - paragraph [ref=f9e135]:
+          - link "360-831-1124" [ref=f9e136] [cursor=pointer]:
+            - /url: tel:3608311124
+          - text: ·
+          - link "wctwashougal@gmail.com" [ref=f9e137] [cursor=pointer]:
+            - /url: mailto:wctwashougal@gmail.com
+          - text: ·
+          - link "Facebook" [ref=f9e138] [cursor=pointer]:
+            - /url: https://www.facebook.com/profile.php?id=100085540675144
+  - link "Try 2 weeks" [ref=f9e140] [cursor=pointer]:
+    - /url: /new/start/?intent=trial
+  - contentinfo [ref=f9e141]:
+    - generic [ref=f9e142]:
+      - strong [ref=f9e143]: World Champion Taekwondo Washougal
+      - paragraph [ref=f9e144]:
+        - 'link "3307 Evergreen Way #605, Washougal, WA 98671" [ref=f9e145] [cursor=pointer]':
+          - /url: https://maps.app.goo.gl/yvFzGpkYGjAzo5Zs8
+      - paragraph [ref=f9e146]:
+        - link "wctwashougal@gmail.com" [ref=f9e147] [cursor=pointer]:
+          - /url: mailto:wctwashougal@gmail.com
+        - text: ·
+        - link "360-831-1124" [ref=f9e148] [cursor=pointer]:
+          - /url: tel:3608311124
+      - paragraph [ref=f9e149]:
+        - link "Member sign in" [ref=f9e150] [cursor=pointer]:
+          - /url: /new/members/
+        - text: — family portal coming soon
+      - generic [ref=f9e151]:
+        - img "United States Taekwondo Education Foundation" [ref=f9e152]
+        - paragraph [ref=f9e153]: Affiliated with the United States Taekwondo Education Foundation
+      - paragraph [ref=f9e154]:
+        - text: © 2026 World Champion Taekwondo Washougal ·
+        - link "Privacy Policy" [ref=f9e155] [cursor=pointer]:
+          - /url: /new/privacy-policy/

@@ -1,0 +1,56 @@
+- generic [active] [ref=f39e1]:
+  - banner [ref=f39e2]:
+    - generic [ref=f39e3]:
+      - link "WCT Washougal" [ref=f39e4] [cursor=pointer]:
+        - /url: /new/
+      - button "Menu" [ref=f39e6] [cursor=pointer]
+  - main [ref=f39e11]:
+    - generic [ref=f39e13]:
+      - heading "Reserve your first class" [level=1] [ref=f39e14]
+      - paragraph [ref=f39e15]:
+        - text: Form wires to our Lambda + SES API. Set
+        - code [ref=f39e16]: PUBLIC_API_URL
+        - text: "when the endpoint is live. Try 2 weeks: $40."
+      - generic [ref=f39e17]:
+        - generic [ref=f39e18]:
+          - text: Name
+          - textbox "Name" [ref=f39e19]
+        - generic [ref=f39e20]:
+          - text: Email
+          - textbox "Email" [ref=f39e21]
+        - generic [ref=f39e22]:
+          - text: Phone
+          - textbox "Phone" [ref=f39e23]
+        - generic [ref=f39e24]:
+          - text: Message (optional)
+          - textbox "Message (optional)" [ref=f39e25]
+        - button "Send" [ref=f39e26] [cursor=pointer]
+        - status
+  - contentinfo [ref=f39e27]:
+    - generic [ref=f39e28]:
+      - strong [ref=f39e29]: World Champion Taekwondo Washougal
+      - paragraph [ref=f39e30]:
+        - 'link "3307 Evergreen Way #605, Washougal, WA 98671" [ref=f39e31] [cursor=pointer]':
+          - /url: https://maps.app.goo.gl/yvFzGpkYGjAzo5Zs8
+      - paragraph [ref=f39e32]:
+        - link "wctwashougal@gmail.com" [ref=f39e33] [cursor=pointer]:
+          - /url: mailto:wctwashougal@gmail.com
+        - text: ·
+        - link "360-831-1124" [ref=f39e34] [cursor=pointer]:
+          - /url: tel:3608311124
+      - paragraph [ref=f39e35]:
+        - link "Member sign in" [ref=f39e36] [cursor=pointer]:
+          - /url: /new/members/
+        - text: — family portal coming soon
+      - generic [ref=f39e37]:
+        - img "United States Taekwondo Education Foundation" [ref=f39e38]
+        - paragraph [ref=f39e39]: Affiliated with the United States Taekwondo Education Foundation
+      - paragraph [ref=f39e40]:
+        - text: © 2026 World Champion Taekwondo Washougal ·
+        - link "Privacy Policy" [ref=f39e41] [cursor=pointer]:
+          - /url: /new/privacy-policy/
+  - generic [ref=f39e44]:
+    - button [ref=f39e45]
+    - button [ref=f39e51]
+    - button [ref=f39e55]
+    - button [ref=f39e63]

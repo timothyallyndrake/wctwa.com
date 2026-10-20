@@ -1,0 +1,59 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import DesignReview from "../../components/DesignReview.astro";
+import { site } from "../../content/site";
+import { withBase } from "../../lib/with-base";
+import "../../styles/designs.css";
+
+const facts = [
+  ["Degree", "7th Degree, World Tae Kwon Do Federation"],
+  ["Also", "4th Degree, Yong Moo Do"],
+  ["School", "Yong-In University, Tae Kwon Do"],
+  ["1995", "National Champion"],
+  ["Coach", "USAT Certified Coach"],
+  ["Line", "Taekwondo of America, founded by Master Kim Je-Kyoung"],
+];
+---
+
+<BaseLayout
+  title="The record"
+  showHeader={false}
+  showFooter={false}
+  bodyClass="design-record"
+>
+  <article class="record">
+    <p class="record-kicker">{site.name}</p>
+    <h1>Chulan Kim</h1>
+    <div class="record-layout">
+      <figure class="record-figure">
+        <img
+          src={withBase(site.hero.src)}
+          alt={site.hero.alt}
+          width="1536"
+          height="1024"
+        />
+        <figcaption>
+          Students on the mat in Washougal.<br />
+          <a href={withBase("/instructors/")}>Full credentials</a>
+        </figcaption>
+      </figure>
+      <div>
+        <ul class="record-facts">
+          {
+            facts.map(([label, value]) => (
+              <li>
+                <span>{label}</span>
+                {value}
+              </li>
+            ))
+          }
+        </ul>
+        <div class="record-actions">
+          <a class="record-button" href={withBase("/start/?intent=trial")}>Reserve your first class</a>
+          <a class="textish" href={withBase("/instructors/")}>Meet Master Kim</a>
+        </div>
+      </div>
+    </div>
+  </article>
+  <DesignReview current="record" />
+</BaseLayout>

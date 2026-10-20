@@ -1,0 +1,57 @@
+- generic [active] [ref=f63e1]:
+  - banner [ref=f63e2]:
+    - generic [ref=f63e3]:
+      - link "WCT Washougal" [ref=f63e4] [cursor=pointer]:
+        - /url: /new/
+      - button "Menu" [ref=f63e6] [cursor=pointer]
+  - main [ref=f63e11]:
+    - generic [ref=f63e13]:
+      - heading "Programs" [level=1] [ref=f63e14]
+      - paragraph [ref=f63e15]: One clear overview — then go deeper if you want.
+      - list [ref=f63e16]:
+        - listitem [ref=f63e17]:
+          - heading "Kids Martial Arts" [level=2] [ref=f63e18]
+          - paragraph [ref=f63e19]: Confidence, discipline, and leadership — at each child’s pace.
+          - link "Learn more" [ref=f63e20] [cursor=pointer]:
+            - /url: /new/programs/kids-martial-arts/
+        - listitem [ref=f63e21]:
+          - heading "Tiny Tigers" [level=2] [ref=f63e22]
+          - paragraph [ref=f63e23]: Energetic classes for children under 6 — respect, kindness, fun.
+          - link "Learn more" [ref=f63e24] [cursor=pointer]:
+            - /url: /new/programs/tiny-tigers-martial-arts/
+        - listitem [ref=f63e25]:
+          - heading "Adults & Families" [level=2] [ref=f63e26]
+          - paragraph [ref=f63e27]: Fitness, self-defense, and classes families can train in together.
+          - link "Learn more" [ref=f63e28] [cursor=pointer]:
+            - /url: /new/programs/adults-and-families-martial-arts/
+      - paragraph [ref=f63e29]:
+        - link "Start here" [ref=f63e30] [cursor=pointer]:
+          - /url: /new/start/
+  - contentinfo [ref=f63e31]:
+    - generic [ref=f63e32]:
+      - strong [ref=f63e33]: World Champion Taekwondo Washougal
+      - paragraph [ref=f63e34]:
+        - 'link "3307 Evergreen Way #605, Washougal, WA 98671" [ref=f63e35] [cursor=pointer]':
+          - /url: https://maps.app.goo.gl/yvFzGpkYGjAzo5Zs8
+      - paragraph [ref=f63e36]:
+        - link "wctwashougal@gmail.com" [ref=f63e37] [cursor=pointer]:
+          - /url: mailto:wctwashougal@gmail.com
+        - text: ·
+        - link "360-831-1124" [ref=f63e38] [cursor=pointer]:
+          - /url: tel:3608311124
+      - paragraph [ref=f63e39]:
+        - link "Member sign in" [ref=f63e40] [cursor=pointer]:
+          - /url: /new/members/
+        - text: — family portal coming soon
+      - generic [ref=f63e41]:
+        - img "United States Taekwondo Education Foundation" [ref=f63e42]
+        - paragraph [ref=f63e43]: Affiliated with the United States Taekwondo Education Foundation
+      - paragraph [ref=f63e44]:
+        - text: © 2026 World Champion Taekwondo Washougal ·
+        - link "Privacy Policy" [ref=f63e45] [cursor=pointer]:
+          - /url: /new/privacy-policy/
+  - generic [ref=f63e48]:
+    - button [ref=f63e49]
+    - button [ref=f63e55]
+    - button [ref=f63e59]
+    - button [ref=f63e67]

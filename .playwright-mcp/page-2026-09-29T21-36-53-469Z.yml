@@ -1,0 +1,52 @@
+- generic [active] [ref=f52e1]:
+  - banner [ref=f52e2]:
+    - generic [ref=f52e3]:
+      - link "WCT Washougal" [ref=f52e4] [cursor=pointer]:
+        - /url: /new/
+      - button "Menu" [ref=f52e6] [cursor=pointer]
+  - main [ref=f52e11]:
+    - generic [ref=f52e13]:
+      - heading "Instructors" [level=1] [ref=f52e14]
+      - heading "Master Chulan Kim" [level=2] [ref=f52e15]
+      - paragraph [ref=f52e16]: Headmaster of World Champion Taekwondo Washougal. Graduate of Yong-In University (major in Tae Kwon Do). National Champion 1995.
+      - list [ref=f52e17]:
+        - listitem [ref=f52e18]: 7th Degree World Tae Kwon Do Federation Black Belt
+        - listitem [ref=f52e19]: 4th Degree Yong Moo Do
+        - listitem [ref=f52e20]: Course of Teaching Profession in Education
+        - listitem [ref=f52e21]: 20+ years experience
+        - listitem [ref=f52e22]: Taekwondo of America Master — founded by Olympic Gold Medalist Master Kim Je-Kyoung (1992)
+        - listitem [ref=f52e23]: USAT Certified Coach
+      - generic [ref=f52e24]:
+        - img "United States Taekwondo Education Foundation" [ref=f52e25]
+        - paragraph [ref=f52e26]: United States Taekwondo Education Foundation — affiliation mark shown with Master Kim’s credentials.
+      - paragraph [ref=f52e27]:
+        - link "Request information" [ref=f52e28] [cursor=pointer]:
+          - /url: /new/start/?intent=info
+  - contentinfo [ref=f52e29]:
+    - generic [ref=f52e30]:
+      - strong [ref=f52e31]: World Champion Taekwondo Washougal
+      - paragraph [ref=f52e32]:
+        - 'link "3307 Evergreen Way #605, Washougal, WA 98671" [ref=f52e33] [cursor=pointer]':
+          - /url: https://maps.app.goo.gl/yvFzGpkYGjAzo5Zs8
+      - paragraph [ref=f52e34]:
+        - link "wctwashougal@gmail.com" [ref=f52e35] [cursor=pointer]:
+          - /url: mailto:wctwashougal@gmail.com
+        - text: ·
+        - link "360-831-1124" [ref=f52e36] [cursor=pointer]:
+          - /url: tel:3608311124
+      - paragraph [ref=f52e37]:
+        - link "Member sign in" [ref=f52e38] [cursor=pointer]:
+          - /url: /new/members/
+        - text: — family portal coming soon
+      - generic [ref=f52e39]:
+        - img "United States Taekwondo Education Foundation" [ref=f52e40]
+        - paragraph [ref=f52e41]: Affiliated with the United States Taekwondo Education Foundation
+      - paragraph [ref=f52e42]:
+        - text: © 2026 World Champion Taekwondo Washougal ·
+        - link "Privacy Policy" [ref=f52e43] [cursor=pointer]:
+          - /url: /new/privacy-policy/
+  - generic [ref=f52e46]:
+    - button [ref=f52e47]
+    - button [ref=f52e53]
+    - button [ref=f52e57]
+    - button [ref=f52e65]
