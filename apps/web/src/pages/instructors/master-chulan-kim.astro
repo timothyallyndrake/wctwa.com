@@ -1,0 +1,45 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { withBase } from "../../lib/with-base";
+
+const credentials = [
+  "7th Degree World Tae Kwon Do Federation Black Belt",
+  "4th Degree Yong Moo Do",
+  "Yong-In University",
+  "Course of Teaching Profession in Education",
+  "National Champion 1995",
+  "20+ years experience",
+  "Taekwondo of America Master — founded by Olympic Gold Medalist Master Kim Je-Kyoung (1992)",
+  "USAT Certified Coach",
+];
+---
+
+<BaseLayout
+  title="Master Chulan Kim"
+  description="Credentials and background for Master Chulan Kim, headmaster of World Champion Taekwondo Washougal."
+>
+  <section class="page">
+    <div class="wrap">
+      <h1>Master Chulan Kim</h1>
+      <div class="instructor-profile">
+        <figure class="instructor-profile__photo">
+          <img
+            src={withBase("/images/source/instructors-main.webp")}
+            alt="Master Chulan Kim"
+            width="771"
+            height="1000"
+            loading="lazy"
+          />
+        </figure>
+        <div class="instructor-profile__content">
+          <ul class="instructor-profile__credentials">
+            {credentials.map((item) => <li>{item}</li>)}
+          </ul>
+          <p>
+            <a class="text-link" href={withBase("/instructors/")}>← Instructors</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

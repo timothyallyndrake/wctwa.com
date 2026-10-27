@@ -18,18 +18,13 @@ The trial action stays in the header on medium and wide screens. On a narrow scr
 
 ## Homepage regions
 
-1. Welcome
-2. Local trust markers
-3. Master Kim
-4. Programs
-5. Training photo story
-6. Parent testimonials
-7. Schedule preview
-8. Trial offer
-9. Visit and contact
-10. Footer
+1. Hero (full-body photo, navy text column, wave into gray)
+2. Programs (white cards on gray)
+3. Local facts (address and hours on navy)
+4. Trial offer
+5. Footer
 
-The trial offer stays below trust. The `$40 / 2 weeks` fact stays in that offer, not in the welcome.
+Master Kim lives on his own page under Instructors, not on the homepage. The `$40 / 2 weeks` fact stays in the trial offer, not in the hero.
 
 ## Homepage (corrected 2026-10-14)
 
@@ -39,13 +34,13 @@ The homepage hero is the tall opening. Every other page opens with a shorter tit
 
 Homepage regions:
 
-1. Hero. The photograph is part of the hero. The bottom wave masks the photo. The photo’s left edge curves into the navy.
-2. Facts panel. Rounded. Fully above Master Kim.
-3. Master Kim. Portrait clear of any wave.
-4. Three equal rounded program cards.
-5. A short schedule prompt that links to the schedule page. Not the full grid.
-6. One trial offer.
-7. Footer. Address, phone, and email live here once. Shorter than a stacked list. Smooth wave along the top.
+1. Hero. Photo is the outpainted full-body frame. Bottom wave masks the photo and reveals the gray. Photo’s left edge curves into a wider navy text column.
+2. Programs. Three equal white cards on the gray field that starts behind the hero wave.
+3. Local facts (address and hours) on a navy band.
+4. One trial offer.
+5. Footer.
+
+Master Kim is not on the homepage. He has his own page under Instructors.
 
 The training-photo section and the visit block are not on the homepage. The full class grid lives on the schedule page.
 
