@@ -8,22 +8,51 @@ const programs = [
     href: withBase("/programs/tiny-tigers-martial-arts/"),
     title: "Tiny Tigers",
     blurb: "Energetic classes for children under 6 — respect, kindness, and fun on the mat.",
-    image: withBase("/images/source/home-tiny-tigers-martial-arts.jpg"),
+    image: withBase("/images/enhanced/home-tiny-tigers-martial-arts.webp"),
+    width: 2048,
+    height: 1263,
     alt: "Tiny Tigers class at World Champion Taekwondo Washougal.",
   },
   {
     href: withBase("/programs/kids-martial-arts/"),
     title: "Kids",
     blurb: "Confidence, discipline, and leadership — at each child’s pace.",
-    image: withBase("/images/source/home-kids-martial-arts.jpg"),
+    image: withBase("/images/enhanced/home-kids-martial-arts.webp"),
+    width: 1536,
+    height: 952,
     alt: "Kids martial arts class in Washougal.",
   },
   {
     href: withBase("/programs/adults-and-families-martial-arts/"),
     title: "Adults & Families",
     blurb: "Fitness, self-defense, and classes families can train in together.",
-    image: withBase("/images/source/home-adult-and-family-martial-arts.jpg"),
+    image: withBase("/images/enhanced/home-adult-and-family-martial-arts.webp"),
+    width: 2560,
+    height: 1431,
     alt: "Adults and families training together.",
+  },
+];
+
+const quotes = [
+  {
+    quote:
+      "Master Kim was one of my Masters that taught me Taekwondo when I was 10 years old. He is very good at teaching Positive Discipline through his Taekwondo Class! Highly Recommend!",
+    name: "Master Eric",
+  },
+  {
+    quote:
+      "Master Kim is an exemplary instructor. He’s very patient and calm with the kids and he makes it fun and engaging for them. So glad we found this class!",
+    name: "Michelle Ludlow",
+  },
+  {
+    quote:
+      "My son and I have been attending family class together with Master Kim and he is a wonderful and positive teacher and look forward to more.",
+    name: "Sara Dimitt",
+  },
+  {
+    quote:
+      "Master Kim has shaped our family for years. My kids and I learned a discipline, strength, and patience beside him that still guides how we live.",
+    name: "Tim Drake",
   },
 ];
 ---
@@ -41,8 +70,12 @@ const programs = [
     <section class="home-welcome" aria-label="Welcome">
       <div class="home-welcome__inner">
         <div class="home-welcome__content">
-          <h1 class="type-display">Washougal trains here.</h1>
-          <p class="type-body">A safe, positive, encouraging place to connect, learn, and grow stronger together.</p>
+          <h1 class="type-display">World Champion Taekwondo Washougal</h1>
+          <p class="type-body">A safe, positive, and encouraging environment to connect, learn, and grow stronger together.</p>
+          <a class="button home-welcome__info" href={withBase("/start/?intent=info")}>Request more information</a>
+          <svg class="home-welcome__cap" viewBox="0 0 1200 100" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+            <path fill="currentColor" d="M0,0 L1200,0 L1200,46 C1080,18 960,96 760,58 C460,4 220,92 0,38 Z"></path>
+          </svg>
         </div>
         <figure class="home-welcome__photo">
           <img
@@ -54,6 +87,30 @@ const programs = [
           />
         </figure>
       </div>
+      <svg class="home-welcome__wave" viewBox="0 0 1200 100" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+        <path fill="currentColor" d="M0,38 C220,92 460,4 760,58 C960,96 1080,18 1200,46 L1200,100 L0,100 Z"></path>
+      </svg>
+    </section>
+
+    <section class="home-quotes" aria-labelledby="quotes-heading">
+      <div class="wrap">
+        <h2 id="quotes-heading" class="type-heading">From the community</h2>
+        <ul class="home-quotes__list">
+          {
+            quotes.map((item) => (
+              <li>
+                <blockquote>
+                  <p>{item.quote}</p>
+                  <footer>{item.name}</footer>
+                </blockquote>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+      <svg class="home-quotes__wave" viewBox="0 0 1200 100" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+        <path fill="currentColor" d="M0,38 C220,92 460,4 760,58 C960,96 1080,18 1200,46 L1200,100 L0,100 Z"></path>
+      </svg>
     </section>
 
     <section class="home-programs" aria-labelledby="programs-heading">
@@ -67,8 +124,8 @@ const programs = [
                   class="program__photo"
                   src={program.image}
                   alt={program.alt}
-                  width="640"
-                  height="427"
+                  width={program.width}
+                  height={program.height}
                   loading="lazy"
                 />
                 <h3 class="type-heading program__title">{program.title}</h3>
@@ -108,7 +165,10 @@ const programs = [
     <div class="wrap home-offer__inner">
       <div class="home-offer__copy">
         <h2 id="offer-heading" class="type-heading">Try 2 weeks for $40</h2>
-        <p class="type-body">Two weeks of class — a simple way to start. Includes a uniform and belt.</p>
+        <p class="type-body">
+          Two weeks of class — a simple way to start.
+          <span class="home-offer__perk">Includes uniform and belt!</span>
+        </p>
       </div>
       <a class="button button--signal" href={withBase("/start/?intent=trial")}>
         Reserve your first class

@@ -14,7 +14,7 @@ export const site = {
     href: "tel:3608311124",
   },
   email: "wctwashougal@gmail.com",
-  facebook: "https://www.facebook.com/profile.php?id=100085540675144",
+  facebook: "https://www.facebook.com/people/WCT-washougal/100085540675144/",
   offer: {
     label: "Try 2 weeks",
     price: "$40",
