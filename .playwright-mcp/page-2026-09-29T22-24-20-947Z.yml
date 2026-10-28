@@ -1,0 +1,44 @@
+- generic [active] [ref=f75e1]:
+  - main [ref=f75e2]:
+    - main [ref=f75e3]:
+      - heading "Five designs" [level=1] [ref=f75e4]
+      - paragraph [ref=f75e5]: Same school, same photograph, same facts. These are directions to compare, not the live homepage.
+      - list [ref=f75e6]:
+        - listitem [ref=f75e7]:
+          - link "Inside the room" [ref=f75e8] [cursor=pointer]:
+            - /url: /new/designs/room/
+          - paragraph [ref=f75e9]: The orange wall is the page. The mat continues under the students.
+        - listitem [ref=f75e10]:
+          - link "The record" [ref=f75e11] [cursor=pointer]:
+            - /url: /new/designs/record/
+          - paragraph [ref=f75e12]: Master Kim’s name and credentials lead. The students are a plate beside the record.
+        - listitem [ref=f75e13]:
+          - link "Open on one face" [ref=f75e14] [cursor=pointer]:
+            - /url: /new/designs/face/
+          - paragraph [ref=f75e15]: Scroll. The frame opens from the center student to the line of three, then the room.
+        - listitem [ref=f75e16]:
+          - link "The afternoon" [ref=f75e17] [cursor=pointer]:
+            - /url: /new/designs/afternoon/
+          - paragraph [ref=f75e18]: "The homepage is the day: weekday classes from 2pm to 8pm, with the photograph in the middle of it."
+        - listitem [ref=f75e19]:
+          - link "Five screens" [ref=f75e20] [cursor=pointer]:
+            - /url: /new/designs/screens/
+          - paragraph [ref=f75e21]: "One fact at a time. Scroll a full page for each: the room, Master Kim, the programs, the hours, the trial."
+    - navigation "Review the five designs" [ref=f75e22]:
+      - link "All" [ref=f75e23] [cursor=pointer]:
+        - /url: /new/designs/
+      - link "Room" [ref=f75e24] [cursor=pointer]:
+        - /url: /new/designs/room/
+      - link "Record" [ref=f75e25] [cursor=pointer]:
+        - /url: /new/designs/record/
+      - link "Face" [ref=f75e26] [cursor=pointer]:
+        - /url: /new/designs/face/
+      - link "Afternoon" [ref=f75e27] [cursor=pointer]:
+        - /url: /new/designs/afternoon/
+      - link "Screens" [ref=f75e28] [cursor=pointer]:
+        - /url: /new/designs/screens/
+  - generic [ref=f75e31]:
+    - button [ref=f75e32]
+    - button [ref=f75e38]
+    - button [ref=f75e42]
+    - button [ref=f75e47]

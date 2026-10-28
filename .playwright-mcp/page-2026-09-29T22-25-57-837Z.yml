@@ -1,0 +1,50 @@
+- generic [active] [ref=f81e1]:
+  - main [ref=f81e2]:
+    - region "The room" [ref=f81e3]:
+      - img "Three students in ready stance on the mat at World Champion Taekwondo Washougal." [ref=f81e4]
+      - paragraph [ref=f81e5]: WCT Washougal
+    - region [ref=f81e6]:
+      - paragraph [ref=f81e7]: Headmaster
+      - heading "Chulan Kim" [level=1] [ref=f81e8]
+      - list [ref=f81e9]:
+        - listitem [ref=f81e10]: 7th Degree, World Tae Kwon Do Federation
+        - listitem [ref=f81e11]: Yong-In University
+        - listitem [ref=f81e12]: National Champion, 1995
+        - listitem [ref=f81e13]: USAT Certified Coach
+    - region "Programs" [ref=f81e14]:
+      - list [ref=f81e15]:
+        - listitem [ref=f81e16]:
+          - heading "Tiny Tigers" [level=2] [ref=f81e17]
+          - paragraph [ref=f81e18]: Children under 6. Respect, kindness, and fun on the mat.
+        - listitem [ref=f81e19]:
+          - heading "Kids" [level=2] [ref=f81e20]
+          - paragraph [ref=f81e21]: Confidence and discipline, at each child’s pace.
+        - listitem [ref=f81e22]:
+          - heading "Adults & Families" [level=2] [ref=f81e23]
+          - paragraph [ref=f81e24]: Fitness, self-defense, and classes a family can share.
+    - region [ref=f81e25]:
+      - heading "2pm–8pm" [level=2] [ref=f81e26]
+      - paragraph [ref=f81e27]: Monday through Friday. Saturday is events. Sunday the school is closed.
+    - region [ref=f81e28]:
+      - heading "Try 2 weeks for $40" [level=2] [ref=f81e29]: Try 2 weeksfor $40
+      - paragraph [ref=f81e30]: Two weeks of class — a simple way to start.
+      - link "Reserve your first class" [ref=f81e31] [cursor=pointer]:
+        - /url: /new/start/?intent=trial
+    - navigation "Review the five designs" [ref=f81e32]:
+      - link "All" [ref=f81e33] [cursor=pointer]:
+        - /url: /new/designs/
+      - link "Room" [ref=f81e34] [cursor=pointer]:
+        - /url: /new/designs/room/
+      - link "Record" [ref=f81e35] [cursor=pointer]:
+        - /url: /new/designs/record/
+      - link "Face" [ref=f81e36] [cursor=pointer]:
+        - /url: /new/designs/face/
+      - link "Afternoon" [ref=f81e37] [cursor=pointer]:
+        - /url: /new/designs/afternoon/
+      - link "Screens" [ref=f81e38] [cursor=pointer]:
+        - /url: /new/designs/screens/
+  - generic [ref=f81e41]:
+    - button [ref=f81e42]
+    - button [ref=f81e48]
+    - button [ref=f81e52]
+    - button [ref=f81e60]

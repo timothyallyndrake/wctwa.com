@@ -7,9 +7,19 @@ interface Props {
   title: string;
   description?: string;
   home?: boolean;
+  showHeader?: boolean;
+  showFooter?: boolean;
+  bodyClass?: string;
 }
 
-const { title, description = site.tagline, home = false } = Astro.props;
+const {
+  title,
+  description = site.tagline,
+  home = false,
+  showHeader = true,
+  showFooter = true,
+  bodyClass = "",
+} = Astro.props;
 const pageTitle = title === site.name ? title : `${title} | ${site.shortName}`;
 
 const now = Date.now();
@@ -17,10 +27,12 @@ const startsOk =
   !announcement.startsAt || now >= Date.parse(announcement.startsAt);
 const endsOk = !announcement.endsAt || now <= Date.parse(announcement.endsAt);
 const showAnnouncement = announcement.active && announcement.message && startsOk && endsOk;
+
+const year = new Date().getFullYear();
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/png" sizes="32x32" href={withBase("/favicon-32.png")} />
@@ -32,79 +44,160 @@ const showAnnouncement = announcement.active && announcement.message && startsOk
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto+Flex:opsz,wght@8..144,400;8..144,600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Barlow+Semi+Condensed:ital,wght@0,600;0,700;1,700&display=swap"
       rel="stylesheet"
     />
     <title>{pageTitle}</title>
   </head>
-  <body class:list={[{ "layout--home": home }]}>
+  <body class:list={[{ "layout--home": home }, bodyClass]}>
     <!--
-      WCT Washougal — Dobok Embroidery direction contract
-      Cotton weave grounds, black V-neck collar bars, gold belt-thread accents.
-      Sacred blue #0054B7, red #E70E1B, ivory/off-white, near-black navy.
-      Trust before transaction. No eyebrow kickers, carnival CTAs, or glass cards.
+      Pinned world: bright civic school, white ground, navy fields, bright-blue links,
+      red only for the trial action, Barlow Semi Condensed display, Atkinson body,
+      documentary photos in grid frames, trial action in the header (bottom bar on narrow).
+      User-pinned 2026-10-14. No concept seed.
     -->
+    <svg class="site-clips" aria-hidden="true" focusable="false" width="0" height="0">
+      <defs>
+        <clipPath id="site-clip-wave-bottom" clipPathUnits="objectBoundingBox">
+          <path d="M0,0 H1 V0.8 C0.75,0.96 0.25,0.7 0,0.84 L0,0 Z"></path>
+        </clipPath>
+        <clipPath id="site-clip-footer-top" clipPathUnits="objectBoundingBox">
+          <path d="M0,0.72 C0.25,0.28 0.75,0.48 1,0.22 V1 H0 Z"></path>
+        </clipPath>
+      </defs>
+    </svg>
     {
       showAnnouncement && (
         <div class="banner" role="status">{announcement.message}</div>
       )
     }
-    <header class:list={["site-header", { "site-header--home": home }]}>
-      <div class="site-header__inner wrap">
-        <a class="brand-lockup" href={withBase("/")}>
-          <img src={withBase(site.marks.school.src)} alt="" width="40" height="40" />
-          <span>{site.shortName}</span>
-        </a>
-        <nav aria-label="Primary">
-          <ul class="nav">
-            {nav.map((item) => (
-              <li>
-                <a href={withBase(item.href)}>{item.label}</a>
-              </li>
-            ))}
-            <li>
-              <a class="nav-cta" href={withBase("/start/")}>Start here</a>
-            </li>
-            <li>
-              <a class="nav-signin" href={withBase("/members/")}>Member sign in</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+    {
+      showHeader && (
+        <header class="site-header">
+          <div class="site-header__inner wrap">
+            <a class="brand-lockup" href={withBase("/")}>
+              <img src={withBase(site.marks.school.src)} alt="" width="40" height="40" />
+              <span>{site.shortName}</span>
+            </a>
+            <button
+              class="site-header__menu-button"
+              type="button"
+              aria-expanded="false"
+              aria-controls="primary-navigation"
+            >
+              <span class="visually-hidden">Menu</span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </button>
+            <nav id="primary-navigation" aria-label="Primary">
+              <ul class="nav">
+                {nav.map((item) => (
+                  <li>
+                    <a href={withBase(item.href)}>{item.label}</a>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+            <a class="site-header__phone" href={site.phone.href}>
+              <span class="site-header__phone-number">{site.phone.display}</span>
+              <span class="site-header__phone-call">Call</span>
+            </a>
+          </div>
+        </header>
+      )
+    }
 
     <main class:list={[{ "main--home": home }]}>
       <slot />
     </main>
 
-    <footer class="site-footer">
-      <div class="wrap site-footer__inner">
-        <strong class="site-footer__name">{site.name}</strong>
-        <p style="margin:0;">
-          <a href={site.address.mapsUrl}>
-            {site.address.line1}, {site.address.city}, {site.address.state}{" "}
-            {site.address.zip}
-          </a>
-        </p>
-        <p style="margin:0;">
-          <a href={`mailto:${site.email}`}>{site.email}</a>
-          {" · "}
-          <a href={site.phone.href}>{site.phone.display}</a>
-        </p>
-        <p style="margin:0;">
-          <a href={withBase("/members/")}>Member sign in</a>
-          <span style="opacity:0.7;"> — family portal coming soon</span>
-        </p>
-        <div class="affiliation-mark">
-          <img src={withBase(site.marks.foundation.src)} alt={site.marks.foundation.alt} width="68" height="68" />
-          <p>Affiliated with the United States Taekwondo Education Foundation</p>
-        </div>
-        <p style="margin:0;opacity:0.8;font-size:0.9rem;">
-          © {new Date().getFullYear()} {site.name}
-          {" · "}
-          <a href={withBase("/privacy-policy/")}>Privacy Policy</a>
-        </p>
-      </div>
-    </footer>
+    <script>
+      const siteHeader = document.querySelector(".site-header");
+      const menuButton = siteHeader?.querySelector<HTMLButtonElement>(".site-header__menu-button");
+
+      menuButton?.addEventListener("click", () => {
+        const isOpen = siteHeader?.toggleAttribute("data-menu-open");
+        menuButton.setAttribute("aria-expanded", String(Boolean(isOpen)));
+      });
+
+      siteHeader?.querySelectorAll("nav a").forEach((link) => {
+        link.addEventListener("click", () => {
+          siteHeader?.removeAttribute("data-menu-open");
+          menuButton?.setAttribute("aria-expanded", "false");
+        });
+      });
+
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") {
+          siteHeader?.removeAttribute("data-menu-open");
+          menuButton?.setAttribute("aria-expanded", "false");
+          menuButton?.focus();
+        }
+      });
+    </script>
+
+    {
+      showFooter && (
+        <footer class="site-footer">
+          <div class="wrap site-footer__inner">
+            <div class="site-footer__contact">
+              <a class="site-footer__address" href={site.address.mapsUrl}>
+                <span>{site.address.line1}</span>
+                <span>{site.address.city}, {site.address.state} {site.address.zip}</span>
+              </a>
+              <a class="site-footer__email" href={`mailto:${site.email}`}>{site.email}</a>
+              <div class="site-footer__reach">
+              <a class="site-footer__phone" href={site.phone.href}>{site.phone.display}</a>
+              <a
+                class="site-footer__facebook"
+                href={site.facebook}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path
+                    fill="currentColor"
+                    d="M22 12.07C22 6.48 17.52 2 11.93 2S2 6.48 2 12.07C2 17.1 5.66 21.24 10.44 22v-7.03H7.9v-2.9h2.54V9.84c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.76 8.43-4.9 8.43-9.93z"
+                  ></path>
+                </svg>
+                <span>Facebook</span>
+              </a>
+              </div>
+              <p class="site-footer__members" hidden>
+                <a href={withBase("/members/")}>Member sign in</a>
+                <span>Family portal coming soon</span>
+              </p>
+            </div>
+            <div class="site-footer__identity">
+              <div class="site-footer__marks">
+                <img
+                  class="site-footer__mark"
+                  src={withBase(site.marks.school.src)}
+                  alt=""
+                  width="52"
+                  height="52"
+                />
+                <img
+                  class="site-footer__mark"
+                  src={withBase(site.marks.foundation.src)}
+                  alt=""
+                  width="52"
+                  height="52"
+                />
+              </div>
+              <div class="site-footer__words">
+                <p class="site-footer__name">{site.name}</p>
+                <p class="site-footer__affiliate">Affiliated with the United States<br class="site-footer__affiliate-break" /> Taekwondo Education Foundation</p>
+                <p class="site-footer__copy">© {year} {site.name}</p>
+              </div>
+            </div>
+            <p class="site-footer__privacy">
+              <a href={withBase("/privacy-policy/")}>Privacy Policy</a>
+            </p>
+          </div>
+        </footer>
+      )
+    }
   </body>
 </html>

@@ -1,0 +1,115 @@
+- generic [active] [ref=f25e1]:
+  - banner [ref=f25e2]:
+    - generic [ref=f25e3]:
+      - link "WCT Washougal" [ref=f25e4] [cursor=pointer]:
+        - /url: /new/
+      - button "Menu" [ref=f25e6] [cursor=pointer]
+  - main [ref=f25e11]:
+    - region "Welcome" [ref=f25e12]:
+      - img "Three students in ready stance on the mat at World Champion Taekwondo Washougal." [ref=f25e15]
+      - generic [ref=f25e17]:
+        - heading "Washougal trains here." [level=1] [ref=f25e18]
+        - paragraph [ref=f25e19]: Master Chulan Kim. A safe, positive school for families.
+        - generic [ref=f25e20]:
+          - link "Reserve your first class" [ref=f25e21] [cursor=pointer]:
+            - /url: /new/start/?intent=trial
+          - link "Meet Master Kim" [ref=f25e22] [cursor=pointer]:
+            - /url: /new/instructors/
+    - region [ref=f25e23]:
+      - generic [ref=f25e24]:
+        - img "Master Chulan Kim" [ref=f25e25]
+        - generic [ref=f25e26]:
+          - heading "Master Chulan Kim" [level=2] [ref=f25e27]
+          - list [ref=f25e28]:
+            - listitem [ref=f25e29]: 7th Degree WTF Black Belt·
+            - listitem [ref=f25e30]: Yong-In University·
+            - listitem [ref=f25e31]: National Champion 1995·
+            - listitem [ref=f25e32]: USAT Certified Coach
+          - link "Full credentials" [ref=f25e33] [cursor=pointer]:
+            - /url: /new/instructors/
+    - region [ref=f25e34]:
+      - generic [ref=f25e35]:
+        - generic [ref=f25e36]:
+          - heading "Programs for every age" [level=2] [ref=f25e37]
+          - paragraph [ref=f25e38]: Tiny Tigers, Kids, and Adults & Families — one school, clear paths.
+        - list [ref=f25e39]:
+          - listitem [ref=f25e40]:
+            - img "Tiny Tigers class at World Champion Taekwondo Washougal." [ref=f25e41]
+            - generic [ref=f25e42]:
+              - generic [ref=f25e43]: White belt
+              - heading "Tiny Tigers" [level=3] [ref=f25e44]
+              - paragraph [ref=f25e45]: Energetic classes for children under 6 — respect, kindness, and fun on the mat.
+            - link "Learn more" [ref=f25e46] [cursor=pointer]:
+              - /url: /new/programs/tiny-tigers-martial-arts/
+          - listitem [ref=f25e47]:
+            - img "Kids martial arts class in Washougal." [ref=f25e48]
+            - generic [ref=f25e49]:
+              - generic [ref=f25e50]: Color belt
+              - heading "Kids" [level=3] [ref=f25e51]
+              - paragraph [ref=f25e52]: Confidence, discipline, and leadership — at each child’s pace.
+            - link "Learn more" [ref=f25e53] [cursor=pointer]:
+              - /url: /new/programs/kids-martial-arts/
+          - listitem [ref=f25e54]:
+            - img "Adults and families training together." [ref=f25e55]
+            - generic [ref=f25e56]:
+              - generic [ref=f25e57]: Black belt path
+              - heading "Adults & Families" [level=3] [ref=f25e58]
+              - paragraph [ref=f25e59]: Fitness, self-defense, and classes families can train in together.
+            - link "Learn more" [ref=f25e60] [cursor=pointer]:
+              - /url: /new/programs/adults-and-families-martial-arts/
+    - region [ref=f25e61]:
+      - generic [ref=f25e62]:
+        - heading "Coming soon — a member home for every family" [level=2] [ref=f25e63]
+        - paragraph [ref=f25e64]: We’re building a simple place for parents and students to manage training life online — without the clutter.
+        - list [ref=f25e65]:
+          - listitem [ref=f25e66]:
+            - heading "Family accounts" [level=3] [ref=f25e67]
+            - paragraph [ref=f25e68]: Sign in to see your students, belt progress, and class rhythm in one calm view.
+          - listitem [ref=f25e69]:
+            - heading "Live schedule" [level=3] [ref=f25e70]
+            - paragraph [ref=f25e71]: Check what’s on the mat this week — updates published from the school, not a PDF chase.
+          - listitem [ref=f25e72]:
+            - heading "School store" [level=3] [ref=f25e73]
+            - paragraph [ref=f25e74]: Order uniforms and gear when you need them, sized for your student’s path.
+          - listitem [ref=f25e75]:
+            - heading "Monthly dues online" [level=3] [ref=f25e76]
+            - paragraph [ref=f25e77]: Pay membership automatically and securely — fewer reminders, more training.
+        - generic [ref=f25e78]:
+          - link "Preview member sign in" [ref=f25e79] [cursor=pointer]:
+            - /url: /new/members/
+          - link "Ask about membership" [ref=f25e80] [cursor=pointer]:
+            - /url: /new/start/?intent=info
+    - region [ref=f25e81]:
+      - generic [ref=f25e83]:
+        - heading "Try 2 weeks — $40" [level=2] [ref=f25e84]
+        - paragraph [ref=f25e85]: Two weeks of class — a simple way to start.
+        - link "Get started" [ref=f25e86] [cursor=pointer]:
+          - /url: /new/start/?intent=trial
+  - contentinfo [ref=f25e87]:
+    - generic [ref=f25e88]:
+      - strong [ref=f25e89]: World Champion Taekwondo Washougal
+      - paragraph [ref=f25e90]:
+        - 'link "3307 Evergreen Way #605, Washougal, WA 98671" [ref=f25e91] [cursor=pointer]':
+          - /url: https://maps.app.goo.gl/yvFzGpkYGjAzo5Zs8
+      - paragraph [ref=f25e92]:
+        - link "wctwashougal@gmail.com" [ref=f25e93] [cursor=pointer]:
+          - /url: mailto:wctwashougal@gmail.com
+        - text: ·
+        - link "360-831-1124" [ref=f25e94] [cursor=pointer]:
+          - /url: tel:3608311124
+      - paragraph [ref=f25e95]:
+        - link "Member sign in" [ref=f25e96] [cursor=pointer]:
+          - /url: /new/members/
+        - text: — family portal coming soon
+      - generic [ref=f25e97]:
+        - img "United States Taekwondo Education Foundation" [ref=f25e98]
+        - paragraph [ref=f25e99]: Affiliated with the United States Taekwondo Education Foundation
+      - paragraph [ref=f25e100]:
+        - text: © 2026 World Champion Taekwondo Washougal ·
+        - link "Privacy Policy" [ref=f25e101] [cursor=pointer]:
+          - /url: /new/privacy-policy/
+  - generic [ref=f25e104]:
+    - button [ref=f25e105]
+    - button [ref=f25e111]
+    - button [ref=f25e115]
+    - button [ref=f25e120]

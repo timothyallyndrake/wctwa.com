@@ -1,0 +1,108 @@
+- generic [active] [ref=f54e1]:
+  - banner [ref=f54e2]:
+    - generic [ref=f54e3]:
+      - link "WCT Washougal" [ref=f54e4] [cursor=pointer]:
+        - /url: /new/
+      - button "Menu" [ref=f54e6] [cursor=pointer]
+      - generic [ref=f54e11]:
+        - link "360-831-1124" [ref=f54e12] [cursor=pointer]:
+          - /url: tel:3608311124
+        - link "Member sign in" [ref=f54e13] [cursor=pointer]:
+          - /url: /new/members/
+  - main [ref=f54e14]:
+    - region "Welcome" [ref=f54e15]:
+      - generic [ref=f54e16]:
+        - generic [ref=f54e17]:
+          - heading "Washougal trains here." [level=1] [ref=f54e18]
+          - paragraph [ref=f54e19]: Master Chulan Kim. A safe, positive school for families.
+        - figure [ref=f54e20]:
+          - img "Three students in ready stance on the mat at World Champion Taekwondo Washougal." [ref=f54e21]
+    - region "Location and hours" [ref=f54e22]:
+      - list [ref=f54e25]:
+        - listitem [ref=f54e26]: "3307 Evergreen Way #605, Washougal, WA 98671"
+        - listitem [ref=f54e27]: Classes Monday–Friday, 2–8pm
+        - listitem [ref=f54e28]: "Saturday: events only"
+        - listitem [ref=f54e29]: "Sunday: closed"
+    - region [ref=f54e30]:
+      - generic [ref=f54e31]:
+        - figure [ref=f54e32]:
+          - img "Master Chulan Kim" [ref=f54e33]
+        - generic [ref=f54e34]:
+          - heading "Master Chulan Kim" [level=2] [ref=f54e35]
+          - list [ref=f54e36]:
+            - listitem [ref=f54e37]: 7th Degree World Tae Kwon Do Federation Black Belt
+            - listitem [ref=f54e38]: 4th Degree Yong Moo Do
+            - listitem [ref=f54e39]: Yong-In University
+            - listitem [ref=f54e40]: National Champion 1995
+            - listitem [ref=f54e41]: USAT Certified Coach
+            - listitem [ref=f54e42]: Taekwondo of America Master
+          - link "View full credentials" [ref=f54e43] [cursor=pointer]:
+            - /url: /new/instructors/
+    - region [ref=f54e44]:
+      - generic [ref=f54e45]:
+        - heading "Programs for every age" [level=2] [ref=f54e46]
+        - generic [ref=f54e47]:
+          - article [ref=f54e48]:
+            - img "Tiny Tigers class at World Champion Taekwondo Washougal." [ref=f54e49]
+            - heading "Tiny Tigers" [level=3] [ref=f54e50]
+            - paragraph [ref=f54e51]: Energetic classes for children under 6 — respect, kindness, and fun on the mat.
+            - link "View program" [ref=f54e52] [cursor=pointer]:
+              - /url: /new/programs/tiny-tigers-martial-arts/
+          - article [ref=f54e53]:
+            - img "Kids martial arts class in Washougal." [ref=f54e54]
+            - heading "Kids" [level=3] [ref=f54e55]
+            - paragraph [ref=f54e56]: Confidence, discipline, and leadership — at each child’s pace.
+            - link "View program" [ref=f54e57] [cursor=pointer]:
+              - /url: /new/programs/kids-martial-arts/
+          - article [ref=f54e58]:
+            - img "Adults and families training together." [ref=f54e59]
+            - heading "Adults & Families" [level=3] [ref=f54e60]
+            - paragraph [ref=f54e61]: Fitness, self-defense, and classes families can train in together.
+            - link "View program" [ref=f54e62] [cursor=pointer]:
+              - /url: /new/programs/adults-and-families-martial-arts/
+    - region [ref=f54e63]:
+      - generic [ref=f54e64]:
+        - heading "Class times" [level=2] [ref=f54e65]
+        - paragraph [ref=f54e66]: Weekday classes run from 4:00 to 7:40pm. Saturday is for events. Sunday is closed.
+        - link "See the full schedule →" [ref=f54e67] [cursor=pointer]:
+          - /url: /new/schedule/
+    - region [ref=f54e68]:
+      - generic [ref=f54e69]:
+        - generic [ref=f54e70]:
+          - heading "Try 2 weeks for $40" [level=2] [ref=f54e71]
+          - paragraph [ref=f54e72]: Two weeks of class — a simple way to start.
+        - link "Reserve your first class" [ref=f54e73] [cursor=pointer]:
+          - /url: /new/start/?intent=trial
+  - link "Try 2 weeks" [ref=f54e75] [cursor=pointer]:
+    - /url: /new/start/?intent=trial
+  - contentinfo [ref=f54e76]:
+    - generic [ref=f54e77]:
+      - generic [ref=f54e78]:
+        - strong [ref=f54e79]: World Champion Taekwondo Washougal
+        - generic [ref=f54e80]:
+          - img "United States Taekwondo Education Foundation" [ref=f54e81]
+          - paragraph [ref=f54e82]: Affiliated with the United States Taekwondo Education Foundation
+      - generic [ref=f54e83]:
+        - paragraph [ref=f54e84]:
+          - 'link "3307 Evergreen Way #605, Washougal, WA 98671" [ref=f54e85] [cursor=pointer]':
+            - /url: https://maps.app.goo.gl/yvFzGpkYGjAzo5Zs8
+        - paragraph [ref=f54e86]:
+          - link "360-831-1124" [ref=f54e87] [cursor=pointer]:
+            - /url: tel:3608311124
+        - paragraph [ref=f54e88]:
+          - link "wctwashougal@gmail.com" [ref=f54e89] [cursor=pointer]:
+            - /url: mailto:wctwashougal@gmail.com
+      - generic [ref=f54e90]:
+        - paragraph [ref=f54e91]:
+          - link "Member sign in" [ref=f54e92] [cursor=pointer]:
+            - /url: /new/members/
+          - text: — family portal coming soon
+        - paragraph [ref=f54e93]:
+          - link "Privacy Policy" [ref=f54e94] [cursor=pointer]:
+            - /url: /new/privacy-policy/
+          - text: · © 2026 World Champion Taekwondo Washougal
+  - generic [ref=f54e97]:
+    - button [ref=f54e98]
+    - button [ref=f54e104]
+    - button [ref=f54e108]
+    - button [ref=f54e113]

@@ -1,0 +1,33 @@
+- generic [active] [ref=f78e1]:
+  - main [ref=f78e2]:
+    - region "One student" [ref=f78e3]:
+      - paragraph [ref=f78e4]: WCT Washougal
+    - region "Three students" [ref=f78e5]
+    - region "Welcome" [ref=f78e6]:
+      - img "Three students in ready stance on the mat at World Champion Taekwondo Washougal." [ref=f78e7]
+      - generic [ref=f78e8]:
+        - heading "Washougal trains here." [level=1] [ref=f78e9]
+        - paragraph [ref=f78e10]: Master Chulan Kim. A safe, positive school for families.
+        - generic [ref=f78e11]:
+          - link "Reserve your first class" [ref=f78e12] [cursor=pointer]:
+            - /url: /new/start/?intent=trial
+          - link "Meet Master Kim" [ref=f78e13] [cursor=pointer]:
+            - /url: /new/instructors/
+    - navigation "Review the five designs" [ref=f78e14]:
+      - link "All" [ref=f78e15] [cursor=pointer]:
+        - /url: /new/designs/
+      - link "Room" [ref=f78e16] [cursor=pointer]:
+        - /url: /new/designs/room/
+      - link "Record" [ref=f78e17] [cursor=pointer]:
+        - /url: /new/designs/record/
+      - link "Face" [ref=f78e18] [cursor=pointer]:
+        - /url: /new/designs/face/
+      - link "Afternoon" [ref=f78e19] [cursor=pointer]:
+        - /url: /new/designs/afternoon/
+      - link "Screens" [ref=f78e20] [cursor=pointer]:
+        - /url: /new/designs/screens/
+  - generic [ref=f78e23]:
+    - button [ref=f78e24]
+    - button [ref=f78e30]
+    - button [ref=f78e34]
+    - button [ref=f78e39]

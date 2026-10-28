@@ -1,0 +1,82 @@
+- generic [active] [ref=f22e1]:
+  - banner [ref=f22e2]:
+    - generic [ref=f22e3]:
+      - link "WCT Washougal" [ref=f22e4] [cursor=pointer]:
+        - /url: /new/
+      - navigation "Primary" [ref=f22e6]:
+        - list [ref=f22e7]:
+          - listitem [ref=f22e8]:
+            - link "About" [ref=f22e9] [cursor=pointer]:
+              - /url: /new/about-us/
+          - listitem [ref=f22e10]:
+            - link "Programs" [ref=f22e11] [cursor=pointer]:
+              - /url: /new/programs/
+          - listitem [ref=f22e12]:
+            - link "Schedule" [ref=f22e13] [cursor=pointer]:
+              - /url: /new/schedule/
+          - listitem [ref=f22e14]:
+            - link "Instructors" [ref=f22e15] [cursor=pointer]:
+              - /url: /new/instructors/
+          - listitem [ref=f22e16]:
+            - link "Birthday Parties" [ref=f22e17] [cursor=pointer]:
+              - /url: /new/martial-arts-birthday-parties/
+          - listitem [ref=f22e18]:
+            - link "Contact" [ref=f22e19] [cursor=pointer]:
+              - /url: /new/contact-us/
+          - listitem [ref=f22e20]:
+            - link "Start here" [ref=f22e21] [cursor=pointer]:
+              - /url: /new/start/
+          - listitem [ref=f22e22]:
+            - link "Member sign in" [ref=f22e23] [cursor=pointer]:
+              - /url: /new/members/
+  - main [ref=f22e24]:
+    - generic [ref=f22e26]:
+      - heading "Programs" [level=1] [ref=f22e27]
+      - paragraph [ref=f22e28]: One clear overview — then go deeper if you want.
+      - list [ref=f22e29]:
+        - listitem [ref=f22e30]:
+          - heading "Kids Martial Arts" [level=2] [ref=f22e31]
+          - paragraph [ref=f22e32]: Confidence, discipline, and leadership — at each child’s pace.
+          - link "Learn more" [ref=f22e33] [cursor=pointer]:
+            - /url: /new/programs/kids-martial-arts/
+        - listitem [ref=f22e34]:
+          - heading "Tiny Tigers" [level=2] [ref=f22e35]
+          - paragraph [ref=f22e36]: Energetic classes for children under 6 — respect, kindness, fun.
+          - link "Learn more" [ref=f22e37] [cursor=pointer]:
+            - /url: /new/programs/tiny-tigers-martial-arts/
+        - listitem [ref=f22e38]:
+          - heading "Adults & Families" [level=2] [ref=f22e39]
+          - paragraph [ref=f22e40]: Fitness, self-defense, and classes families can train in together.
+          - link "Learn more" [ref=f22e41] [cursor=pointer]:
+            - /url: /new/programs/adults-and-families-martial-arts/
+      - paragraph [ref=f22e42]:
+        - link "Start here" [ref=f22e43] [cursor=pointer]:
+          - /url: /new/start/
+  - contentinfo [ref=f22e44]:
+    - generic [ref=f22e45]:
+      - strong [ref=f22e46]: World Champion Taekwondo Washougal
+      - paragraph [ref=f22e47]:
+        - 'link "3307 Evergreen Way #605, Washougal, WA 98671" [ref=f22e48] [cursor=pointer]':
+          - /url: https://maps.app.goo.gl/yvFzGpkYGjAzo5Zs8
+      - paragraph [ref=f22e49]:
+        - link "wctwashougal@gmail.com" [ref=f22e50] [cursor=pointer]:
+          - /url: mailto:wctwashougal@gmail.com
+        - text: ·
+        - link "360-831-1124" [ref=f22e51] [cursor=pointer]:
+          - /url: tel:3608311124
+      - paragraph [ref=f22e52]:
+        - link "Member sign in" [ref=f22e53] [cursor=pointer]:
+          - /url: /new/members/
+        - text: — family portal coming soon
+      - generic [ref=f22e54]:
+        - img "United States Taekwondo Education Foundation" [ref=f22e55]
+        - paragraph [ref=f22e56]: Affiliated with the United States Taekwondo Education Foundation
+      - paragraph [ref=f22e57]:
+        - text: © 2026 World Champion Taekwondo Washougal ·
+        - link "Privacy Policy" [ref=f22e58] [cursor=pointer]:
+          - /url: /new/privacy-policy/
+  - generic [ref=f22e61]:
+    - button [ref=f22e62]
+    - button [ref=f22e68]
+    - button [ref=f22e72]
+    - button [ref=f22e80]

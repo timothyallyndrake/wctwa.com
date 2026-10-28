@@ -1,0 +1,32 @@
+---
+import { withBase } from "../lib/with-base";
+
+interface Props {
+  current: string;
+}
+
+const { current } = Astro.props;
+
+const links = [
+  ["room", "Room"],
+  ["record", "Record"],
+  ["face", "Face"],
+  ["afternoon", "Afternoon"],
+  ["screens", "Screens"],
+  ["place", "Place"],
+];
+---
+
+<nav class="design-review" aria-label="Review the designs">
+  <a href={withBase("/designs/")}>All</a>
+  {
+    links.map(([slug, label]) => (
+      <a
+        href={withBase(`/designs/${slug}/`)}
+        aria-current={current === slug ? "page" : undefined}
+      >
+        {label}
+      </a>
+    ))
+  }
+</nav>

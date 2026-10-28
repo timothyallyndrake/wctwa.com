@@ -1,0 +1,23 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "side-tab",
+        "value": "border-left: 4px solid var(--color-red)",
+        "createdAt": "2026-09-29T21:34:52.436Z",
+        "reason": "User explicitly required a 4px vertical red rule at the blue/photo seam."
+      },
+      {
+        "rule": "side-tab",
+        "value": "*",
+        "files": [
+          "apps/web/src/styles/global.css"
+        ],
+        "createdAt": "2026-09-29T21:35:09.209Z",
+        "reason": "User explicitly required a 4px vertical red rule at the blue/photo seam."
+      }
+    ]
+  }
+}

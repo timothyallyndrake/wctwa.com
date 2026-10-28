@@ -1,0 +1,52 @@
+- generic [active] [ref=f5e1]:
+  - banner [ref=f5e2]:
+    - generic [ref=f5e3]:
+      - link "WCT Washougal" [ref=f5e4] [cursor=pointer]:
+        - /url: /new/
+      - button "Menu" [ref=f5e6] [cursor=pointer]
+      - generic [ref=f5e11]:
+        - link "360-831-1124" [ref=f5e12] [cursor=pointer]:
+          - /url: tel:3608311124
+        - link "Member sign in" [ref=f5e13] [cursor=pointer]:
+          - /url: /new/members/
+  - main [ref=f5e14]:
+    - generic [ref=f5e16]:
+      - heading "About the school" [level=1] [ref=f5e17]
+      - paragraph [ref=f5e18]: Copy rewrite placeholder — preserve facts, new voice.
+      - heading "What is Taekwondo?" [level=2] [ref=f5e19]
+      - paragraph [ref=f5e20]: Taekwondo is a traditional Korean martial art — “the way of the foot and hand.” At our Washougal school, students build body, mind, and character together.
+      - heading "A positive place to train" [level=2] [ref=f5e21]
+      - paragraph [ref=f5e22]: We focus on discipline, confidence, and encouragement — so students can grow without giving up.
+      - paragraph [ref=f5e23]:
+        - link "Request information" [ref=f5e24] [cursor=pointer]:
+          - /url: /new/start/?intent=info
+  - link "Try 2 weeks" [ref=f5e26] [cursor=pointer]:
+    - /url: /new/start/?intent=trial
+  - contentinfo [ref=f5e27]:
+    - generic [ref=f5e28]:
+      - strong [ref=f5e29]: World Champion Taekwondo Washougal
+      - paragraph [ref=f5e30]:
+        - 'link "3307 Evergreen Way #605, Washougal, WA 98671" [ref=f5e31] [cursor=pointer]':
+          - /url: https://maps.app.goo.gl/yvFzGpkYGjAzo5Zs8
+      - paragraph [ref=f5e32]:
+        - link "wctwashougal@gmail.com" [ref=f5e33] [cursor=pointer]:
+          - /url: mailto:wctwashougal@gmail.com
+        - text: ·
+        - link "360-831-1124" [ref=f5e34] [cursor=pointer]:
+          - /url: tel:3608311124
+      - paragraph [ref=f5e35]:
+        - link "Member sign in" [ref=f5e36] [cursor=pointer]:
+          - /url: /new/members/
+        - text: — family portal coming soon
+      - generic [ref=f5e37]:
+        - img "United States Taekwondo Education Foundation" [ref=f5e38]
+        - paragraph [ref=f5e39]: Affiliated with the United States Taekwondo Education Foundation
+      - paragraph [ref=f5e40]:
+        - text: © 2026 World Champion Taekwondo Washougal ·
+        - link "Privacy Policy" [ref=f5e41] [cursor=pointer]:
+          - /url: /new/privacy-policy/
+  - generic [ref=f5e44]:
+    - button [ref=f5e45]
+    - button [ref=f5e51]
+    - button [ref=f5e55]
+    - button [ref=f5e60]

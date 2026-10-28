@@ -3,7 +3,7 @@
 Living doc of locked choices for the wctwa.com refresh.  
 Companion: [CURRENT_SITE_INVENTORY.md](./CURRENT_SITE_INVENTORY.md)
 
-Last updated: 2026-08-11
+Last updated: 2026-10-14
 
 ---
 
@@ -24,11 +24,20 @@ Last updated: 2026-08-11
 | Homepage job | **Trust first** (Master, school, Washougal families); trial CTA persistent but not carnival |
 | Visual brand | **Evolve** — **blue + red sacred**; rethink layout, type, photo treatment, motion, polish |
 | Visual tone | **Calm authority + warmth** (editorial, spacious; not kids-club cartoon, not MMA hype) |
+| Visual treatment | **Bright civic school** (working direction, 2026-10-14). Tokens in `design/tokens/`. Layout in `design/layout.md`. Must feel new and exciting beside the current public site; do not study that site until Tim brings it in |
 | Copy | **Full rewrite**; preserve facts/credentials; drop urgency-spam / template tone |
 | IA | **Hybrid** — strong Programs overview; keep useful deep links; Instructors + Birthday Parties real; no filler hubs |
 | Trial offer | **Keep $40 / 2 weeks**; demote below trust (not hero scream) |
 | Announcements | **Repo content** (typed config); prefer dismissible banner; modal only if Master wants urgent; Tim+AI ship |
 | Photos | Launch on best current + Master anchor; Tim brings more; **enhance/upscale** keepers; easy to swap |
+
+### Visual system (working, 2026-10-14)
+
+Accepted in this grill, and still reopenable:
+
+- Treatment, color roles, type, shape, spacing, and elevation: `design/tokens/`
+- One layout direction: `design/layout.md`
+- The built site must feel new and exciting beside the current public site. Do not open that site for visual reference until Tim introduces it
 
 ### v1 in scope
 
@@ -98,15 +107,15 @@ Last updated: 2026-08-11
 - Announcement content schema details  
 - Whether birthday copy/pricing ($200, 90 min, etc.) changes  
 
-### Session routing (locked 2026-08-18)
+### Session routing (locked 2026-09-29)
 
 | Role | Model |
 |---|---|
-| Parent / main session | Cursor Grok 4.6 High Fast |
+| Parent / main session | Grok 4.7 High Fast (`grok-4.7-high-fast`) |
 | Implementor subagent | Cursor Composer 2.5 Fast |
 | Design / graphics / visual advice subagent | GPT 5.6 Sol Medium |
 
-Enforced in `.cursor/rules/session-model-router.mdc`. Impeccable new surfaces: **comp-first** (`apps/web/.impeccable/config.json`).
+Enforced in `.cursor/rules/session-model-router.mdc`. Impeccable new surfaces: **code-led** — the running page is the comp (`apps/web/.impeccable/config.json`).
 
 ### Locked during scaffold
 
@@ -128,3 +137,4 @@ Enforced in `.cursor/rules/session-model-router.mdc`. Impeccable new surfaces: *
 | NestJS API | Deferred — overkill for validate+SES; revisit if API surface grows |
 | Lead admin UI | Out of v1 |
 | Blocking popup as default announcement | Deferred — banner preferred |
+| Drawn dobok / collar-tape homepage | Rejected 2026-09-29 — gimmick; did not survive in the live page |

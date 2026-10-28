@@ -1,0 +1,173 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { comingSoon, nav, site } from "../../content/site";
+import { withBase } from "../../lib/with-base";
+import "../../styles/versions.css";
+
+const programs = [
+  {
+    href: withBase("/programs/tiny-tigers-martial-arts/"),
+    title: "Tiny Tigers",
+    blurb: "Energetic classes for children under 6 — respect, kindness, and fun on the mat.",
+    image: withBase("/images/source/home-tiny-tigers-martial-arts.jpg"),
+    alt: "Tiny Tigers class at World Champion Taekwondo Washougal.",
+  },
+  {
+    href: withBase("/programs/kids-martial-arts/"),
+    title: "Kids",
+    blurb: "Confidence, discipline, and leadership — at each child’s pace.",
+    image: withBase("/images/source/home-kids-martial-arts.jpg"),
+    alt: "Kids martial arts class in Washougal.",
+  },
+  {
+    href: withBase("/programs/adults-and-families-martial-arts/"),
+    title: "Adults & Families",
+    blurb: "Fitness, self-defense, and classes families can train in together.",
+    image: withBase("/images/source/home-adult-and-family-martial-arts.jpg"),
+    alt: "Adults and families training together.",
+  },
+];
+---
+
+<BaseLayout title={`${site.name} — Cinematic`} description={site.tagline} showHeader={false}>
+  <section class="v2-hero" aria-label="Welcome">
+    <img
+      class="v2-hero__photo"
+      src={withBase(site.hero.src)}
+      alt={site.hero.alt}
+      width="1536"
+      height="1024"
+      fetchpriority="high"
+    />
+    <header class="version-header version-header--overlay">
+      <div class="version-header__inner">
+        <a class="version-brand" href={withBase("/")}>
+          <img src={withBase(site.marks.school.src)} alt="" width="48" height="48" />
+          <span>{site.shortName}</span>
+        </a>
+        <button
+          class="version-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="version-two-navigation"
+        >
+          <span class="visually-hidden">Menu</span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </button>
+        <nav id="version-two-navigation" aria-label="Primary">
+          <ul>
+            {nav.map((item) => <li><a href={withBase(item.href)}>{item.label}</a></li>)}
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="v2-hero__shade" aria-hidden="true"></div>
+    <div class="v2-hero__content">
+      <h1>Washougal<br />trains here.</h1>
+      <p>Master Chulan Kim. A safe, positive school for families.</p>
+      <div class="version-actions">
+        <a class="version-button" href={withBase("/start/?intent=trial")}>Reserve your first class</a>
+        <a class="version-link version-link--light" href={withBase("/instructors/")}>Meet Master Kim</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="version-section version-master" aria-labelledby="v2-master-heading">
+    <div class="version-wrap version-master__grid">
+      <img
+        class="version-master__photo"
+        src={withBase("/images/source/instructors-main.webp")}
+        alt="Master Chulan Kim"
+        width="771"
+        height="1000"
+        loading="lazy"
+      />
+      <div>
+        <h2 id="v2-master-heading">Master Chulan Kim</h2>
+        <ul class="version-facts">
+          <li>7th Degree WTF Black Belt</li>
+          <li>4th Degree Yong Moo Do</li>
+          <li>Yong-In University</li>
+          <li>National Champion 1995</li>
+          <li>USAT Certified Coach</li>
+        </ul>
+        <a class="version-link" href={withBase("/instructors/")}>View full credentials</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="version-section version-programs" aria-labelledby="v2-programs-heading">
+    <div class="version-wrap">
+      <div class="version-intro">
+        <h2 id="v2-programs-heading">Programs for every age</h2>
+        <p>Tiny Tigers, Kids, and Adults &amp; Families — one school, clear paths.</p>
+      </div>
+      <div class="version-program-grid">
+        {programs.map((program) => (
+          <article class="version-program">
+            <img src={program.image} alt={program.alt} width="300" height="186" loading="lazy" />
+            <h3>{program.title}</h3>
+            <p>{program.blurb}</p>
+            <a class="version-link" href={program.href}>View program</a>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="version-section version-coming" aria-labelledby="v2-coming-heading">
+    <div class="version-wrap">
+      <h2 id="v2-coming-heading">Coming soon — a member home for every family</h2>
+      <p class="version-lead">{comingSoon.lead}</p>
+      <ul class="version-feature-list">
+        {comingSoon.features.map((feature) => (
+          <li>
+            <h3>{feature.title}</h3>
+            <p>{feature.detail}</p>
+          </li>
+        ))}
+      </ul>
+      <div class="version-inline-links">
+        <a class="version-link" href={withBase(comingSoon.membersPath)}>Preview member sign in</a>
+        <a class="version-link" href={withBase("/start/?intent=info")}>Ask about membership</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="version-offer version-offer--blue" aria-labelledby="v2-offer-heading">
+    <div class="version-wrap version-offer__inner">
+      <div>
+        <h2 id="v2-offer-heading">{site.offer.label} for {site.offer.price}</h2>
+        <p>{site.offer.detail}</p>
+      </div>
+      <a class="version-button" href={withBase("/start/?intent=trial")}>Reserve your first class</a>
+    </div>
+  </section>
+
+  <nav class="version-switcher" aria-label="Homepage versions">
+    <a href={withBase("/")}>Version 1</a>
+    <span aria-hidden="true">·</span>
+    <a aria-current="page" href={withBase("/versions/2/")}>Version 2</a>
+    <span aria-hidden="true">·</span>
+    <a href={withBase("/versions/3/")}>Version 3</a>
+  </nav>
+
+  <script>
+    const versionHeader = document.querySelector<HTMLElement>(".version-header");
+    const versionMenu = versionHeader?.querySelector<HTMLButtonElement>(".version-menu");
+
+    versionMenu?.addEventListener("click", () => {
+      const isOpen = versionHeader?.toggleAttribute("data-menu-open");
+      versionMenu.setAttribute("aria-expanded", String(Boolean(isOpen)));
+    });
+
+    versionHeader?.querySelectorAll("nav a").forEach((link) => {
+      link.addEventListener("click", () => {
+        versionHeader.removeAttribute("data-menu-open");
+        versionMenu?.setAttribute("aria-expanded", "false");
+      });
+    });
+  </script>
+</BaseLayout>

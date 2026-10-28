@@ -1,0 +1,25 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { withBase } from "../../lib/with-base";
+import "../../styles/versions.css";
+---
+
+<BaseLayout title="Homepage versions">
+  <div class="versions-index wrap">
+    <h1>Homepage versions</h1>
+    <ul>
+      <li>
+        <a href={withBase("/")}>Version 1 — the current homepage</a>
+        <p>Blue panel and full-height photograph.</p>
+      </li>
+      <li>
+        <a href={withBase("/versions/2/")}>Version 2</a>
+        <p>Full-screen training photograph with lower-left type and action.</p>
+      </li>
+      <li>
+        <a href={withBase("/versions/3/")}>Version 3</a>
+        <p>Giant navy headline above a wide photograph and red action band.</p>
+      </li>
+    </ul>
+  </div>
+</BaseLayout>

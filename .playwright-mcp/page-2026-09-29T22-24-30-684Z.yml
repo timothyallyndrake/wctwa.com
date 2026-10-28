@@ -1,0 +1,45 @@
+- generic [active] [ref=f76e1]:
+  - main [ref=f76e2]:
+    - region "Welcome" [ref=f76e3]:
+      - generic [ref=f76e4]:
+        - link "WCT Washougal" [ref=f76e5] [cursor=pointer]:
+          - /url: /new/
+        - list [ref=f76e7]:
+          - listitem [ref=f76e8]:
+            - link "Instructors" [ref=f76e9] [cursor=pointer]:
+              - /url: /new/instructors/
+          - listitem [ref=f76e10]:
+            - link "Schedule" [ref=f76e11] [cursor=pointer]:
+              - /url: /new/schedule/
+          - listitem [ref=f76e12]:
+            - link "Programs" [ref=f76e13] [cursor=pointer]:
+              - /url: /new/programs/
+      - generic [ref=f76e14]:
+        - heading "Washougal trains here." [level=1] [ref=f76e15]
+        - paragraph [ref=f76e16]: Master Chulan Kim. A safe, positive school for families.
+        - link "Reserve your first class" [ref=f76e18] [cursor=pointer]:
+          - /url: /new/start/?intent=trial
+      - figure [ref=f76e19]:
+        - img "Three students in ready stance on the mat at World Champion Taekwondo Washougal." [ref=f76e20]
+      - generic [ref=f76e21]:
+        - generic [ref=f76e22]: "3307 Evergreen Way #605"
+        - link "Meet Master Kim" [ref=f76e23] [cursor=pointer]:
+          - /url: /new/instructors/
+    - navigation "Review the five designs" [ref=f76e24]:
+      - link "All" [ref=f76e25] [cursor=pointer]:
+        - /url: /new/designs/
+      - link "Room" [ref=f76e26] [cursor=pointer]:
+        - /url: /new/designs/room/
+      - link "Record" [ref=f76e27] [cursor=pointer]:
+        - /url: /new/designs/record/
+      - link "Face" [ref=f76e28] [cursor=pointer]:
+        - /url: /new/designs/face/
+      - link "Afternoon" [ref=f76e29] [cursor=pointer]:
+        - /url: /new/designs/afternoon/
+      - link "Screens" [ref=f76e30] [cursor=pointer]:
+        - /url: /new/designs/screens/
+  - generic [ref=f76e33]:
+    - button [ref=f76e34]
+    - button [ref=f76e40]
+    - button [ref=f76e44]
+    - button [ref=f76e49]

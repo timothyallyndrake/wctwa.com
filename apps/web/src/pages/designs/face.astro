@@ -1,0 +1,36 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import DesignReview from "../../components/DesignReview.astro";
+import { site } from "../../content/site";
+import { withBase } from "../../lib/with-base";
+import "../../styles/designs.css";
+
+const src = withBase(site.hero.src);
+---
+
+<BaseLayout
+  title="Open on one face"
+  showHeader={false}
+  showFooter={false}
+  bodyClass="design-face"
+>
+  <section class="face-stage face-stage--tight" aria-label="One student">
+    <img src={src} alt="" width="1536" height="1024" />
+    <p class="face-label">{site.shortName}</p>
+  </section>
+  <section class="face-stage face-stage--line" aria-label="Three students">
+    <img src={src} alt="" width="1536" height="1024" />
+  </section>
+  <section class="face-stage face-stage--room" aria-label="Welcome">
+    <img src={src} alt={site.hero.alt} width="1536" height="1024" />
+    <div class="face-copy">
+      <h1>Washougal trains here.</h1>
+      <p>Master Chulan Kim. A safe, positive school for families.</p>
+      <div class="face-actions">
+        <a class="face-button" href={withBase("/start/?intent=trial")}>Reserve your first class</a>
+        <a class="textish" href={withBase("/instructors/")}>Meet Master Kim</a>
+      </div>
+    </div>
+  </section>
+  <DesignReview current="face" />
+</BaseLayout>

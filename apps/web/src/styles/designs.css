@@ -1,0 +1,964 @@
+/* Review set for homepage directions. Not the live homepage. */
+
+.design-review {
+  position: fixed;
+  z-index: 50;
+  left: 50%;
+  bottom: 0.7rem;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.15rem;
+  max-width: calc(100% - 1rem);
+  padding: 0.25rem;
+  background: rgba(13, 27, 42, 0.92);
+  color: #f4f1ea;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
+.design-review a {
+  color: inherit;
+  text-decoration: none;
+  padding: 0.35rem 0.55rem;
+  white-space: nowrap;
+}
+
+.design-review a[aria-current="page"] {
+  background: #e70e1b;
+}
+
+.designs-index {
+  padding: 4rem 0 6rem;
+}
+
+.designs-index h1 {
+  margin: 0 0 0.5rem;
+  font-size: clamp(2.4rem, 5vw, 3.5rem);
+}
+
+.designs-index > p {
+  max-width: 38rem;
+  margin: 0 0 2rem;
+}
+
+.designs-index ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 1.25rem;
+}
+
+.designs-index a {
+  font-size: 1.35rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.designs-index li p {
+  margin: 0.25rem 0 0;
+  max-width: 40rem;
+}
+
+/* ——— 1. Inside the room ——— */
+
+.design-room {
+  background: #b0391c;
+  color: #f6f1ea;
+}
+
+.room {
+  height: 100svh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.room-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.1rem clamp(1.25rem, 4vw, 2.5rem) 0;
+}
+
+.room-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: inherit;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.room-brand img {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.room-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.92rem;
+}
+
+.room-links a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.room-intro {
+  padding: clamp(1.5rem, 4vh, 3rem) clamp(1.25rem, 4vw, 2.5rem) 1rem;
+}
+
+.room-intro h1 {
+  margin: 0;
+  max-width: 12ch;
+  color: #f6f1ea;
+  font-size: clamp(2rem, 4vw, 3.1rem);
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  line-height: 0.95;
+}
+
+.room-intro p {
+  margin: 0.8rem 0 0;
+  max-width: 28rem;
+  font-size: 1.05rem;
+}
+
+.room-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 1.25rem;
+  align-items: center;
+  margin-top: 1.15rem;
+}
+
+.room-button,
+.record-button,
+.face-button,
+.day-button,
+.screen-button {
+  display: inline-block;
+  padding: 0.75rem 1.1rem;
+  background: #e70e1b;
+  color: #f6f1ea;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.room-intro .textish,
+.record-figure figcaption a,
+.face-copy .textish,
+.day-note a,
+.screen-copy a {
+  color: inherit;
+}
+
+.room-photo {
+  flex: 1 1 auto;
+  min-height: 0;
+  margin: 0;
+}
+
+.room-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 42%;
+}
+
+.room-mat {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 4.75rem;
+  padding: 0.8rem clamp(1.25rem, 4vw, 2.5rem) 3.4rem;
+  background: #2c74d4;
+}
+
+.room-mat span {
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+.room-mat a {
+  color: #f6f1ea;
+  font-weight: 700;
+}
+
+/* ——— 2. The record ——— */
+
+.design-record {
+  background: #f3efe6;
+  color: #1a140f;
+}
+
+.record {
+  width: min(100% - 2.5rem, 72rem);
+  margin-inline: auto;
+  padding: clamp(2.5rem, 6vw, 4.5rem) 0 6rem;
+}
+
+.record-kicker {
+  margin: 0 0 0.4rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.record h1 {
+  margin: 0;
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: clamp(4.2rem, 11vw, 8.5rem);
+  font-weight: 560;
+  font-optical-sizing: auto;
+  letter-spacing: -0.035em;
+  line-height: 0.86;
+  color: #1a140f;
+}
+
+.record-layout {
+  display: grid;
+  grid-template-columns: minmax(12rem, 18rem) 1fr;
+  gap: clamp(1.5rem, 4vw, 4rem);
+  align-items: start;
+  margin-top: clamp(2rem, 5vw, 3.5rem);
+}
+
+.record-figure {
+  margin: 0;
+}
+
+.record-figure img {
+  width: 100%;
+  height: auto;
+}
+
+.record-figure figcaption {
+  margin-top: 0.55rem;
+  font-size: 0.92rem;
+}
+
+.record-facts {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid rgba(26, 20, 15, 0.25);
+}
+
+.record-facts li {
+  display: grid;
+  grid-template-columns: 7.5rem 1fr;
+  gap: 1rem;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid rgba(26, 20, 15, 0.25);
+  font-size: 1.05rem;
+}
+
+.record-facts span {
+  color: #6a5c50;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.record-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 1.4rem;
+  align-items: center;
+  margin-top: 1.6rem;
+}
+
+.record-actions .textish {
+  color: #0054b7;
+  font-weight: 700;
+}
+
+/* ——— 3. Open on one face ——— */
+
+.face-stage {
+  position: relative;
+  height: 100svh;
+  overflow: hidden;
+  background: #1a100c;
+  color: #f6f1ea;
+}
+
+.face-stage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.face-stage--tight img {
+  object-position: 48% 22%;
+  transform: scale(3.6);
+  transform-origin: 48% 26%;
+}
+
+.face-stage--line img {
+  object-position: center 40%;
+  transform: scale(1.18);
+  transform-origin: 50% 42%;
+}
+
+.face-stage--room img {
+  object-position: center 46%;
+}
+
+.face-label {
+  position: absolute;
+  left: clamp(1.25rem, 4vw, 2.5rem);
+  bottom: 4.5rem;
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.face-copy {
+  position: absolute;
+  left: clamp(1.25rem, 4vw, 2.5rem);
+  right: clamp(1.25rem, 4vw, 2.5rem);
+  bottom: 4.2rem;
+  max-width: 36rem;
+}
+
+.face-copy h1 {
+  margin: 0 0 0.7rem;
+  color: #f6f1ea;
+  font-size: clamp(3rem, 6vw, 5.4rem);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 0.9;
+  text-shadow: 0 1px 18px rgba(20, 8, 4, 0.35);
+}
+
+.face-copy p {
+  margin: 0 0 1rem;
+  max-width: 28rem;
+  font-size: 1.1rem;
+}
+
+.face-copy .face-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 1.2rem;
+  align-items: center;
+}
+
+.face-copy .textish {
+  font-weight: 700;
+}
+
+.face-stage--room::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  height: 46%;
+  background: linear-gradient(to top, rgba(18, 8, 4, 0.78), transparent);
+  pointer-events: none;
+}
+
+.face-copy,
+.face-label {
+  z-index: 1;
+}
+
+/* ——— 4. The afternoon ——— */
+
+.design-afternoon {
+  background: #f3efe6;
+  color: #1a140f;
+}
+
+.day-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: baseline;
+  padding: 1.25rem clamp(1.25rem, 4vw, 2.5rem) 0;
+}
+
+.day-top a {
+  color: inherit;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.day-top p {
+  margin: 0;
+  max-width: 22rem;
+  text-align: right;
+}
+
+.day {
+  margin: 0;
+  padding: 1rem 0 0;
+  list-style: none;
+}
+
+.day li {
+  display: grid;
+  grid-template-columns: minmax(7rem, 18vw) 1fr;
+  gap: 1rem;
+  align-items: end;
+  min-height: 7.5rem;
+  padding: 1rem clamp(1.25rem, 4vw, 2.5rem) 1.1rem;
+  border-top: 1px solid rgba(26, 20, 15, 0.18);
+}
+
+.day-hour {
+  font-size: clamp(3.4rem, 8vw, 6.5rem);
+  font-weight: 700;
+  letter-spacing: -0.05em;
+  line-height: 0.8;
+}
+
+.day-hour small {
+  font-size: 0.28em;
+  letter-spacing: 0;
+  margin-left: 0.15em;
+}
+
+.day p {
+  margin: 0 0 0.35rem;
+  max-width: 28rem;
+  font-size: 1.15rem;
+}
+
+.day-closed {
+  background: #e7e0d4;
+  color: #6a5c50;
+}
+
+.day-live {
+  background: #b0391c;
+  color: #f6f1ea;
+  border-top-color: transparent;
+}
+
+.day-live .day-photo {
+  grid-column: 1 / -1;
+  margin: 0.4rem 0 0;
+}
+
+.day-live .day-photo img {
+  width: 100%;
+  max-height: 70vh;
+  object-fit: cover;
+  object-position: center 42%;
+}
+
+.day-offer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  padding: 2rem clamp(1.25rem, 4vw, 2.5rem) 5.5rem;
+  background: #0d1b2a;
+  color: #f6f1ea;
+}
+
+.day-offer h2 {
+  margin: 0 0 0.3rem;
+  color: inherit;
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.day-offer p {
+  margin: 0;
+}
+
+/* ——— 5. Five screens ——— */
+
+html:has(.design-screens) {
+  scroll-snap-type: y mandatory;
+}
+
+.screen {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 100svh;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  padding: clamp(1.5rem, 4vw, 3rem);
+  padding-bottom: 4.5rem;
+  box-sizing: border-box;
+}
+
+.screen--photo {
+  padding: 0;
+  justify-content: stretch;
+  background: #1a100c;
+}
+
+.screen--photo img {
+  width: 100%;
+  height: 100svh;
+  object-fit: cover;
+  object-position: center 42%;
+}
+
+.screen--photo .screen-name {
+  position: absolute;
+  left: clamp(1.25rem, 4vw, 2.5rem);
+  top: 1.25rem;
+  margin: 0;
+  color: #f6f1ea;
+  font-weight: 700;
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.35);
+}
+
+.screen--record {
+  background: #f3efe6;
+  color: #1a140f;
+  justify-content: center;
+}
+
+.screen--record h1 {
+  margin: 0 0 1rem;
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: clamp(3.8rem, 8vw, 7rem);
+  font-weight: 560;
+  letter-spacing: -0.035em;
+  line-height: 0.88;
+  color: #1a140f;
+}
+
+.screen-facts {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  max-width: 36rem;
+  font-size: clamp(1.15rem, 2vw, 1.45rem);
+}
+
+.screen-facts li {
+  padding: 0.35rem 0;
+  border-top: 1px solid rgba(26, 20, 15, 0.2);
+}
+
+.screen--paths {
+  background: #0d1b2a;
+  color: #f6f1ea;
+  justify-content: center;
+}
+
+.screen--paths ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.screen--paths li {
+  padding: 0.9rem 0;
+  border-top: 1px solid rgba(246, 241, 234, 0.2);
+}
+
+.screen--paths h2 {
+  margin: 0;
+  color: inherit;
+  font-size: clamp(2.2rem, 5vw, 3.6rem);
+  letter-spacing: -0.035em;
+}
+
+.screen--paths p {
+  margin: 0.2rem 0 0;
+  max-width: 36rem;
+  color: rgba(246, 241, 234, 0.82);
+}
+
+.screen--hours {
+  background: #b0391c;
+  color: #f6f1ea;
+  justify-content: center;
+}
+
+.screen--hours h2 {
+  margin: 0;
+  color: inherit;
+  font-size: clamp(3rem, 7vw, 6rem);
+  letter-spacing: -0.045em;
+  line-height: 0.92;
+}
+
+.screen--hours p {
+  margin: 1rem 0 0;
+  font-size: 1.25rem;
+}
+
+.screen--offer {
+  background: #e70e1b;
+  color: #f6f1ea;
+  justify-content: center;
+}
+
+.screen--offer h2 {
+  margin: 0 0 0.6rem;
+  color: inherit;
+  font-size: clamp(3rem, 7vw, 5.5rem);
+  letter-spacing: -0.04em;
+  line-height: 0.92;
+}
+
+.screen--offer p {
+  margin: 0 0 1.3rem;
+  font-size: 1.2rem;
+}
+
+.screen-button {
+  background: #f6f1ea;
+  color: #0d1b2a;
+}
+
+@media (max-width: 720px) {
+  .room-links {
+    display: none;
+  }
+
+  .record-layout,
+  .day li {
+    grid-template-columns: 1fr;
+  }
+
+  .record-facts li {
+    grid-template-columns: 1fr;
+    gap: 0.15rem;
+  }
+
+  .day-top {
+    flex-direction: column;
+  }
+
+  .day-top p {
+    text-align: left;
+  }
+
+  .day-hour {
+    font-size: 4.2rem;
+  }
+
+  .design-review {
+    justify-content: flex-start;
+    overflow-x: auto;
+  }
+}
+
+/* ——— 6. The place ——— */
+
+.design-place {
+  background: #f6f1ea;
+  color: #0d1b2a;
+}
+
+.place {
+  position: relative;
+  height: 100svh;
+  min-height: 40rem;
+  overflow: hidden;
+  color: #fff;
+}
+
+.place-photo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 42%;
+}
+
+.place-nav {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 1.35rem clamp(1.25rem, 4vw, 2.75rem);
+}
+
+.place-brand {
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  text-shadow: 0 1px 10px rgba(80, 20, 8, 0.35);
+}
+
+.place-links {
+  display: flex;
+  gap: 1.35rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.place-links a {
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 0 1px 10px rgba(80, 20, 8, 0.35);
+}
+
+.place-copy {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  right: 0;
+  top: 6.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.15rem;
+  padding: 0 1.5rem;
+  text-align: center;
+}
+
+.place-copy h1 {
+  margin: 0;
+  color: #fff;
+  text-shadow: 0 1px 12px rgba(80, 20, 8, 0.28);
+  font-family: "Source Serif 4", Georgia, serif;
+  font-weight: 560;
+  font-size: clamp(2.1rem, 4.4vw, 3.35rem);
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+}
+
+.place-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.8rem 1.35rem;
+  border-radius: 999px;
+  background: #fff;
+  color: #0d1b2a;
+  font-size: 0.92rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.place-statement,
+.place-master,
+.place-programs,
+.place-visit,
+.place-offer {
+  padding-inline: clamp(1.25rem, 5vw, 4.5rem);
+}
+
+.place-statement {
+  padding-block: clamp(5rem, 10vw, 8rem);
+  text-align: center;
+}
+
+.place-statement p {
+  max-width: 18em;
+  margin: 0 auto;
+  font-family: "Source Serif 4", Georgia, serif;
+  font-weight: 560;
+  font-size: clamp(1.85rem, 3.4vw, 2.7rem);
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+}
+
+.place-statement p + p {
+  max-width: 22em;
+  margin-top: 1.25rem;
+  font-size: clamp(1.35rem, 2.2vw, 1.7rem);
+}
+
+.place-statement a,
+.place-master a,
+.place-programs a {
+  color: inherit;
+  font-weight: 700;
+  text-underline-offset: 0.2em;
+}
+
+.place-statement a {
+  display: inline-block;
+  margin-top: 1.75rem;
+}
+
+.place-master {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(16rem, 0.9fr);
+  gap: clamp(2rem, 5vw, 5rem);
+  align-items: center;
+  padding-block: clamp(2rem, 4vw, 3rem) clamp(4rem, 8vw, 6rem);
+}
+
+.place-master h2,
+.place-programs h2,
+.place-visit h2,
+.place-offer h2 {
+  margin: 0;
+  color: inherit;
+  font-family: "Source Serif 4", Georgia, serif;
+  font-weight: 560;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+}
+
+.place-master h2 {
+  font-size: clamp(2.8rem, 5vw, 4.5rem);
+}
+
+.place-master p,
+.place-programs p,
+.place-visit p,
+.place-offer p {
+  margin: 1rem 0 0;
+  max-width: 36rem;
+  font-size: 1.05rem;
+  line-height: 1.5;
+}
+
+.place-master ul {
+  margin: 1.5rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.place-master li {
+  padding: 0.7rem 0;
+  border-top: 1px solid rgba(13, 27, 42, 0.16);
+  font-size: 1rem;
+}
+
+.place-master a {
+  display: inline-block;
+  margin-top: 1.25rem;
+}
+
+.place-master img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.place-programs {
+  padding-block: clamp(4rem, 8vw, 6.5rem);
+  background: #fff;
+}
+
+.place-programs h2,
+.place-visit h2 {
+  font-size: clamp(2.4rem, 4.5vw, 3.8rem);
+}
+
+.place-programs__lead {
+  max-width: 28rem;
+}
+
+.place-programs__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(1.25rem, 2.5vw, 2rem);
+  margin-top: 2.5rem;
+}
+
+.place-programs article img {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+
+.place-programs h3 {
+  margin: 1rem 0 0;
+  color: inherit;
+  font-family: inherit;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.place-programs article p {
+  margin-top: 0.4rem;
+  font-size: 0.98rem;
+}
+
+.place-programs article a {
+  display: inline-block;
+  margin-top: 0.8rem;
+}
+
+.place-visit {
+  padding-block: clamp(4rem, 8vw, 6.5rem);
+}
+
+.place-visit__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.place-visit__grid p {
+  margin: 0;
+}
+
+.place-visit a {
+  color: inherit;
+}
+
+a.place-pill--ink {
+  display: inline-flex;
+  margin-top: 2rem;
+  background: #0d1b2a;
+  color: #fff;
+}
+
+.place-offer {
+  padding-block: clamp(4.5rem, 9vw, 7rem) 8rem;
+  background: #0d1b2a;
+  color: #f6f1ea;
+}
+
+.place-offer h2 {
+  font-size: clamp(2.6rem, 5vw, 4.2rem);
+}
+
+.place-offer p {
+  color: inherit;
+}
+
+@media (max-width: 720px) {
+  .place-links {
+    display: none;
+  }
+
+  .place-brand {
+    white-space: nowrap;
+  }
+
+  .place-master,
+  .place-programs__grid,
+  .place-visit__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .place-master img {
+    max-height: 28rem;
+    object-fit: cover;
+    object-position: center top;
+  }
+}

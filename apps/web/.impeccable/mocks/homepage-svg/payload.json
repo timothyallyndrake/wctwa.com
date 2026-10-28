@@ -1,0 +1,65 @@
+{
+  "title": "Choose the drawn Dobok homepage",
+  "question": "Five directions. Flip a card for the phone layout. Click the image to zoom.",
+  "options": [
+    {
+      "id": "collar",
+      "label": "Collar Frame",
+      "thesis": "The page is a dobok V-neck: black collar tape is architecture, the three students live in the clearing, gold stitch is the only ornament.",
+      "palette": ["#f4f1ea", "#0d1b2a", "#0054b7", "#e70e1b", "#c9a227"],
+      "materials": ["collar tape", "running stitch", "cotton weave", "documentary photo"],
+      "viewport": "Desktop: full-bleed trio inside a drawn V that grows in from the page edges. Phone: the same V, flowing off the left and right sides of the screen.",
+      "risk": "Collar can read as a decorative border if it does not actually structure the scroll.",
+      "comp": ".impeccable/mocks/homepage-svg/collar.webp",
+      "board": ".impeccable/mocks/homepage-svg/collar-mobile.webp"
+    },
+    {
+      "id": "spread",
+      "label": "Unfolded Uniform",
+      "thesis": "A diagonal cut: the photo is one field, hero type is the other. The garment is the split, not a frame around a picture.",
+      "palette": ["#f4f1ea", "#0d1b2a", "#0054b7", "#e70e1b", "#c9a227"],
+      "materials": ["collar header", "diagonal photo cut", "weave field", "documentary photo"],
+      "viewport": "Desktop: photo takes one half on a diagonal cut; hero type sits on the other half. Phone: the same split, naturally stacked.",
+      "risk": "If the photo gets a box around it, the idea dies.",
+      "comp": ".impeccable/mocks/homepage-svg/spread.webp",
+      "board": ".impeccable/mocks/homepage-svg/spread-mobile.webp"
+    },
+    {
+      "id": "vcollar",
+      "label": "Collar V",
+      "thesis": "The dobok V drops from the top: collar, then a small square at the point, then the school speaks.",
+      "palette": ["#f4f1ea", "#0d1b2a", "#0054b7", "#e70e1b", "#c9a227"],
+      "materials": ["navy V collar", "gold running stitch", "cotton weave", "documentary photo"],
+      "viewport": "Desktop: the locked V-down layout. Phone: header above (logo, name, menu), a smaller V, square at the point, headline underneath.",
+      "risk": "The V can become a logo instead of architecture if it is too small or too ornate.",
+      "comp": ".impeccable/mocks/homepage-svg/vcollar.webp",
+      "board": ".impeccable/mocks/homepage-svg/vcollar-mobile.webp"
+    },
+    {
+      "id": "horizon",
+      "label": "Belt Horizon",
+      "thesis": "One red rank-tape is the horizon: the dojang is the sky, the words are the ground.",
+      "palette": ["#f4f1ea", "#0d1b2a", "#0054b7", "#e70e1b", "#c9a227"],
+      "materials": ["rank tape horizon", "cinematic photo band", "ivory ground", "thin type"],
+      "viewport": "Desktop: full-bleed trio as a wide band above a single red tape; type below on ivory. Phone: the same stack, tape as a slim horizon, no V, no diagonal garment.",
+      "risk": "A horizontal band can read as a generic sports site if the tape is just a red line.",
+      "comp": ".impeccable/mocks/homepage-svg/horizon.webp",
+      "board": ".impeccable/mocks/homepage-svg/horizon-mobile.webp"
+    },
+    {
+      "id": "studio",
+      "label": "Studio White",
+      "kicker": "HIGH ROLL",
+      "thesis": "Gallery quiet: huge type, one hard red bar, the students as a sharp crop in white space. No stitch costume.",
+      "palette": ["#f7f7f5", "#0d1b2a", "#0054b7", "#e70e1b"],
+      "materials": ["editorial white", "compressed display type", "hard red bar", "cropped documentary photo"],
+      "viewport": "Desktop: vast white, oversized “Washougal trains here.” overlapping a sharp trio crop, hairline nav, one red rank-bar CTA. Phone: the same hierarchy, stacked, still airy.",
+      "risk": "Can feel like a fashion lookbook instead of a family school if the photo is treated as a product.",
+      "comp": ".impeccable/mocks/homepage-svg/studio.webp",
+      "board": ".impeccable/mocks/homepage-svg/studio-mobile.webp"
+    }
+  ],
+  "reroll": false,
+  "steer": false,
+  "canon": false
+}

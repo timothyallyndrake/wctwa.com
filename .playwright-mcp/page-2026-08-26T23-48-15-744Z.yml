@@ -1,0 +1,139 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]: Impeccable
+  - main [ref=e8]:
+    - generic [ref=e9]:
+      - generic [ref=e10]:
+        - heading "Choose the drawn Dobok homepage" [level=1] [ref=e18]
+        - generic [ref=e19]:
+          - radiogroup "Build path" [ref=e20]:
+            - radio "Comp first" [checked] [ref=e21] [cursor=pointer]
+            - radio "Code first" [ref=e22] [cursor=pointer]
+          - paragraph [ref=e23]: An image sets the bar first and the build must match it. Bolder composition; comps render before code.
+      - paragraph [ref=e24]: Same locked world — Dobok Embroidery as SVG/CSS, not photoreal thread. v4 hero photo stays a photograph. Full homepage must feel finished. Desktop fold is the card; mobile fold is the board (trio must remain a trio).
+      - generic [ref=e26]:
+        - article [ref=e27]:
+          - generic [ref=e28]:
+            - generic [ref=e29]:
+              - generic [ref=e30]:
+                - generic [ref=e31]: rendering…
+                - generic [ref=e33]:
+                  - button "Expand the image" [ref=e34] [cursor=pointer]
+                  - button "Flip the card" [ref=e37] [cursor=pointer]:
+                    - generic [ref=e41]: Details
+              - generic [ref=e42]:
+                - heading "Collar Frame" [level=2] [ref=e43]
+                - paragraph [ref=e44]: "The page is a dobok V-neck: black collar tape is architecture, the three students live in the clearing, gold stitch is the only ornament."
+                - generic [ref=e45]:
+                  - generic [ref=e46]:
+                    - generic "#f4f1ea" [ref=e47]
+                    - generic "#0d1b2a" [ref=e48]
+                    - generic "#0054b7" [ref=e49]
+                    - generic "#e70e1b" [ref=e50]
+                    - generic "#c9a227" [ref=e51]
+                  - generic [ref=e52]: SVG collar tape
+                  - generic [ref=e53]: running stitch
+                  - generic [ref=e54]: cotton weave pattern
+                  - generic [ref=e55]: documentary photo
+                - paragraph [ref=e56]:
+                  - generic [ref=e57]: Risk
+                  - text: Collar can read as a decorative border if it does not actually structure the scroll.
+                - button "Build this" [ref=e58] [cursor=pointer]
+            - generic:
+              - generic:
+                - paragraph: The full read · Collar Frame
+                - button "Flip the card":
+                  - generic: Front
+              - generic:
+                - paragraph:
+                  - generic: First viewport
+                  - text: "Desktop: full-bleed v4 trio inside a drawn V-collar; headline on the belt-line as real type. Mobile board: framed plate that keeps all three kids, never cover-crop to one face."
+                - paragraph:
+                  - generic: Risk
+                  - text: Collar can read as a decorative border if it does not actually structure the scroll.
+                - button "Build this"
+        - article [ref=e59]:
+          - generic [ref=e60]:
+            - generic [ref=e61]:
+              - generic [ref=e62]:
+                - generic [ref=e63]: rendering…
+                - generic [ref=e65]:
+                  - button "Expand the image" [ref=e66] [cursor=pointer]
+                  - button "Flip the card" [ref=e69] [cursor=pointer]:
+                    - generic [ref=e73]: Details
+              - generic [ref=e74]:
+                - heading "Rank Spine" [level=2] [ref=e75]
+                - paragraph [ref=e76]: A vertical rank-tape is the reading rail for the whole homepage — GSAP draws it as you move; programs, credentials, and the offer hang off that tape.
+                - generic [ref=e77]:
+                  - generic [ref=e78]:
+                    - generic "#f4f1ea" [ref=e79]
+                    - generic "#0d1b2a" [ref=e80]
+                    - generic "#0054b7" [ref=e81]
+                    - generic "#e70e1b" [ref=e82]
+                    - generic "#c9a227" [ref=e83]
+                  - generic [ref=e84]: SVG rank tape
+                  - generic [ref=e85]: dan bars
+                  - generic [ref=e86]: stitch as scroll
+                  - generic [ref=e87]: documentary photo
+                - paragraph [ref=e88]:
+                  - generic [ref=e89]: Risk
+                  - text: A persistent rail can feel like a dashboard if the tape gets UI-chrome instead of garment.
+                - button "Build this" [ref=e90] [cursor=pointer]
+            - generic:
+              - generic:
+                - paragraph: The full read · Rank Spine
+                - button "Flip the card":
+                  - generic: Front
+              - generic:
+                - paragraph:
+                  - generic: First viewport
+                  - text: "Desktop: v4 hero still owns the first screen; a red rank-tape holds the left rail into the fold below. Mobile board: tape becomes a top collar bar so the trio can sit as a group."
+                - paragraph:
+                  - generic: Risk
+                  - text: A persistent rail can feel like a dashboard if the tape gets UI-chrome instead of garment.
+                - button "Build this"
+        - article [ref=e91]:
+          - generic [ref=e92]:
+            - generic [ref=e93]:
+              - generic [ref=e94]:
+                - generic [ref=e95]: rendering…
+                - generic [ref=e97]:
+                  - button "Expand the image" [ref=e98] [cursor=pointer]
+                  - button "Flip the card" [ref=e101] [cursor=pointer]:
+                    - generic [ref=e105]: Details
+              - generic [ref=e106]:
+                - heading "Unfolded Uniform" [level=2] [ref=e107]
+                - paragraph [ref=e108]: "The homepage is a dobok laid open: header is the collar, weave is the cloth, seams divide trust / programs / coming-soon / offer as panels of one garment."
+                - generic [ref=e109]:
+                  - generic [ref=e110]:
+                    - generic "#f4f1ea" [ref=e111]
+                    - generic "#0d1b2a" [ref=e112]
+                    - generic "#0054b7" [ref=e113]
+                    - generic "#e70e1b" [ref=e114]
+                    - generic "#c9a227" [ref=e115]
+                  - generic [ref=e116]: SVG seams
+                  - generic [ref=e117]: weave field
+                  - generic [ref=e118]: panel folds
+                  - generic [ref=e119]: documentary photo
+                - paragraph [ref=e120]:
+                  - generic [ref=e121]: Risk
+                  - text: Too much garment metaphor can hide the school. Seams must remain a grid, not a costume.
+                - button "Build this" [ref=e122] [cursor=pointer]
+            - generic:
+              - generic:
+                - paragraph: The full read · Unfolded Uniform
+                - button "Flip the card":
+                  - generic: Front
+              - generic:
+                - paragraph:
+                  - generic: First viewport
+                  - text: "Desktop: v4 photo occupies the chest panel; type sits on cloth, not on a scrim poster. Mobile board: stack the panels; photo plate still shows all three students."
+                - paragraph:
+                  - generic: Risk
+                  - text: Too much garment metaphor can hide the school. Seams must remain a grid, not a costume.
+                - button "Build this"
+  - contentinfo [ref=e123]:
+    - 'textbox "Optional steer: what should be different or kept?" [ref=e124]'
+    - button "← Safer hand" [ref=e125] [cursor=pointer]
+    - button "Re-roll" [ref=e127] [cursor=pointer]
+    - button "Bolder hand →" [ref=e136] [cursor=pointer]

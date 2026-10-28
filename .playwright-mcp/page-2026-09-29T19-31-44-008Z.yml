@@ -1,0 +1,81 @@
+- generic [active] [ref=f10e1]:
+  - banner [ref=f10e2]:
+    - generic [ref=f10e3]:
+      - link "WCT Washougal" [ref=f10e4] [cursor=pointer]:
+        - /url: /new/
+      - navigation "Primary" [ref=f10e6]:
+        - list [ref=f10e7]:
+          - listitem [ref=f10e8]:
+            - link "About" [ref=f10e9] [cursor=pointer]:
+              - /url: /new/about-us/
+          - listitem [ref=f10e10]:
+            - link "Programs" [ref=f10e11] [cursor=pointer]:
+              - /url: /new/programs/
+          - listitem [ref=f10e12]:
+            - link "Schedule" [ref=f10e13] [cursor=pointer]:
+              - /url: /new/schedule/
+          - listitem [ref=f10e14]:
+            - link "Instructors" [ref=f10e15] [cursor=pointer]:
+              - /url: /new/instructors/
+          - listitem [ref=f10e16]:
+            - link "Birthday Parties" [ref=f10e17] [cursor=pointer]:
+              - /url: /new/martial-arts-birthday-parties/
+          - listitem [ref=f10e18]:
+            - link "Contact" [ref=f10e19] [cursor=pointer]:
+              - /url: /new/contact-us/
+          - listitem [ref=f10e20]:
+            - link "Start here" [ref=f10e21] [cursor=pointer]:
+              - /url: /new/start/
+          - listitem [ref=f10e22]:
+            - link "Member sign in" [ref=f10e23] [cursor=pointer]:
+              - /url: /new/members/
+  - main [ref=f10e24]:
+    - generic [ref=f10e26]:
+      - heading "Reserve your first class" [level=1] [ref=f10e27]
+      - paragraph [ref=f10e28]:
+        - text: Form wires to our Lambda + SES API. Set
+        - code [ref=f10e29]: PUBLIC_API_URL
+        - text: "when the endpoint is live. Try 2 weeks: $40."
+      - generic [ref=f10e30]:
+        - generic [ref=f10e31]:
+          - text: Name
+          - textbox "Name" [ref=f10e32]
+        - generic [ref=f10e33]:
+          - text: Email
+          - textbox "Email" [ref=f10e34]
+        - generic [ref=f10e35]:
+          - text: Phone
+          - textbox "Phone" [ref=f10e36]
+        - generic [ref=f10e37]:
+          - text: Message (optional)
+          - textbox "Message (optional)" [ref=f10e38]
+        - button "Send" [ref=f10e39] [cursor=pointer]
+        - status
+  - contentinfo [ref=f10e40]:
+    - generic [ref=f10e41]:
+      - strong [ref=f10e42]: World Champion Taekwondo Washougal
+      - paragraph [ref=f10e43]:
+        - 'link "3307 Evergreen Way #605, Washougal, WA 98671" [ref=f10e44] [cursor=pointer]':
+          - /url: https://maps.app.goo.gl/yvFzGpkYGjAzo5Zs8
+      - paragraph [ref=f10e45]:
+        - link "wctwashougal@gmail.com" [ref=f10e46] [cursor=pointer]:
+          - /url: mailto:wctwashougal@gmail.com
+        - text: ·
+        - link "360-831-1124" [ref=f10e47] [cursor=pointer]:
+          - /url: tel:3608311124
+      - paragraph [ref=f10e48]:
+        - link "Member sign in" [ref=f10e49] [cursor=pointer]:
+          - /url: /new/members/
+        - text: — family portal coming soon
+      - generic [ref=f10e50]:
+        - img "United States Taekwondo Education Foundation" [ref=f10e51]
+        - paragraph [ref=f10e52]: Affiliated with the United States Taekwondo Education Foundation
+      - paragraph [ref=f10e53]:
+        - text: © 2026 World Champion Taekwondo Washougal ·
+        - link "Privacy Policy" [ref=f10e54] [cursor=pointer]:
+          - /url: /new/privacy-policy/
+  - generic [ref=f10e57]:
+    - button [ref=f10e58]
+    - button [ref=f10e64]
+    - button [ref=f10e68]
+    - button [ref=f10e76]

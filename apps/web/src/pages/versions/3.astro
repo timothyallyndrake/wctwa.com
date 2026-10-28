@@ -1,0 +1,138 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { comingSoon, site } from "../../content/site";
+import { withBase } from "../../lib/with-base";
+import "../../styles/versions.css";
+
+const programs = [
+  {
+    href: withBase("/programs/tiny-tigers-martial-arts/"),
+    title: "Tiny Tigers",
+    blurb: "Energetic classes for children under 6 — respect, kindness, and fun on the mat.",
+    image: withBase("/images/source/home-tiny-tigers-martial-arts.jpg"),
+    alt: "Tiny Tigers class at World Champion Taekwondo Washougal.",
+  },
+  {
+    href: withBase("/programs/kids-martial-arts/"),
+    title: "Kids",
+    blurb: "Confidence, discipline, and leadership — at each child’s pace.",
+    image: withBase("/images/source/home-kids-martial-arts.jpg"),
+    alt: "Kids martial arts class in Washougal.",
+  },
+  {
+    href: withBase("/programs/adults-and-families-martial-arts/"),
+    title: "Adults & Families",
+    blurb: "Fitness, self-defense, and classes families can train in together.",
+    image: withBase("/images/source/home-adult-and-family-martial-arts.jpg"),
+    alt: "Adults and families training together.",
+  },
+];
+---
+
+<BaseLayout title={`${site.name} — Poster`} description={site.tagline}>
+  <section class="v3-opening" aria-label="Welcome">
+    <div class="v3-title-wrap">
+      <h1>Washougal<br />trains here.</h1>
+    </div>
+    <figure class="v3-photo">
+      <img
+        src={withBase(site.hero.src)}
+        alt={site.hero.alt}
+        width="1536"
+        height="1024"
+        fetchpriority="high"
+      />
+    </figure>
+    <div class="v3-action-band">
+      <div class="version-wrap v3-action-band__inner">
+        <p>Master Chulan Kim. A safe, positive school for families.</p>
+        <div class="version-actions">
+          <a class="version-button version-button--ivory" href={withBase("/start/?intent=trial")}>
+            Reserve your first class
+          </a>
+          <a class="version-link version-link--light" href={withBase("/instructors/")}>Meet Master Kim</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="version-section version-master v3-section" aria-labelledby="v3-master-heading">
+    <div class="version-wrap version-master__grid">
+      <div>
+        <h2 id="v3-master-heading">Master Chulan Kim</h2>
+        <ul class="version-facts">
+          <li>7th Degree WTF Black Belt</li>
+          <li>4th Degree Yong Moo Do</li>
+          <li>Yong-In University</li>
+          <li>National Champion 1995</li>
+          <li>USAT Certified Coach</li>
+        </ul>
+        <a class="version-link" href={withBase("/instructors/")}>View full credentials</a>
+      </div>
+      <img
+        class="version-master__photo"
+        src={withBase("/images/source/instructors-main.webp")}
+        alt="Master Chulan Kim"
+        width="771"
+        height="1000"
+        loading="lazy"
+      />
+    </div>
+  </section>
+
+  <section class="version-section version-programs v3-section" aria-labelledby="v3-programs-heading">
+    <div class="version-wrap">
+      <div class="version-intro">
+        <h2 id="v3-programs-heading">Programs for every age</h2>
+        <p>Tiny Tigers, Kids, and Adults &amp; Families — one school, clear paths.</p>
+      </div>
+      <div class="version-program-grid">
+        {programs.map((program) => (
+          <article class="version-program">
+            <img src={program.image} alt={program.alt} width="300" height="186" loading="lazy" />
+            <h3>{program.title}</h3>
+            <p>{program.blurb}</p>
+            <a class="version-link" href={program.href}>View program</a>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="version-section version-coming v3-section" aria-labelledby="v3-coming-heading">
+    <div class="version-wrap">
+      <h2 id="v3-coming-heading">Coming soon — a member home for every family</h2>
+      <p class="version-lead">{comingSoon.lead}</p>
+      <ul class="version-feature-list">
+        {comingSoon.features.map((feature) => (
+          <li>
+            <h3>{feature.title}</h3>
+            <p>{feature.detail}</p>
+          </li>
+        ))}
+      </ul>
+      <div class="version-inline-links">
+        <a class="version-link" href={withBase(comingSoon.membersPath)}>Preview member sign in</a>
+        <a class="version-link" href={withBase("/start/?intent=info")}>Ask about membership</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="version-offer version-offer--navy" aria-labelledby="v3-offer-heading">
+    <div class="version-wrap version-offer__inner">
+      <div>
+        <h2 id="v3-offer-heading">{site.offer.label} for {site.offer.price}</h2>
+        <p>{site.offer.detail}</p>
+      </div>
+      <a class="version-button" href={withBase("/start/?intent=trial")}>Reserve your first class</a>
+    </div>
+  </section>
+
+  <nav class="version-switcher" aria-label="Homepage versions">
+    <a href={withBase("/")}>Version 1</a>
+    <span aria-hidden="true">·</span>
+    <a href={withBase("/versions/2/")}>Version 2</a>
+    <span aria-hidden="true">·</span>
+    <a aria-current="page" href={withBase("/versions/3/")}>Version 3</a>
+  </nav>
+</BaseLayout>
