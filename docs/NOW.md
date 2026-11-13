@@ -4,13 +4,13 @@ Phase: **inner pages.** The homepage is locked. Continue from this file, then [l
 
 ## Where the code is
 
-- Working branch: `main`
-- `main` includes the civic homepage and the inner-page title band (pull requests #1 and #2)
-- Start the next branch from `main`
+- Working branch: `inner-pages`
 
 ## What is next
 
-Write the inner pages, starting with About. Each page already opens with `PageTitle` (`apps/web/src/components/PageTitle.astro`): a plain navy band, display type, and the shared wave. Photographs go in the content under the band.
+Build the Programs hub and its three program pages, following the About page story pattern (photograph in the content beside the first section from the medium viewport up, one reading column for the rest, `Request information` as the signal action, no placeholder copy).
+
+Each inner page opens with `PageTitle` (`apps/web/src/components/PageTitle.astro`): a plain navy band, display type, and the shared wave. Photographs go in the content under the band.
 
 Follow [layout.md](../design/layout.md) for the shell, homepage regions, header, and footer. Follow [DECISIONS.md](./DECISIONS.md) for product and technical choices. Follow [design/tokens/](../design/tokens/) for color, type, spacing, and shape.
 

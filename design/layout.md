@@ -34,6 +34,8 @@ Every page other than the homepage opens with a plain navy title band across the
 
 Schedule, Programs, About, Instructors, Birthday Parties, Contact, and the start form all use this band.
 
+Narrative inner pages (About first; Programs and similar pages follow) open under the title band with a documentary school photograph beside the first section from the medium viewport up. The photograph is a real school image in the page content, not in the band. The rest of the page is a single reading column. The primary action is **Request information**, using the signal button treatment.
+
 ## Viewports
 
 - **Narrow:** one column, a menu panel, and the phone as a Call button. Footer contact sits above the school lockup, with the phone and Facebook beside the address and email.
