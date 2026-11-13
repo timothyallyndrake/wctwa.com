@@ -4,11 +4,9 @@ Phase: **inner pages.** The homepage is locked. Continue from this file, then [l
 
 ## Where the code is
 
-- Working branch: `fix/homepage-polish`
-- `main` has the civic homepage through pull request #1
-- This branch adds the hero photo edge, the shared title band, the footer spacing, and these docs
-
-Start the next branch from `fix/homepage-polish` until this branch is merged. A branch from `main` alone is missing the title band.
+- Working branch: `main`
+- `main` includes the civic homepage and the inner-page title band (pull requests #1 and #2)
+- Start the next branch from `main`
 
 ## What is next
 
