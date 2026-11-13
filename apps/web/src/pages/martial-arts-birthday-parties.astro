@@ -11,17 +11,26 @@ import { withBase } from "../lib/with-base";
   <PageTitle title="Birthday Parties" />
   <section class="page">
     <div class="wrap">
-      <p class="muted">Washougal location — Gresham copy will not return.</p>
-      <ul>
-        <li>Duration: 90 minutes</li>
-        <li>Activities: practice, games, board breaking</li>
-        <li>VIP gift passes for guests</li>
-        <li>Capacity: 15–20 guests</li>
-        <li>Price: $200</li>
-      </ul>
-      <p>
-        <a class="cta" href={withBase("/start/?intent=birthday")}>Reserve a party</a>
-      </p>
+      <div class="page-story__copy">
+        <section>
+          <h2 class="type-heading">A party at the school</h2>
+          <p class="type-body">
+            Ninety minutes at World Champion Taekwondo Washougal. Guests practice, play games, and break a
+            board.
+          </p>
+        </section>
+        <section>
+          <h2 class="type-heading">What is included</h2>
+          <ul class="page-story__list">
+            <li>90 minutes</li>
+            <li>Practice, games, and board breaking</li>
+            <li>A VIP gift pass for guests</li>
+            <li>Room for 15 to 20 guests</li>
+            <li>$200</li>
+          </ul>
+        </section>
+        <a class="button button--signal" href={withBase("/start/birthday/")}>Reserve a party</a>
+      </div>
     </div>
   </section>
 </BaseLayout>

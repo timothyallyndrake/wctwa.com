@@ -1,0 +1,95 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PageTitle from "./PageTitle.astro";
+import { site } from "../content/site";
+
+interface Props {
+  intent: "trial" | "info" | "birthday";
+}
+
+const { intent } = Astro.props;
+
+const headings = {
+  trial: "Reserve your first class",
+  info: "Request information",
+  birthday: "Birthday party request",
+} as const;
+
+const intro = {
+  trial: `Two weeks of class for ${site.offer.price}, including a uniform and belt. Tell us how to reach you.`,
+  info: "Tell us what you want to know. We will write back.",
+  birthday: "Parties are 90 minutes and $200 at the Washougal school. Tell us the date you have in mind.",
+} as const;
+
+const apiUrl = import.meta.env.PUBLIC_API_URL ?? "";
+---
+
+<BaseLayout title={headings[intent]} description="Get started with World Champion Taekwondo Washougal.">
+  <PageTitle title={headings[intent]} />
+  <section class="page">
+    <div class="wrap">
+      <div class="page-story__copy">
+        <p class="type-body">{intro[intent]}</p>
+
+        <form id="lead-form" class="lead-form">
+          <input type="hidden" name="intent" value={intent} />
+
+          <label>
+            Name
+            <input name="name" required autocomplete="name" />
+          </label>
+
+          <label>
+            Email
+            <input name="email" type="email" required autocomplete="email" />
+          </label>
+
+          <label>
+            Phone
+            <input name="phone" type="tel" required autocomplete="tel" />
+          </label>
+
+          <label>
+            Message <span class="muted">(optional)</span>
+            <textarea name="message" rows="4"></textarea>
+          </label>
+
+          <button class="button button--signal" type="submit">Send</button>
+          <p id="lead-status" class="muted" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <script define:vars={{ apiUrl, phoneDisplay: site.phone.display, email: site.email, intent }}>
+    const form = document.getElementById("lead-form");
+    const status = document.getElementById("lead-status");
+    form?.addEventListener("submit", async (event) => {
+      event.preventDefault();
+      if (!(form instanceof HTMLFormElement) || !status) return;
+
+      if (!apiUrl) {
+        status.textContent = `This form is not connected yet. Call ${phoneDisplay} or email ${email}.`;
+        return;
+      }
+
+      status.textContent = "Sending…";
+      const data = Object.fromEntries(new FormData(form));
+
+      try {
+        const res = await fetch(`${apiUrl.replace(/\/$/, "")}/leads`, {
+          method: "POST",
+          headers: { "content-type": "application/json" },
+          body: JSON.stringify(data),
+        });
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        status.textContent = "Thank you — we’ll be in touch soon.";
+        form.reset();
+        const hidden = form.querySelector('input[name="intent"]');
+        if (hidden instanceof HTMLInputElement) hidden.value = intent;
+      } catch {
+        status.textContent = "Something went wrong. Please call or email us directly.";
+      }
+    });
+  </script>
+</BaseLayout>

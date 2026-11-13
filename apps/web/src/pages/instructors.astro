@@ -11,20 +11,27 @@ import { withBase } from "../lib/with-base";
 >
   <PageTitle title="Instructors" />
   <section class="page">
-    <div class="wrap">
-      <h2>Master Chulan Kim</h2>
-      <p>
-        Headmaster of World Champion Taekwondo Washougal.
-        <a class="text-link" href={withBase("/instructors/master-chulan-kim/")}>View credentials</a>
-      </p>
-      <div class="affiliation-mark" style="margin:1.75rem 0;">
-        <img src={withBase(site.marks.foundation.src)} alt={site.marks.foundation.alt} width="72" height="72" />
-        <p>
-          United States Taekwondo Education Foundation — affiliation mark
-          shown with Master Kim’s credentials.
+    <div class="wrap page-story__copy">
+      <section>
+        <h2 class="type-heading">Master Chulan Kim</h2>
+        <p class="type-body">
+          Headmaster of World Champion Taekwondo Washougal. His credentials are listed on his own page.
         </p>
+        <a class="text-link" href={withBase("/instructors/master-chulan-kim/")}>View credentials</a>
+      </section>
+
+      <div class="affiliation-mark">
+        <img
+          src={withBase(site.marks.foundation.src)}
+          alt={site.marks.foundation.alt}
+          width="72"
+          height="72"
+          loading="lazy"
+        />
+        <p>Affiliated with the United States Taekwondo Education Foundation.</p>
       </div>
-      <p><a class="cta" href={withBase("/start/?intent=info")}>Request information</a></p>
+
+      <a class="button button--signal" href={withBase("/start/info/")}>Request information</a>
     </div>
   </section>
 </BaseLayout>

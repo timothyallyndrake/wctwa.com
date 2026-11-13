@@ -34,7 +34,23 @@ Every page other than the homepage opens with a plain navy title band across the
 
 Schedule, Programs, About, Instructors, Birthday Parties, Contact, and the start form all use this band.
 
-Narrative inner pages (About first; Programs and similar pages follow) open under the title band with a documentary school photograph beside the first section from the medium viewport up. The photograph is a real school image in the page content, not in the band. The rest of the page is a single reading column. The primary action is **Request information**, using the signal button treatment.
+**Program detail pages** (Kids, Tiny Tigers, Adults & Families) follow the About story pattern: a documentary school photograph beside the first section from the medium viewport up, then a single reading column for the remaining sections and actions (`Reserve a class`, schedule text link).
+
+**Programs hub** reuses the homepage’s three program cards (photo, title, blurb, “View program”) in a catalog layout, with a trial signal button below the grid.
+
+**Schedule** is hours, an effective date, and the weekly class table (horizontal scroll on narrow viewports), plus class-level notes and gear.
+
+**Birthday parties** are a reading column only — offer facts, no stock collage.
+
+**Contact** is address, phone, email, Facebook, a static map image, and directions / request buttons in a two-column layout from the medium viewport up (details before map when stacked).
+
+**Start form** is the title band plus intro copy and the lead form. Trial is `/start/`, information is `/start/info/`, and birthday parties are `/start/birthday/`. The site is static, so those are separate pages rather than a query string.
+
+**Privacy** is a reading column.
+
+**Instructors** is a short intro, affiliation mark, and request button; Master Kim’s page keeps the instructor profile layout and credential list.
+
+Narrative inner pages (About and program detail pages) use the signal button for the primary action on that page (trial reserve, party reserve, or request information as appropriate).
 
 ## Viewports
 

@@ -12,21 +12,45 @@ import { withBase } from "../lib/with-base";
   <PageTitle title="Contact" />
   <section class="page">
     <div class="wrap">
-      <p>
-        <a href={site.address.mapsUrl}>
-          {site.address.line1}<br />
-          {site.address.city}, {site.address.state} {site.address.zip}
-        </a>
-      </p>
-      <p>
-        <a href={`mailto:${site.email}`}>{site.email}</a><br />
-        <a href={site.phone.href}>{site.phone.display}</a>
-      </p>
-      <p>
-        <a href={site.facebook}>Facebook</a>
-        {" · "}
-        <a class="cta" href={withBase("/start/?intent=info")}>Request information</a>
-      </p>
+      <div class="contact-grid">
+        <figure class="contact-grid__map">
+          <img
+            src={withBase("/images/source/contact-us-main.png")}
+            alt="Map showing World Champion Taekwondo Washougal on Evergreen Way."
+            width="1390"
+            height="1134"
+            loading="lazy"
+          />
+        </figure>
+        <div class="contact-grid__details page-story__copy">
+          <p class="type-body home-facts__address">
+            <a href={site.address.mapsUrl} target="_blank" rel="noopener noreferrer">
+              <span>{site.address.line1}</span>
+              <span>{site.address.city}, {site.address.state} {site.address.zip}</span>
+            </a>
+          </p>
+          <p class="type-body">
+            <a href={`mailto:${site.email}`}>{site.email}</a>
+          </p>
+          <p class="type-body">
+            <a href={site.phone.href}>{site.phone.display}</a>
+          </p>
+          <p class="type-body">
+            <a href={site.facebook} target="_blank" rel="noopener noreferrer">
+              Facebook
+            </a>
+          </p>
+          <a
+            class="button button--primary"
+            href={site.address.mapsUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Get directions
+          </a>
+          <a class="button button--signal" href={withBase("/start/info/")}>Request information</a>
+        </div>
+      </div>
     </div>
   </section>
 </BaseLayout>
