@@ -1,6 +1,7 @@
 # Layout direction
 
-Working direction, grilled 2026-10-14. One layout for the marketing site.
+Working direction, grilled 2026-10-14. One layout for the marketing site.  
+Current phase and next job: [docs/NOW.md](../docs/NOW.md).
 
 ## Freshness
 

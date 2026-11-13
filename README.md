@@ -7,8 +7,12 @@ World Champion Taekwondo Washougal — site refresh.
 
 ## Docs
 
-- [Current site inventory](docs/CURRENT_SITE_INVENTORY.md)
+Start at [Now](docs/NOW.md). [How this repo remembers](docs/README.md) lists which file owns which fact.
+
+- [Now](docs/NOW.md) — phase, working branch, next job
 - [Locked rebuild decisions](docs/DECISIONS.md)
+- [Layout](design/layout.md)
+- [Current site inventory](docs/CURRENT_SITE_INVENTORY.md)
 
 ## Monorepo
 

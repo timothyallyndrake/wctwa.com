@@ -1,6 +1,7 @@
 # Rebuild decisions (grilled)
 
 Living doc of locked choices for the wctwa.com refresh.  
+Current phase and next job: [NOW.md](./NOW.md).  
 Companion: [CURRENT_SITE_INVENTORY.md](./CURRENT_SITE_INVENTORY.md)
 
 Last updated: 2026-11-13
