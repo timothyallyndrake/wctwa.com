@@ -500,7 +500,7 @@ h3 {
 .site-footer {
   --footer-inset: var(--space-7);
   position: relative;
-  margin-top: 0;
+  margin-top: 4rem;
   padding-top: calc(var(--footer-inset) - 1.35rem);
   background: var(--color-bg-field);
   color: var(--color-fg-on-field);
@@ -771,7 +771,7 @@ h3 {
 }
 
 .page {
-  padding: var(--space-6) 0 var(--space-7);
+  padding: var(--space-6) 0 var(--space-8);
 }
 
 .page > .wrap > * + * {
@@ -1356,7 +1356,7 @@ h3 {
 
 .home-offer {
   padding-top: var(--space-8);
-  padding-bottom: calc(var(--space-8) + 4rem);
+  padding-bottom: var(--space-8);
   background: var(--color-bg);
 }
 
