@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import PageTitle from "../components/PageTitle.astro";
 import { site } from "../content/site";
 import { withBase } from "../lib/with-base";
 ---
@@ -8,9 +9,9 @@ import { withBase } from "../lib/with-base";
   title="Contact Us"
   description="Contact World Champion Taekwondo Washougal — address, phone, and email."
 >
+  <PageTitle title="Contact" />
   <section class="page">
     <div class="wrap">
-      <h1>Contact</h1>
       <p>
         <a href={site.address.mapsUrl}>
           {site.address.line1}<br />

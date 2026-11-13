@@ -747,41 +747,35 @@ h3 {
 
 /* Shared inner pages */
 
-.hero {
-  padding: var(--space-7) 0 var(--space-8);
+.page-title {
+  position: relative;
+  padding: var(--space-7) 0 calc(var(--space-6) + 2.75rem);
+  background: var(--color-bg-field);
+  color: var(--color-fg-on-field);
+}
+
+.page-title h1 {
+  color: var(--color-fg-on-field);
+  text-wrap: balance;
+}
+
+.page-title__wave {
+  position: absolute;
+  right: 0;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2.75rem;
+  color: var(--color-bg);
+  pointer-events: none;
 }
 
 .page {
-  padding: 0 0 var(--space-7);
+  padding: var(--space-6) 0 var(--space-7);
 }
 
-.page > .wrap > h1:first-child {
-  position: relative;
-  isolation: isolate;
-  margin: 0 calc(50% - 50vw);
-  padding: var(--space-7) calc(50vw - 50% + var(--space-page))
-    calc(var(--space-7) + 4.5rem);
-  color: var(--color-fg-on-field);
-  font-size: var(--type-display-size);
-  font-weight: 700;
-  line-height: 1.02;
-}
-
-.page > .wrap > h1:first-child::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  background: var(--color-bg-field);
-  clip-path: url("#site-clip-wave-bottom");
-}
-
-.page > .wrap > *:not(h1:first-child) {
+.page > .wrap > * + * {
   margin-top: var(--space-5);
-}
-
-.page > .wrap > h1:first-child + * {
-  margin-top: var(--space-6);
 }
 
 .cta {
@@ -1064,7 +1058,16 @@ h3 {
     padding-bottom: calc(var(--space-7) + 5rem);
   }
 
+  .home-welcome__photo {
+    display: flex;
+    min-height: 100%;
+  }
+
   .home-welcome__photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
     clip-path: url("#home-clip-photo-left");
   }
 

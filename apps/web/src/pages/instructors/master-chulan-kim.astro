@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import PageTitle from "../../components/PageTitle.astro";
 import { withBase } from "../../lib/with-base";
 
 const credentials = [
@@ -18,9 +19,9 @@ const credentials = [
   title="Master Chulan Kim"
   description="Credentials and background for Master Chulan Kim, headmaster of World Champion Taekwondo Washougal."
 >
+  <PageTitle title="Master Chulan Kim" />
   <section class="page">
     <div class="wrap">
-      <h1>Master Chulan Kim</h1>
       <div class="instructor-profile">
         <figure class="instructor-profile__photo">
           <img

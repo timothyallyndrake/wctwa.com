@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import PageTitle from "../components/PageTitle.astro";
 import { site } from "../content/site";
 
 const intentParam = Astro.url.searchParams.get("intent");
@@ -18,9 +19,9 @@ const apiUrl = import.meta.env.PUBLIC_API_URL ?? "";
 ---
 
 <BaseLayout title={headings[intent]} description="Get started with World Champion Taekwondo Washougal.">
+  <PageTitle title={headings[intent]} />
   <section class="page">
     <div class="wrap" style="max-width:36rem;">
-      <h1>{headings[intent]}</h1>
       <p class="muted">
         Form wires to our Lambda + SES API. Set <code>PUBLIC_API_URL</code> when
         the endpoint is live. {site.offer.label}: {site.offer.price}.

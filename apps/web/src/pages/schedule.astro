@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import PageTitle from "../components/PageTitle.astro";
 import { withBase } from "../lib/with-base";
 ---
 
@@ -7,9 +8,9 @@ import { withBase } from "../lib/with-base";
   title="Schedule"
   description="Class schedule and hours for World Champion Taekwondo Washougal."
 >
+  <PageTitle title="Schedule" />
   <section class="page">
     <div class="wrap">
-      <h1>Schedule</h1>
       <p class="muted">Effective Feb 23, 2026 — structured data coming next.</p>
 
       <h2>Hours</h2>
