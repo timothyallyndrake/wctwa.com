@@ -1,0 +1,16 @@
+---
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<header class="page-title">
+  <div class="wrap">
+    <h1 class="type-display">{title}</h1>
+  </div>
+  <svg class="page-title__wave" viewBox="0 0 1200 100" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+    <path fill="currentColor" d="M0,38 C220,92 460,4 760,58 C960,96 1080,18 1200,46 L1200,100 L0,100 Z"></path>
+  </svg>
+</header>

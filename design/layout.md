@@ -1,6 +1,7 @@
 # Layout direction
 
-Working direction, grilled 2026-10-14. One layout for the marketing site.
+Working direction, grilled 2026-10-14. One layout for the marketing site.  
+Current phase and next job: [docs/NOW.md](../docs/NOW.md).
 
 ## Freshness
 
@@ -10,46 +11,31 @@ Decoration is photography, type, and the color fields in `design/tokens/colors.m
 
 ## Page shell
 
-A sticky white header holds the school mark and name, primary navigation, a phone link, a quiet member link, and a compact trial action. Content sits in a `72rem` column.
+A white header holds the school mark and name, primary navigation, and a phone link. On a narrow screen the phone becomes a Call button and the navigation moves into the menu. Content sits in a `72rem` column.
 
-Documentary photographs sit in the flow described below. Type sits beside a photo, or crosses the edge the photo is already crossing.
+The header does not carry a trial button. The `$40 / 2 weeks` offer lives in the homepage trial section and on the start form. Member sign-in stays in the footer markup and is hidden until the family portal is ready.
 
-The trial action stays in the header on medium and wide screens. On a narrow screen it becomes a compact bar at the bottom.
+Documentary photographs sit in the page content. They do not sit inside the title band.
 
 ## Homepage regions
 
-1. Hero (full-body photo, navy text column, wave into gray)
-2. Programs (white cards on gray)
-3. Local facts (address and hours on navy)
-4. Trial offer
-5. Footer
-
-Master Kim lives on his own page under Instructors, not on the homepage. The `$40 / 2 weeks` fact stays in the trial offer, not in the hero.
-
-## Homepage (corrected 2026-10-14)
-
-Shared by every page: the same header, the same footer, rounded cards, and a smooth wave only where a background color changes. A wave masks the edge it crosses. It stays smooth all the way across. It does not cover a face, a caption, or a link.
-
-The homepage hero is the tall opening. Every other page opens with a shorter title band, then the same kind of sections.
-
-Homepage regions:
-
-1. Hero. Photo is the outpainted full-body frame. Bottom wave masks the photo and reveals the gray. Photo’s left edge curves into a wider navy text column.
-2. Programs. Three equal white cards on the gray field that starts behind the hero wave.
-3. Local facts (address and hours) on a navy band.
-4. One trial offer.
-5. Footer.
+1. Hero. Full-body photo, navy text column, bottom wave into the quotes gray. The photo fills the column so the wave covers its bottom edge.
+2. From the community. Four quotes on the darker gray, then a wave into the programs field.
+3. Programs. Three equal white cards.
+4. Local facts. Address and hours on a navy band, with directions and the full schedule.
+5. Trial offer. `$40 / 2 weeks`, including uniform and belt.
+6. Footer.
 
 Master Kim is not on the homepage. He has his own page under Instructors.
 
-The training-photo section and the visit block are not on the homepage. The full class grid lives on the schedule page.
-
 ## Inner pages
 
-Schedule and Programs reuse this shell. Each opens with a compact title and photo, then tighter bordered groups for the details, then a visit block and the footer.
+Every page other than the homepage opens with a plain navy title band across the full width. The title uses the display type. The same wave used between homepage sections closes the band and reveals the page ground. The band does not include a photograph. Photos, when a page has them, live in the content below.
+
+Schedule, Programs, About, Instructors, Birthday Parties, Contact, and the start form all use this band.
 
 ## Viewports
 
-- **Narrow:** one column, a menu panel, edge-to-edge photo moments, and the bottom trial bar.
-- **Medium:** some photo-and-type sections become two columns. The menu panel remains.
-- **Wide:** full navigation. Key photos span the grid. Text columns stay aligned and readable.
+- **Narrow:** one column, a menu panel, and the phone as a Call button. Footer contact sits above the school lockup, with the phone and Facebook beside the address and email.
+- **Medium:** some sections become two columns. The menu panel remains.
+- **Wide:** full navigation. The homepage hero is two columns. Footer contact is right-aligned.

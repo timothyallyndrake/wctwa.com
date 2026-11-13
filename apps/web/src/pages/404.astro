@@ -1,12 +1,13 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import PageTitle from "../components/PageTitle.astro";
 import { withBase } from "../lib/with-base";
 ---
 
 <BaseLayout title="Page not found">
+  <PageTitle title="Page not found" />
   <section class="page">
     <div class="wrap">
-      <h1>Page not found</h1>
       <p class="muted">That page doesn’t exist. Try the home page or Start here.</p>
       <p>
         <a class="cta" href={withBase("/")}>Home</a>

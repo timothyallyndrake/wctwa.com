@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import PageTitle from "../components/PageTitle.astro";
 import { comingSoon, site } from "../content/site";
 import { withBase } from "../lib/with-base";
 ---
@@ -8,13 +9,11 @@ import { withBase } from "../lib/with-base";
   title="Member sign in"
   description="Family member portal for World Champion Taekwondo Washougal — coming soon."
 >
+  <PageTitle title="Member sign in" />
   <section class="page">
     <div class="wrap" style="max-width:40rem;">
       <div class="coming-soon-panel">
         <p class="eyebrow">{comingSoon.eyebrow}</p>
-        <h1 style="font-size:clamp(2.2rem, 6vw, 3.25rem);margin:0 0 0.75rem;">
-          Member sign in
-        </h1>
         <p class="muted" style="margin:0;font-size:1.05rem;">
           Parents and students will sign in here — for schedules, store orders,
           and dues. School staff will use a separate admin workspace. This portal

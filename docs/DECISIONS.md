@@ -1,9 +1,10 @@
 # Rebuild decisions (grilled)
 
 Living doc of locked choices for the wctwa.com refresh.  
+Current phase and next job: [NOW.md](./NOW.md).  
 Companion: [CURRENT_SITE_INVENTORY.md](./CURRENT_SITE_INVENTORY.md)
 
-Last updated: 2026-10-14
+Last updated: 2026-11-13
 
 ---
 
@@ -27,7 +28,7 @@ Last updated: 2026-10-14
 | Visual treatment | **Bright civic school** (working direction, 2026-10-14). Tokens in `design/tokens/`. Layout in `design/layout.md`. Must feel new and exciting beside the current public site; do not study that site until Tim brings it in |
 | Copy | **Full rewrite**; preserve facts/credentials; drop urgency-spam / template tone |
 | IA | **Hybrid** — strong Programs overview; keep useful deep links; Instructors + Birthday Parties real; no filler hubs |
-| Trial offer | **Keep $40 / 2 weeks**; demote below trust (not hero scream) |
+| Trial offer | **Keep $40 / 2 weeks**; it lives in the homepage offer and the start form, not in the header |
 | Announcements | **Repo content** (typed config); prefer dismissible banner; modal only if Master wants urgent; Tim+AI ship |
 | Photos | Launch on best current + Master anchor; Tim brings more; **enhance/upscale** keepers; easy to swap |
 
@@ -38,6 +39,7 @@ Accepted in this grill, and still reopenable:
 - Treatment, color roles, type, shape, spacing, and elevation: `design/tokens/`
 - One layout direction: `design/layout.md`
 - The built site must feel new and exciting beside the current public site. Do not open that site for visual reference until Tim introduces it
+- Inner pages open with a plain full-width navy title band in the display type. The shared wave closes the band. Photographs stay in the page content, not in the title band. Locked 2026-11-13.
 
 ### v1 in scope
 

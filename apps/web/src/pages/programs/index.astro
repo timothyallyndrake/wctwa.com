@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import PageTitle from "../../components/PageTitle.astro";
 import { withBase } from "../../lib/with-base";
 
 const programs = [
@@ -25,9 +26,9 @@ const programs = [
   title="Programs"
   description="Kids, Tiny Tigers, and Adults & Families martial arts programs in Washougal."
 >
+  <PageTitle title="Programs" />
   <section class="page">
     <div class="wrap">
-      <h1>Programs</h1>
       <p class="muted">One clear overview — then go deeper if you want.</p>
       <ul style="list-style:none;padding:0;display:grid;gap:1.5rem;margin:2rem 0;">
         {
