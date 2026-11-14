@@ -34,7 +34,9 @@ Every page other than the homepage opens with a plain navy title band across the
 
 Schedule, Programs, About, Instructors, Birthday Parties, Contact, and the start form all use this band.
 
-**Program detail pages** (Kids, Tiny Tigers, Adults & Families) follow the About story pattern: a documentary school photograph beside the first section from the medium viewport up, then a single reading column for the remaining sections and actions (`Reserve a class`, schedule text link).
+**About** places the opening words on the left and the photograph on the right from the medium viewport up. Below that width the photograph comes first.
+
+**Program detail pages** (Kids, Tiny Tigers, Adults & Families) follow the story pattern with the photograph on the left from the medium viewport up, then a single reading column for the remaining sections and actions (`Reserve a class`, schedule text link).
 
 **Programs hub** reuses the homepage’s three program cards (photo, title, blurb, “View program”) in a catalog layout, with a trial signal button below the grid.
 

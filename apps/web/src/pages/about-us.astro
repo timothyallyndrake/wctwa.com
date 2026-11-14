@@ -6,13 +6,27 @@ import { withBase } from "../lib/with-base";
 
 <BaseLayout
   title="About Us"
-  description="What Taekwondo means at World Champion Taekwondo Washougal — fitness, life skills, and a positive school for families."
+  description="What Taekwondo means at World Champion Taekwondo Washougal — a family school for kids and adults, and a steady place to train."
 >
   <PageTitle title="About the school" />
   <section class="page">
     <div class="wrap">
       <article class="page-story">
-        <div class="page-story__lead">
+        <div class="page-story__lead page-story__lead--copy-first">
+          <section>
+            <h2 class="type-heading">What is Taekwondo?</h2>
+            <p class="type-body">
+              Taekwondo is a traditional Korean martial art — the way of the foot and hand. At World
+              Champion Taekwondo Washougal, you train the body and the person together. The strength and
+              focus you practice here are meant to stay with you after class.
+            </p>
+            <p class="type-body">
+              Students come in for different reasons. Some want to compete. Some want to get stronger, or
+              feel more capable in an ordinary day. Some want people to train with. Kids classes and adult
+              classes are both part of this school. What they share is confidence, discipline, and steady
+              work for mind, body, and spirit.
+            </p>
+          </section>
           <figure class="page-story__photo">
             <img
               src={withBase("/images/enhanced/home-kids-martial-arts.webp")}
@@ -22,29 +36,14 @@ import { withBase } from "../lib/with-base";
               loading="lazy"
             />
           </figure>
-          <section>
-            <h2 class="type-heading">What is Taekwondo?</h2>
-            <p class="type-body">
-              Taekwondo is a traditional Korean martial art — the way of the foot and hand. At World
-              Champion Taekwondo Washougal, students train the body and the person together: strength,
-              focus, and the habits that carry past the mat.
-            </p>
-          </section>
         </div>
         <div class="page-story__copy">
           <section>
-            <h2 class="type-heading">Fitness and life skills</h2>
+            <h2 class="type-heading">A family room</h2>
             <p class="type-body">
-              Class builds fitness, balance, and control. It also builds the quieter skills families ask
-              for: listening, patience, and the confidence to try again.
-            </p>
-          </section>
-          <section>
-            <h2 class="type-heading">A positive place to train</h2>
-            <p class="type-body">
-              The school is built around discipline, encouragement, and a room where students can grow
-              without giving up. Families in Washougal train here because the teaching stays calm and the
-              standard stays clear.
+              The instructors are here in Washougal. They keep class stable and familiar, a family room
+              where you can work toward your own goal and find people who will practice beside you. The
+              teaching stays encouraging, the standard stays clear, and there is room to enjoy the work.
             </p>
           </section>
           <a class="button button--signal" href={withBase("/start/info/")}>Request information</a>

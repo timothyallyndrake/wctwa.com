@@ -790,8 +790,13 @@ h3 {
   align-items: start;
 }
 
-.page-story__lead .type-heading + .type-body {
+.page-story__lead .type-heading + .type-body,
+.page-story__lead .type-body + .type-body {
   margin-top: var(--space-3);
+}
+
+.page-story__lead--copy-first .page-story__photo {
+  order: -1;
 }
 
 .page-story__photo {
@@ -834,6 +839,10 @@ h3 {
 @media (min-width: 720px) {
   .page-story__lead {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .page-story__lead--copy-first .page-story__photo {
+    order: 0;
   }
 }
 
